@@ -5,7 +5,8 @@
  3. conferencia do piloto;
  4. estudo completo (cerca de 5 h 30 min); ao fim, climate.ipynb passa a guardar as saidas;
  5. conferencia da release (9 verificacoes, inclusive os cortes temporais);
- 6-9. scripts do artigo, que so leem os resultados: diagnosticos, numeros, figuras e tabelas.
+ 6-10. scripts do artigo, que so leem os resultados: diagnosticos, RPSS sobre a climatologia,
+    numeros, figuras e tabelas.
 
 Para na primeira etapa com erro. Enquanto roda, pede ao Windows para nao suspender
 (SetThreadExecutionState), sem alterar nenhuma configuracao permanente.
@@ -29,6 +30,7 @@ ETAPAS = [
     ('Estudo completo (cerca de 5 h 30 min)', [PY, 'rodar_climate.py']),
     ('Conferencia da release', [PY, 'conferir_publicacao.py']),
     ('Artigo: diagnosticos das previsoes', [PY, 'artigo/diagnosticos_artigo.py']),
+    ('Artigo: RPSS sobre a climatologia', [PY, 'artigo/rpss_climatologia.py']),
     ('Artigo: numeros do texto', [PY, 'artigo/numeros_artigo.py']),
     ('Artigo: figuras', [PY, 'artigo/figuras_artigo.py']),
     ('Artigo: tabelas', [PY, 'artigo/tabelas_artigo.py']),

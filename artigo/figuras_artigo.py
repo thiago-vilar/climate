@@ -342,7 +342,12 @@ def main():
     ax = fig.add_axes([0.25, 0.20, 0.71, 0.70])
     r_l = asso.set_index(['alvo', 'caso', 'índice'])['r(L*)'].abs()
     det = asso.set_index(['alvo', 'caso', 'índice'])['detectado (q < 0,05)']
-    rid = hip[hip['método'] == 'Ridge'].set_index(['alvo', 'caso', 'índice'])
+    # ganho sobre a climatologia de referência N (artigo/rpss_climatologia.py)
+    rn = pd.read_csv(saida.parent / 'rpss_climatologia.csv')
+    rn['caso'] = rn['caso'].map({'ano hidrológico': 'ano hidrológico', 'estação chuvosa': 'estação chuvosa',
+                                 'estação seca': 'estação seca'})
+    rid = rn[rn['método'] == 'Ridge'].set_index(['alvo', 'caso', 'índice']).rename(
+        columns={'RPSS sobre N (%)': 'RPSS sobre o modelo sem índice (%)'})
     for ind in INDICES:
         idx = [k for k in r_l.index if k[2] == ind]
         x, y = r_l.loc[idx].to_numpy(), rid.loc[idx, 'RPSS sobre o modelo sem índice (%)'].to_numpy()
@@ -353,7 +358,7 @@ def main():
     ax.axhline(0, color='k', lw=0.5)
     ax.set_xlim(0, 0.42)
     ax.set_xlabel('Associação defasada, |r|', fontsize=6.5, labelpad=1)
-    ax.set_ylabel('Ganho de previsão,\nRPSS (%)', fontsize=6.5, labelpad=1)
+    ax.set_ylabel('Ganho sobre a\nclimatologia, RPSS (%)', fontsize=6.5, labelpad=1)
     ax.tick_params(labelsize=6, length=2, pad=1)
     ax.legend(handles=[mpl.lines.Line2D([], [], color=COR[i_], marker=MARCA[i_], ls='', ms=3,
                                         label=i_) for i_ in INDICES],
@@ -368,7 +373,7 @@ def main():
             fig.savefig(saida / f'resumo_grafico.{ext}', dpi=300)
     plt.close(fig)
     pd.DataFrame({'|r(L*)|': r_l, 'associação detectada': det,
-                  'RPSS da Ridge sobre o controle (%)': rid['RPSS sobre o modelo sem índice (%)'],
+                  'RPSS da Ridge sobre a climatologia N (%)': rid['RPSS sobre o modelo sem índice (%)'],
                   'IC95 inferior': rid['IC95 inferior'], 'IC95 superior': rid['IC95 superior']}
                  ).reset_index().to_csv(saida / 'resumo_grafico_dados.csv', index=False,
                                         encoding='utf-8-sig')

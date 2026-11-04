@@ -94,7 +94,7 @@ O pipeline inteiro roda com um comando, que para na primeira etapa com erro:
 .\executar_tudo.bat
 ```
 
-São nove etapas: kernel, piloto, conferência do piloto, estudo completo, conferência da release e os quatro scripts do artigo (diagnósticos, números, figuras e tabelas). Para rodar só o notebook:
+São dez etapas: kernel, piloto, conferência do piloto, estudo completo, conferência da release e os cinco scripts do artigo (diagnósticos, RPSS sobre a climatologia, números, figuras e tabelas). Para rodar só o notebook:
 
 ```powershell
 .\.venv\Scripts\python.exe rodar_climate.py --modo piloto   # conferência rápida, resultados/piloto

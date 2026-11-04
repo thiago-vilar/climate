@@ -7,11 +7,12 @@ resultados, que têm manifesto SHA-256 próprio. As tabelas são lidas pelo nome
 
 ## Como gerar
 
-O `executar_tudo.py` (ou `executar_tudo.bat`) roda os quatro scripts no fim do pipeline. Para
+O `executar_tudo.py` (ou `executar_tudo.bat`) roda os cinco scripts no fim do pipeline. Para
 rodá-los à parte, na pasta do repositório:
 
 ```powershell
 .\.venv\Scripts\python.exe artigo\diagnosticos_artigo.py
+.\.venv\Scripts\python.exe artigo\rpss_climatologia.py
 .\.venv\Scripts\python.exe artigo\numeros_artigo.py
 .\.venv\Scripts\python.exe artigo\figuras_artigo.py
 .\.venv\Scripts\python.exe artigo\tabelas_artigo.py
@@ -22,9 +23,10 @@ Saídas em `artigo/saidas/completo/`:
 | arquivo | conteúdo |
 |---|---|
 | `diagnosticos_previsoes.csv` | RPSS sobre a climatologia N do modelo e do controle; desvio-padrão das probabilidades de Q1 e Q5 no teste; confere o RPSS sobre o controle com a tabela da hipótese |
+| `rpss_climatologia.csv` | RPSS de cada modelo e do seu controle sobre a climatologia padrão N, com IC95 (2 000 reamostragens de blocos circulares de 3 anos), e RPSS sobre o controle; referência comum aos três modelos, usada no texto, no resumo gráfico e na Tabela S8 |
 | `numeros.json` | todos os números citados no texto, extraídos das tabelas finais |
 | `figuras/fig1…fig6`, `resumo_grafico` | figuras do texto principal em PNG (300 dpi) e PDF, com os dados de cada painel em `*_dados.csv` |
-| `tab2.json`, `supl.json` | Tabela 2 do texto e Tabelas S1 a S7 do material suplementar, com as células já formatadas |
+| `tab2.json`, `supl.json` | Tabela 2 do texto e Tabelas S1 a S7 do material suplementar (a Tabela S8 vem de `rpss_climatologia.csv`), com as células já formatadas |
 
 ## Figuras do texto
 
