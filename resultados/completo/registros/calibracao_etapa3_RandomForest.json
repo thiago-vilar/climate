@@ -1,0 +1,242 @@
+[
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 1,
+      "folha": 0.3,
+      "arvores": 100
+    },
+    "ordem": [
+      0,
+      0
+    ],
+    "RPSS (%)": -1.4802651656818548,
+    "erro-padrão": 1.1790054882563339,
+    "segundos": 4.8
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 1,
+      "folha": 0.2,
+      "arvores": 100
+    },
+    "ordem": [
+      0,
+      1
+    ],
+    "RPSS (%)": -1.9384623216919803,
+    "erro-padrão": 1.1214439465789898,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 1,
+      "folha": 0.1,
+      "arvores": 100
+    },
+    "ordem": [
+      0,
+      2
+    ],
+    "RPSS (%)": -2.287566996217203,
+    "erro-padrão": 1.0786166211179786,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 1,
+      "folha": 0.05,
+      "arvores": 100
+    },
+    "ordem": [
+      0,
+      3
+    ],
+    "RPSS (%)": -2.418036198300953,
+    "erro-padrão": 1.0723417982392045,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 2,
+      "folha": 0.3,
+      "arvores": 100
+    },
+    "ordem": [
+      1,
+      0
+    ],
+    "RPSS (%)": -2.0630805439894906,
+    "erro-padrão": 1.3249664641580425,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 2,
+      "folha": 0.2,
+      "arvores": 100
+    },
+    "ordem": [
+      1,
+      1
+    ],
+    "RPSS (%)": -3.5378791177313156,
+    "erro-padrão": 1.339536828648952,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 2,
+      "folha": 0.1,
+      "arvores": 100
+    },
+    "ordem": [
+      1,
+      2
+    ],
+    "RPSS (%)": -4.384354079113462,
+    "erro-padrão": 1.3005875130499187,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 2,
+      "folha": 0.05,
+      "arvores": 100
+    },
+    "ordem": [
+      1,
+      3
+    ],
+    "RPSS (%)": -5.019175159834183,
+    "erro-padrão": 1.4298022112752757,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 4,
+      "folha": 0.3,
+      "arvores": 100
+    },
+    "ordem": [
+      2,
+      0
+    ],
+    "RPSS (%)": -2.0630805439894906,
+    "erro-padrão": 1.3249664641580425,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 4,
+      "folha": 0.2,
+      "arvores": 100
+    },
+    "ordem": [
+      2,
+      1
+    ],
+    "RPSS (%)": -4.241730957720368,
+    "erro-padrão": 1.3611785315368472,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 4,
+      "folha": 0.1,
+      "arvores": 100
+    },
+    "ordem": [
+      2,
+      2
+    ],
+    "RPSS (%)": -7.593329841354225,
+    "erro-padrão": 1.3704684101705502,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": 4,
+      "folha": 0.05,
+      "arvores": 100
+    },
+    "ordem": [
+      2,
+      3
+    ],
+    "RPSS (%)": -9.626376376818309,
+    "erro-padrão": 1.7354197408237535,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": null,
+      "folha": 0.3,
+      "arvores": 100
+    },
+    "ordem": [
+      3,
+      0
+    ],
+    "RPSS (%)": -2.0630805439894906,
+    "erro-padrão": 1.3249664641580425,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": null,
+      "folha": 0.2,
+      "arvores": 100
+    },
+    "ordem": [
+      3,
+      1
+    ],
+    "RPSS (%)": -4.241730957720368,
+    "erro-padrão": 1.3611785315368472,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": null,
+      "folha": 0.1,
+      "arvores": 100
+    },
+    "ordem": [
+      3,
+      2
+    ],
+    "RPSS (%)": -8.030208261575767,
+    "erro-padrão": 1.3695021834249523,
+    "segundos": 0.7
+  },
+  {
+    "método": "Random Forest",
+    "parametros": {
+      "profundidade": null,
+      "folha": 0.05,
+      "arvores": 100
+    },
+    "ordem": [
+      3,
+      3
+    ],
+    "RPSS (%)": -13.057562137520732,
+    "erro-padrão": 1.7359676962008466,
+    "segundos": 0.7
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "entrada": "pontual",
+    "sazonal": false,
+    "filtro": "bruto",
+    "atributos": 1,
+    "ordem": [
+      1,
+      0,
+      0
+    ],
+    "RPSS (%)": 0.22497530550167635,
+    "erro-padrão": 0.6409652176696206
+  },
+  {
+    "entrada": "pontual",
+    "sazonal": false,
+    "filtro": "sem_tendencia",
+    "atributos": 1,
+    "ordem": [
+      1,
+      0,
+      1
+    ],
+    "RPSS (%)": -1.6468983229514127,
+    "erro-padrão": 0.6778849740031272
+  },
+  {
+    "entrada": "pontual",
+    "sazonal": true,
+    "filtro": "bruto",
+    "atributos": 3,
+    "ordem": [
+      3,
+      0,
+      0
+    ],
+    "RPSS (%)": -0.19039131039335697,
+    "erro-padrão": 0.9862375936008552
+  },
+  {
+    "entrada": "pontual",
+    "sazonal": true,
+    "filtro": "sem_tendencia",
+    "atributos": 3,
+    "ordem": [
+      3,
+      0,
+      1
+    ],
+    "RPSS (%)": -3.5888235682936607,
+    "erro-padrão": 1.2695865693428503
+  },
+  {
+    "entrada": "media3",
+    "sazonal": false,
+    "filtro": "bruto",
+    "atributos": 1,
+    "ordem": [
+      1,
+      1,
+      0
+    ],
+    "RPSS (%)": 0.14987391489575513,
+    "erro-padrão": 0.6798897950958841
+  },
+  {
+    "entrada": "media3",
+    "sazonal": false,
+    "filtro": "sem_tendencia",
+    "atributos": 1,
+    "ordem": [
+      1,
+      1,
+      1
+    ],
+    "RPSS (%)": -1.2684251508155857,
+    "erro-padrão": 0.6879025753827247
+  },
+  {
+    "entrada": "media3",
+    "sazonal": true,
+    "filtro": "bruto",
+    "atributos": 3,
+    "ordem": [
+      3,
+      1,
+      0
+    ],
+    "RPSS (%)": -0.4232735436427458,
+    "erro-padrão": 1.0053979115729532
+  },
+  {
+    "entrada": "media3",
+    "sazonal": true,
+    "filtro": "sem_tendencia",
+    "atributos": 3,
+    "ordem": [
+      3,
+      1,
+      1
+    ],
+    "RPSS (%)": -3.296460367344876,
+    "erro-padrão": 1.2246378022915072
+  },
+  {
+    "entrada": "tendencia",
+    "sazonal": false,
+    "filtro": "bruto",
+    "atributos": 2,
+    "ordem": [
+      2,
+      2,
+      0
+    ],
+    "RPSS (%)": 0.35624539830189456,
+    "erro-padrão": 0.667802001956845
+  },
+  {
+    "entrada": "tendencia",
+    "sazonal": false,
+    "filtro": "sem_tendencia",
+    "atributos": 2,
+    "ordem": [
+      2,
+      2,
+      1
+    ],
+    "RPSS (%)": -1.0390608570045936,
+    "erro-padrão": 0.6373846066856778
+  },
+  {
+    "entrada": "tendencia",
+    "sazonal": true,
+    "filtro": "bruto",
+    "atributos": 4,
+    "ordem": [
+      4,
+      2,
+      0
+    ],
+    "RPSS (%)": -0.025134117746510518,
+    "erro-padrão": 0.9889056635459267
+  },
+  {
+    "entrada": "tendencia",
+    "sazonal": true,
+    "filtro": "sem_tendencia",
+    "atributos": 4,
+    "ordem": [
+      4,
+      2,
+      1
+    ],
+    "RPSS (%)": -2.9013957043834244,
+    "erro-padrão": 1.2103747512274345
+  },
+  {
+    "entrada": "janela3",
+    "sazonal": false,
+    "filtro": "bruto",
+    "atributos": 3,
+    "ordem": [
+      3,
+      3,
+      0
+    ],
+    "RPSS (%)": -0.9103972639505656,
+    "erro-padrão": 1.1334120329095188
+  },
+  {
+    "entrada": "janela3",
+    "sazonal": false,
+    "filtro": "sem_tendencia",
+    "atributos": 3,
+    "ordem": [
+      3,
+      3,
+      1
+    ],
+    "RPSS (%)": -3.465910891061179,
+    "erro-padrão": 1.072982935162576
+  },
+  {
+    "entrada": "janela3",
+    "sazonal": true,
+    "filtro": "bruto",
+    "atributos": 5,
+    "ordem": [
+      5,
+      3,
+      0
+    ],
+    "RPSS (%)": -1.0606668489138744,
+    "erro-padrão": 1.3771558245776025
+  },
+  {
+    "entrada": "janela3",
+    "sazonal": true,
+    "filtro": "sem_tendencia",
+    "atributos": 5,
+    "ordem": [
+      5,
+      3,
+      1
+    ],
+    "RPSS (%)": -4.820187912757595,
+    "erro-padrão": 1.5084369695073334
+  }
+]

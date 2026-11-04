@@ -1,0 +1,30 @@
+﻿verificação,resultado,detalhe
+eixo mensal regular,ok,"540 meses, 1981-01 a 2025-12"
+meses completos na referência e na normal,ok,referência 360 meses; normal 360 meses
+chuva não negativa,ok,mínimo 0.00 mm
+índices sem falhas,ok,1979-01 a 2025-12
+alinhamento índice × chuva,ok,índice[24] = 1981-01; chuva[0] = 1981-01
+NNEB: calendário (referência 1981–2010) igual ao fixado na capa,ok,"calculado: jan, fev, mar, abr, mai; fixado: jan, fev, mar, abr, mai"
+NNEB: calendário da normal 1991–2020 igual,ok,"jan, fev, mar, abr, mai"
+NNEB: pixels atribuídos,ok,"22127 pixels de 0,05°; suspeitos de quebra (marcados, mantidos): 3.9 % da área"
+NNEB: cobertura da área do polígono,ok,1.0000
+NNEB: anos de treino e de teste,ok,treino 30 anos; teste 15 anos
+NNEB: treino inteiro em jan/1981–dez/2010 e antes do primeiro mês de teste de qualquer alvo,ok,treino 01/1981–12/2010; teste 01/2011–12/2025
+NNEB: classes de quintil equilibradas na referência (série regional),ok,maior desvio de 20 % em um mês e classe: 0.0 p.p.; meses desequilibrados: nenhum
+NNEB: quantis definidos em todos os meses,ok,chuva mensal em todos os meses
+INEB: calendário (referência 1981–2010) igual ao fixado na capa,ok,"calculado: nov, dez, jan, fev, mar, abr; fixado: nov, dez, jan, fev, mar, abr"
+INEB: calendário da normal 1991–2020 igual,ok,"nov, dez, jan, fev, mar, abr"
+INEB: pixels atribuídos,ok,"21179 pixels de 0,05°; suspeitos de quebra (marcados, mantidos): 1.7 % da área"
+INEB: cobertura da área do polígono,ok,1.0000
+INEB: anos de treino e de teste,ok,treino 29 anos; teste 14 anos
+INEB: treino inteiro em jan/1981–dez/2010 e antes do primeiro mês de teste de qualquer alvo,ok,treino 11/1981–10/2010; teste 11/2011–10/2025
+INEB: classes de quintil equilibradas na referência (série regional),ok,maior desvio de 20 % em um mês e classe: 0.0 p.p.; meses desequilibrados: nenhum
+INEB: quantis definidos em todos os meses,ok,chuva mensal em todos os meses
+ENEB: calendário (referência 1981–2010) igual ao fixado na capa,ok,"calculado: mar, abr, mai, jun, jul; fixado: mar, abr, mai, jun, jul"
+ENEB: calendário da normal 1991–2020 igual,ok,"mar, abr, mai, jun, jul"
+ENEB: pixels atribuídos,ok,"8717 pixels de 0,05°; suspeitos de quebra (marcados, mantidos): 10.0 % da área"
+ENEB: cobertura da área do polígono,ok,0.9996
+ENEB: anos de treino e de teste,ok,treino 29 anos; teste 14 anos
+ENEB: treino inteiro em jan/1981–dez/2010 e antes do primeiro mês de teste de qualquer alvo,ok,treino 03/1981–02/2010; teste 03/2011–02/2025
+ENEB: classes de quintil equilibradas na referência (série regional),ok,maior desvio de 20 % em um mês e classe: 0.0 p.p.; meses desequilibrados: nenhum
+ENEB: quantis definidos em todos os meses,ok,chuva mensal em todos os meses

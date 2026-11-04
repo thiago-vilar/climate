@@ -1,0 +1,10 @@
+﻿alvo,caso,meses (ordem do ano hidrológico),defasagens (associação),defasagens (previsão),anos de treino,anos de teste
+NNEB,ano hidrológico,"jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez",L0 a L12,L1 a L12,1981–2010 (30),2011–2025 (15)
+NNEB,estação chuvosa,"jan, fev, mar, abr, mai",L0 a L12,L1 a L12,1981–2010 (30),2011–2025 (15)
+NNEB,estação seca,"jun, jul, ago, set, out, nov, dez",L0 a L12,L1 a L12,1981–2010 (30),2011–2025 (15)
+INEB,ano hidrológico,"nov, dez, jan, fev, mar, abr, mai, jun, jul, ago, set, out",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)
+INEB,estação chuvosa,"nov, dez, jan, fev, mar, abr",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)
+INEB,estação seca,"mai, jun, jul, ago, set, out",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)
+ENEB,ano hidrológico,"mar, abr, mai, jun, jul, ago, set, out, nov, dez, jan, fev",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)
+ENEB,estação chuvosa,"mar, abr, mai, jun, jul",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)
+ENEB,estação seca,"ago, set, out, nov, dez, jan, fev",L0 a L12,L1 a L12,1981–2009 (29),2011–2024 (14)

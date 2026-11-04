@@ -1,0 +1,125 @@
+2026-10-30T22:38:55+00:00 | início | modo completo | assinatura 23f3260ccb7c
+2026-10-30T22:38:55+00:00 | Aquisição: iniciada (46 unidades de trabalho).
+2026-10-30T22:39:12+00:00 | dados: 540 meses (1981-01 a 2025-12); malha de 0.05° com 347 x 329 células e 74701 válidas
+2026-10-30T22:39:13+00:00 | Aquisição: concluída em 0 min.
+2026-10-30T22:39:13+00:00 | Seção 1: iniciada (1 unidades de trabalho).
+2026-10-30T22:39:22+00:00 | Seção 1: homogeneidade, referência, quantis, classes e índices calculados.
+2026-10-30T22:39:36+00:00 | Seção 1: concluída em 0 min.
+2026-10-30T22:39:36+00:00 | Seção 2: iniciada (9 unidades de trabalho).
+2026-10-30T22:39:42+00:00 | Seção 2: 27 combinações; 11 detectadas (q < 0,05); defasagens gravadas em registros/defasagens.json.
+2026-10-30T22:39:46+00:00 | Seção 2: concluída em 0 min.
+2026-10-30T22:39:46+00:00 | Seção 3: iniciada (9 unidades de trabalho).
+2026-10-30T22:40:25+00:00 | Seção 3: 351 mapas; 112 detectados pelo teste de campo (q < 0,05).
+2026-10-30T22:41:17+00:00 | Seção 3: concluída em 2 min.
+2026-10-30T22:41:17+00:00 | Seção 4: iniciada (259 unidades de trabalho).
+2026-10-30T22:41:17+00:00 | Seção 4: cortes conferidos; último mês de treino da calibração 12/1995, validação 01/1996–12/2010, primeiro mês de teste 01/2011 (todos os alvos)
+2026-10-30T22:41:18+00:00 | Seção 4: Ridge escolhido: {'penalidade_por_mes': 10.0}
+2026-10-30T22:41:33+00:00 | Seção 4: Random Forest escolhido: {'profundidade': 1, 'folha': 0.3, 'arvores': 100}
+2026-10-30T22:43:16+00:00 | Seção 4: Rede neural escolhido: {'oculta': 4, 'decaimento': 10.0, 'passagens': 200, 'ativacao': 'tanh', 'taxa': 0.01}
+2026-10-30T22:47:19+00:00 | Seção 4: entrada {'entrada': 'pontual', 'sazonal': False, 'filtro': 'bruto'}; treino único; escolhas gravadas em registros/calibracao.json.
+2026-10-30T22:47:24+00:00 | Seção 4: concluída em 6 min.
+2026-10-30T22:47:24+00:00 | Seção 5: iniciada (9 unidades de trabalho).
+2026-10-30T22:47:44+00:00 | Seção 5: amostras gravadas; N-índice melhor que N com q < 0,05 em 0 de 27 comparações (valor-p pelo nulo de 130 deslocamentos).
+2026-10-30T22:47:50+00:00 | Seção 5: concluída em 0 min.
+2026-10-30T22:47:50+00:00 | Seção 6: iniciada (54 unidades de trabalho).
+2026-10-30T22:47:50+00:00 | Ridge: nenhuma combinação com o modelo idêntico ao controle sem índice.
+2026-10-30T22:47:51+00:00 | Ridge: 54 unidades ajustadas nesta execução; configuração {'penalidade_por_mes': 10.0}.
+2026-10-30T22:48:23+00:00 | Seção 6: concluída em 1 min.
+2026-10-30T22:48:23+00:00 | Seção 7: iniciada (54 unidades de trabalho).
+2026-10-30T22:48:26+00:00 | Random Forest: nenhuma combinação com o modelo idêntico ao controle sem índice.
+2026-10-30T22:48:26+00:00 | Random Forest: 54 unidades ajustadas nesta execução; configuração {'profundidade': 1, 'folha': 0.3, 'arvores': 100}.
+2026-10-30T22:51:44+00:00 | Seção 7: concluída em 3 min.
+2026-10-30T22:51:44+00:00 | Seção 8: iniciada (54 unidades de trabalho).
+2026-10-30T22:51:47+00:00 | Rede neural: nenhuma combinação com o modelo idêntico ao controle sem índice.
+2026-10-30T22:51:47+00:00 | Rede neural: 54 unidades treinadas nesta execução; configuração {'oculta': 4, 'decaimento': 10.0, 'passagens': 200, 'ativacao': 'tanh', 'taxa': 0.01}.
+2026-10-30T22:54:02+00:00 | Seção 8: concluída em 2 min.
+2026-10-30T22:54:02+00:00 | Seção 9: iniciada (201 unidades de trabalho).
+2026-10-30T23:53:04+00:00 | Seção 9: 81 comparações entre métodos; hipótese sustentada em 0 de 81 combinações de método, alvo, caso e índice.
+2026-10-30T23:53:09+00:00 | Seção 9: concluída em 59 min.
+2026-10-30T23:53:10+00:00 | Seção 10: iniciada (3267 unidades de trabalho).
+2026-10-30T23:53:12+00:00 | Seção 10: Ridge, NNEB, ano, NINO3.4: 22127 pixels em 0 min.
+2026-10-30T23:53:14+00:00 | Seção 10: Ridge, NNEB, ano, TSA: 22127 pixels em 0 min.
+2026-10-30T23:53:16+00:00 | Seção 10: Ridge, NNEB, ano, AMM: 22127 pixels em 0 min.
+2026-10-30T23:53:17+00:00 | Seção 10: Ridge, NNEB, chuvosa, NINO3.4: 22127 pixels em 0 min.
+2026-10-30T23:53:17+00:00 | Seção 10: Ridge, NNEB, chuvosa, TSA: 22127 pixels em 0 min.
+2026-10-30T23:53:18+00:00 | Seção 10: Ridge, NNEB, chuvosa, AMM: 22127 pixels em 0 min.
+2026-10-30T23:53:20+00:00 | Seção 10: Ridge, NNEB, seca, NINO3.4: 22127 pixels em 0 min.
+2026-10-30T23:53:21+00:00 | Seção 10: Ridge, NNEB, seca, TSA: 22127 pixels em 0 min.
+2026-10-30T23:53:22+00:00 | Seção 10: Ridge, NNEB, seca, AMM: 22127 pixels em 0 min.
+2026-10-30T23:53:24+00:00 | Seção 10: Ridge, INEB, ano, NINO3.4: 21179 pixels em 0 min.
+2026-10-30T23:53:26+00:00 | Seção 10: Ridge, INEB, ano, TSA: 21179 pixels em 0 min.
+2026-10-30T23:53:28+00:00 | Seção 10: Ridge, INEB, ano, AMM: 21179 pixels em 0 min.
+2026-10-30T23:53:29+00:00 | Seção 10: Ridge, INEB, chuvosa, NINO3.4: 21179 pixels em 0 min.
+2026-10-30T23:53:29+00:00 | Seção 10: Ridge, INEB, chuvosa, TSA: 21179 pixels em 0 min.
+2026-10-30T23:53:30+00:00 | Seção 10: Ridge, INEB, chuvosa, AMM: 21179 pixels em 0 min.
+2026-10-30T23:53:31+00:00 | Seção 10: Ridge, INEB, seca, NINO3.4: 21179 pixels em 0 min.
+2026-10-30T23:53:32+00:00 | Seção 10: Ridge, INEB, seca, TSA: 21179 pixels em 0 min.
+2026-10-30T23:53:33+00:00 | Seção 10: Ridge, INEB, seca, AMM: 21179 pixels em 0 min.
+2026-10-30T23:53:34+00:00 | Seção 10: Ridge, ENEB, ano, NINO3.4: 8717 pixels em 0 min.
+2026-10-30T23:53:35+00:00 | Seção 10: Ridge, ENEB, ano, TSA: 8717 pixels em 0 min.
+2026-10-30T23:53:36+00:00 | Seção 10: Ridge, ENEB, ano, AMM: 8717 pixels em 0 min.
+2026-10-30T23:53:36+00:00 | Seção 10: Ridge, ENEB, chuvosa, NINO3.4: 8717 pixels em 0 min.
+2026-10-30T23:53:36+00:00 | Seção 10: Ridge, ENEB, chuvosa, TSA: 8717 pixels em 0 min.
+2026-10-30T23:53:37+00:00 | Seção 10: Ridge, ENEB, chuvosa, AMM: 8717 pixels em 0 min.
+2026-10-30T23:53:37+00:00 | Seção 10: Ridge, ENEB, seca, NINO3.4: 8717 pixels em 0 min.
+2026-10-30T23:53:37+00:00 | Seção 10: Ridge, ENEB, seca, TSA: 8717 pixels em 0 min.
+2026-10-30T23:53:38+00:00 | Seção 10: Ridge, ENEB, seca, AMM: 8717 pixels em 0 min.
+2026-10-30T23:57:35+00:00 | Seção 10: Rede neural, NNEB, ano, NINO3.4: 22127 pixels em 4 min.
+2026-10-31T00:01:31+00:00 | Seção 10: Rede neural, NNEB, ano, TSA: 22127 pixels em 4 min.
+2026-10-31T00:05:26+00:00 | Seção 10: Rede neural, NNEB, ano, AMM: 22127 pixels em 4 min.
+2026-10-31T00:07:21+00:00 | Seção 10: Rede neural, NNEB, chuvosa, NINO3.4: 22127 pixels em 2 min.
+2026-10-31T00:09:23+00:00 | Seção 10: Rede neural, NNEB, chuvosa, TSA: 22127 pixels em 2 min.
+2026-10-31T00:11:14+00:00 | Seção 10: Rede neural, NNEB, chuvosa, AMM: 22127 pixels em 2 min.
+2026-10-31T00:13:36+00:00 | Seção 10: Rede neural, NNEB, seca, NINO3.4: 22127 pixels em 2 min.
+2026-10-31T00:16:01+00:00 | Seção 10: Rede neural, NNEB, seca, TSA: 22127 pixels em 2 min.
+2026-10-31T00:18:23+00:00 | Seção 10: Rede neural, NNEB, seca, AMM: 22127 pixels em 2 min.
+2026-10-31T00:22:04+00:00 | Seção 10: Rede neural, INEB, ano, NINO3.4: 21179 pixels em 4 min.
+2026-10-31T00:25:43+00:00 | Seção 10: Rede neural, INEB, ano, TSA: 21179 pixels em 4 min.
+2026-10-31T00:29:19+00:00 | Seção 10: Rede neural, INEB, ano, AMM: 21179 pixels em 4 min.
+2026-10-31T00:31:13+00:00 | Seção 10: Rede neural, INEB, chuvosa, NINO3.4: 21179 pixels em 2 min.
+2026-10-31T00:33:08+00:00 | Seção 10: Rede neural, INEB, chuvosa, TSA: 21179 pixels em 2 min.
+2026-10-31T00:34:58+00:00 | Seção 10: Rede neural, INEB, chuvosa, AMM: 21179 pixels em 2 min.
+2026-10-31T00:36:53+00:00 | Seção 10: Rede neural, INEB, seca, NINO3.4: 21179 pixels em 2 min.
+2026-10-31T00:38:44+00:00 | Seção 10: Rede neural, INEB, seca, TSA: 21179 pixels em 2 min.
+2026-10-31T00:40:41+00:00 | Seção 10: Rede neural, INEB, seca, AMM: 21179 pixels em 2 min.
+2026-10-31T00:42:14+00:00 | Seção 10: Rede neural, ENEB, ano, NINO3.4: 8717 pixels em 2 min.
+2026-10-31T00:43:49+00:00 | Seção 10: Rede neural, ENEB, ano, TSA: 8717 pixels em 2 min.
+2026-10-31T00:45:21+00:00 | Seção 10: Rede neural, ENEB, ano, AMM: 8717 pixels em 2 min.
+2026-10-31T00:46:09+00:00 | Seção 10: Rede neural, ENEB, chuvosa, NINO3.4: 8717 pixels em 1 min.
+2026-10-31T00:46:57+00:00 | Seção 10: Rede neural, ENEB, chuvosa, TSA: 8717 pixels em 1 min.
+2026-10-31T00:47:40+00:00 | Seção 10: Rede neural, ENEB, chuvosa, AMM: 8717 pixels em 1 min.
+2026-10-31T00:48:38+00:00 | Seção 10: Rede neural, ENEB, seca, NINO3.4: 8717 pixels em 1 min.
+2026-10-31T00:49:36+00:00 | Seção 10: Rede neural, ENEB, seca, TSA: 8717 pixels em 1 min.
+2026-10-31T00:50:32+00:00 | Seção 10: Rede neural, ENEB, seca, AMM: 8717 pixels em 1 min.
+2026-10-31T00:59:16+00:00 | Seção 10: Random Forest, NNEB, ano, NINO3.4: 22127 pixels em 9 min.
+2026-10-31T01:07:54+00:00 | Seção 10: Random Forest, NNEB, ano, TSA: 22127 pixels em 9 min.
+2026-10-31T01:16:32+00:00 | Seção 10: Random Forest, NNEB, ano, AMM: 22127 pixels em 9 min.
+2026-10-31T01:24:58+00:00 | Seção 10: Random Forest, NNEB, chuvosa, NINO3.4: 22127 pixels em 8 min.
+2026-10-31T01:33:23+00:00 | Seção 10: Random Forest, NNEB, chuvosa, TSA: 22127 pixels em 8 min.
+2026-10-31T01:41:46+00:00 | Seção 10: Random Forest, NNEB, chuvosa, AMM: 22127 pixels em 8 min.
+2026-10-31T01:50:14+00:00 | Seção 10: Random Forest, NNEB, seca, NINO3.4: 22127 pixels em 8 min.
+2026-10-31T01:58:41+00:00 | Seção 10: Random Forest, NNEB, seca, TSA: 22127 pixels em 8 min.
+2026-10-31T02:07:07+00:00 | Seção 10: Random Forest, NNEB, seca, AMM: 22127 pixels em 8 min.
+2026-10-31T02:15:18+00:00 | Seção 10: Random Forest, INEB, ano, NINO3.4: 21179 pixels em 8 min.
+2026-10-31T02:23:34+00:00 | Seção 10: Random Forest, INEB, ano, TSA: 21179 pixels em 8 min.
+2026-10-31T02:31:44+00:00 | Seção 10: Random Forest, INEB, ano, AMM: 21179 pixels em 8 min.
+2026-10-31T02:39:47+00:00 | Seção 10: Random Forest, INEB, chuvosa, NINO3.4: 21179 pixels em 8 min.
+2026-10-31T02:47:50+00:00 | Seção 10: Random Forest, INEB, chuvosa, TSA: 21179 pixels em 8 min.
+2026-10-31T02:55:52+00:00 | Seção 10: Random Forest, INEB, chuvosa, AMM: 21179 pixels em 8 min.
+2026-10-31T03:04:00+00:00 | Seção 10: Random Forest, INEB, seca, NINO3.4: 21179 pixels em 8 min.
+2026-10-31T03:12:08+00:00 | Seção 10: Random Forest, INEB, seca, TSA: 21179 pixels em 8 min.
+2026-10-31T03:20:13+00:00 | Seção 10: Random Forest, INEB, seca, AMM: 21179 pixels em 8 min.
+2026-10-31T03:23:35+00:00 | Seção 10: Random Forest, ENEB, ano, NINO3.4: 8717 pixels em 3 min.
+2026-10-31T03:26:58+00:00 | Seção 10: Random Forest, ENEB, ano, TSA: 8717 pixels em 3 min.
+2026-10-31T03:30:21+00:00 | Seção 10: Random Forest, ENEB, ano, AMM: 8717 pixels em 3 min.
+2026-10-31T03:33:39+00:00 | Seção 10: Random Forest, ENEB, chuvosa, NINO3.4: 8717 pixels em 3 min.
+2026-10-31T03:36:58+00:00 | Seção 10: Random Forest, ENEB, chuvosa, TSA: 8717 pixels em 3 min.
+2026-10-31T03:40:16+00:00 | Seção 10: Random Forest, ENEB, chuvosa, AMM: 8717 pixels em 3 min.
+2026-10-31T03:43:36+00:00 | Seção 10: Random Forest, ENEB, seca, NINO3.4: 8717 pixels em 3 min.
+2026-10-31T03:46:59+00:00 | Seção 10: Random Forest, ENEB, seca, TSA: 8717 pixels em 3 min.
+2026-10-31T03:50:22+00:00 | Seção 10: Random Forest, ENEB, seca, AMM: 8717 pixels em 3 min.
+2026-10-31T03:55:51+00:00 | Seção 10: 81 combinações de método, alvo, caso e índice; RPSS agregado dos pixels sobre o controle sem índice positivo em 29.
+2026-10-31T03:56:46+00:00 | Seção 10: concluída em 4 h 04 min.
+2026-10-31T03:56:46+00:00 | Fechamento: iniciada (1 unidades de trabalho).
+2026-10-31T03:56:47+00:00 | Fechamento: concluída em 0 min.
+2026-10-31T03:56:47+00:00 | fim da execução | modo completo | assinatura 23f3260ccb7c

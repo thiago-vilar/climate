@@ -1,0 +1,38 @@
+{
+  "assinatura": "23f3260ccb7c411799d6b8d67671d7e89ef8ce4943fbab1d45a12f128311f8cc",
+  "codigo": "8c8b2bfcc5bec2e105f1d9b523448adbd2695f2a1802b3145b332cf1e0aec97c",
+  "configuracao": "60f453effe30965df65e6ee08905be46b376b17fc0d58b3b067ca0e8adfc3412",
+  "versoes": {
+    "python": "3.13.15",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.14.1+cpu",
+    "xarray": "2026.9.0",
+    "h5netcdf": "1.8.1",
+    "h5py": "3.16.0",
+    "fsspec": "2026.9.0",
+    "aiohttp": "3.14.5",
+    "requests": "2.34.2",
+    "matplotlib": "3.11.2",
+    "geopandas": "1.2.0",
+    "pyogrio": "0.13.0",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "tqdm": "4.70.1",
+    "pillow": "12.3.0",
+    "sistema": "Windows AMD64",
+    "dispositivo": "cpu",
+    "threads": {
+      "pytorch (intra-op)": 12,
+      "pytorch (inter-op)": 6,
+      "BLAS e OpenMP": "openblas 12; openmp 1; openmp 12",
+      "processos paralelos (joblib)": 12
+    }
+  },
+  "modo": "completo",
+  "dados": "f636abc3aa900ce967c524e5ef27bad7f23716c68909894e0810c02a1ec2a784"
+}

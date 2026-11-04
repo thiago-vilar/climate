@@ -1,0 +1,19 @@
+﻿alvo,caso,papel,anos,meses,pixels do alvo,meses em Q1,meses em Q2,meses em Q3,meses em Q4,meses em Q5,hash
+NNEB,ano hidrológico,treino,1981–2010 (30),360,22127,72,72,72,72,72,c5b5d89abc3a
+NNEB,ano hidrológico,teste,2011–2025 (15),180,22127,30,43,46,28,33,3082bc4eef7b
+NNEB,estação chuvosa,treino,1981–2010 (30),150,22127,30,30,30,30,30,a3a43305edcb
+NNEB,estação chuvosa,teste,2011–2025 (15),75,22127,9,19,17,18,12,3d0df61669f0
+NNEB,estação seca,treino,1981–2010 (30),210,22127,42,42,42,42,42,bdb0ec98cfef
+NNEB,estação seca,teste,2011–2025 (15),105,22127,21,24,29,10,21,a0088ba0d295
+INEB,ano hidrológico,treino,1981–2009 (29),348,21179,70,71,67,70,70,930720de4017
+INEB,ano hidrológico,teste,2011–2024 (14),168,21179,41,40,27,29,31,c2af7ecb9ad3
+INEB,estação chuvosa,treino,1981–2009 (29),174,21179,35,35,34,35,35,9d9c6b624601
+INEB,estação chuvosa,teste,2011–2024 (14),84,21179,21,17,12,15,19,0feb172a5a34
+INEB,estação seca,treino,1981–2009 (29),174,21179,35,36,33,35,35,85036b4603b1
+INEB,estação seca,teste,2011–2024 (14),84,21179,20,23,15,14,12,97b83fb83478
+ENEB,ano hidrológico,treino,1981–2009 (29),348,8717,70,69,72,67,70,f2fcf12193b1
+ENEB,ano hidrológico,teste,2011–2024 (14),168,8717,37,30,43,33,25,bad359f1d9eb
+ENEB,estação chuvosa,treino,1981–2009 (29),145,8717,29,29,30,29,28,57e10c7afa4d
+ENEB,estação chuvosa,teste,2011–2024 (14),70,8717,11,16,23,12,8,ebed2646a892
+ENEB,estação seca,treino,1981–2009 (29),203,8717,41,40,42,38,42,f7409a722a8a
+ENEB,estação seca,teste,2011–2024 (14),98,8717,26,14,20,21,17,b2c04593dada

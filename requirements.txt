@@ -1,0 +1,29 @@
+# climate: dependências diretas, nas versões da execução de referência (Python 3.13).
+# O PyTorch de CPU é instalado antes, à parte (ver README):
+#   python -m pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+# Ambiente completo testado no Windows, com todas as dependências indiretas:
+#   requirements-lock-windows.txt
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+threadpoolctl==3.7.0
+joblib==1.6.0
+matplotlib==3.11.2
+pillow==12.3.0
+xarray==2026.9.0
+h5netcdf==1.8.1
+h5py==3.16.0
+fsspec==2026.9.0
+aiohttp==3.14.5
+requests==2.34.2
+geopandas==1.2.0
+pyogrio==0.13.0
+shapely==2.2.0
+pyproj==3.8.0
+tqdm==4.70.1
+ipython==9.17.1
+ipykernel==7.4.0
+jupyter_client==8.10.0
+nbformat==5.11.1
+nbconvert==7.17.2

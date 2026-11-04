@@ -1,0 +1,10 @@
+﻿método,bloco (anos),largura mediana do IC95 (p.p.),combinações com IC95 acima de zero,combinações
+Ridge,2,1.04356,3,27
+Ridge,3,0.909876,3,27
+Ridge,4,0.913936,2,27
+Random Forest,2,12.2587,0,27
+Random Forest,3,11.2538,0,27
+Random Forest,4,9.17247,1,27
+Rede neural,2,1.38373,2,27
+Rede neural,3,1.21855,2,27
+Rede neural,4,1.0889,2,27

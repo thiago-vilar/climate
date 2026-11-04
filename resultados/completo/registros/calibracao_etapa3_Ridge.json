@@ -1,0 +1,62 @@
+[
+  {
+    "método": "Ridge",
+    "parametros": {
+      "penalidade_por_mes": 100.0
+    },
+    "ordem": [
+      0
+    ],
+    "RPSS (%)": 0.04463415863578198,
+    "erro-padrão": 0.04965511813802916,
+    "segundos": 0.0
+  },
+  {
+    "método": "Ridge",
+    "parametros": {
+      "penalidade_por_mes": 10.0
+    },
+    "ordem": [
+      1
+    ],
+    "RPSS (%)": 0.34919631987730887,
+    "erro-padrão": 0.09797755773240811,
+    "segundos": 0.0
+  },
+  {
+    "método": "Ridge",
+    "parametros": {
+      "penalidade_por_mes": 1.0
+    },
+    "ordem": [
+      2
+    ],
+    "RPSS (%)": 0.22497530550167635,
+    "erro-padrão": 0.6409652176696206,
+    "segundos": 0.0
+  },
+  {
+    "método": "Ridge",
+    "parametros": {
+      "penalidade_por_mes": 0.1
+    },
+    "ordem": [
+      3
+    ],
+    "RPSS (%)": -2.5497449174185096,
+    "erro-padrão": 1.4452249827890684,
+    "segundos": 0.0
+  },
+  {
+    "método": "Ridge",
+    "parametros": {
+      "penalidade_por_mes": 0.01
+    },
+    "ordem": [
+      4
+    ],
+    "RPSS (%)": -3.350614568345632,
+    "erro-padrão": 1.627109125948954,
+    "segundos": 0.0
+  }
+]

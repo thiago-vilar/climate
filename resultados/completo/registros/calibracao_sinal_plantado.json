@@ -1,0 +1,62 @@
+[
+  {
+    "correlação plantada": 0.0,
+    "método": "Ridge",
+    "RPSS (%)": -0.8547153222813023,
+    "erro-padrão": 0.3077679633829878,
+    "configuração escolhida": "{\"penalidade_por_mes\": 100.0}",
+    "melhor RPSS da grade (%)": -0.8547153222813023,
+    "RPSS com a configuração dos dados reais (%)": -0.8858699212920226,
+    "defasagem plantada recuperada (%)": 3.7037037037037033
+  },
+  {
+    "correlação plantada": 0.0,
+    "método": "Random Forest",
+    "RPSS (%)": -4.048856799112104,
+    "erro-padrão": 0.5465915772574484,
+    "configuração escolhida": "{\"profundidade\": 1, \"folha\": 0.3, \"arvores\": 100}",
+    "melhor RPSS da grade (%)": -3.804606893213233,
+    "RPSS com a configuração dos dados reais (%)": -4.048856799112104,
+    "defasagem plantada recuperada (%)": 3.7037037037037033
+  },
+  {
+    "correlação plantada": 0.0,
+    "método": "Rede neural",
+    "RPSS (%)": -0.23640865307003858,
+    "erro-padrão": 0.13151798494196582,
+    "configuração escolhida": "{\"oculta\": 2, \"decaimento\": 10.0, \"passagens\": 200, \"ativacao\": \"tanh\", \"taxa\": 0.01}",
+    "melhor RPSS da grade (%)": -0.2027514068605729,
+    "RPSS com a configuração dos dados reais (%)": -0.2560512375553185,
+    "defasagem plantada recuperada (%)": 3.7037037037037033
+  },
+  {
+    "correlação plantada": 0.3,
+    "método": "Ridge",
+    "RPSS (%)": 2.2819670318287506,
+    "erro-padrão": 0.59127971878834,
+    "configuração escolhida": "{\"penalidade_por_mes\": 1.0}",
+    "melhor RPSS da grade (%)": 2.899067509071429,
+    "RPSS com a configuração dos dados reais (%)": -1.1818780285836703,
+    "defasagem plantada recuperada (%)": 62.96296296296296
+  },
+  {
+    "correlação plantada": 0.3,
+    "método": "Random Forest",
+    "RPSS (%)": 0.7916796036513445,
+    "erro-padrão": 0.9271438404446255,
+    "configuração escolhida": "{\"profundidade\": 1, \"folha\": 0.3, \"arvores\": 100}",
+    "melhor RPSS da grade (%)": 1.1412281181138695,
+    "RPSS com a configuração dos dados reais (%)": 0.7916796036513445,
+    "defasagem plantada recuperada (%)": 62.96296296296296
+  },
+  {
+    "correlação plantada": 0.3,
+    "método": "Rede neural",
+    "RPSS (%)": 2.6149050192479306,
+    "erro-padrão": 0.7959057672612943,
+    "configuração escolhida": "{\"oculta\": 2, \"decaimento\": 1.0, \"passagens\": 200, \"ativacao\": \"tanh\", \"taxa\": 0.01}",
+    "melhor RPSS da grade (%)": 2.6149050192479306,
+    "RPSS com a configuração dos dados reais (%)": 0.09337224495111689,
+    "defasagem plantada recuperada (%)": 62.96296296296296
+  }
+]

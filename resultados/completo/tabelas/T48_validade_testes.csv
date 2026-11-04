@@ -1,0 +1,4 @@
+﻿método,deslocamentos do nulo,"troca de sinal com p < 0,05 sob o nulo (%)",largura mediana do IC95 do RPSS (p.p.)
+Ridge,130,3.24786,0.910083
+Random Forest,130,6.41026,11.4074
+Rede neural,130,3.10541,1.23061

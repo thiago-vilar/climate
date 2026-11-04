@@ -1,0 +1,55 @@
+{
+  "entrada": {
+    "entrada": "pontual",
+    "sazonal": false,
+    "filtro": "bruto"
+  },
+  "janela": "fixa",
+  "modelos": {
+    "Ridge": {
+      "penalidade_por_mes": 10.0
+    },
+    "Random Forest": {
+      "profundidade": 1,
+      "folha": 0.3,
+      "arvores": 100
+    },
+    "Rede neural": {
+      "oculta": 4,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    }
+  },
+  "redes": 3,
+  "defasagens_calibracao": {
+    "NNEB|ano|NINO3.4": 5,
+    "NNEB|ano|TSA": 1,
+    "NNEB|ano|AMM": 1,
+    "NNEB|chuvosa|NINO3.4": 1,
+    "NNEB|chuvosa|TSA": 2,
+    "NNEB|chuvosa|AMM": 1,
+    "NNEB|seca|NINO3.4": 6,
+    "NNEB|seca|TSA": 1,
+    "NNEB|seca|AMM": 3,
+    "INEB|ano|NINO3.4": 6,
+    "INEB|ano|TSA": 7,
+    "INEB|ano|AMM": 1,
+    "INEB|chuvosa|NINO3.4": 1,
+    "INEB|chuvosa|TSA": 4,
+    "INEB|chuvosa|AMM": 7,
+    "INEB|seca|NINO3.4": 10,
+    "INEB|seca|TSA": 12,
+    "INEB|seca|AMM": 1,
+    "ENEB|ano|NINO3.4": 6,
+    "ENEB|ano|TSA": 7,
+    "ENEB|ano|AMM": 3,
+    "ENEB|chuvosa|NINO3.4": 1,
+    "ENEB|chuvosa|TSA": 8,
+    "ENEB|chuvosa|AMM": 2,
+    "ENEB|seca|NINO3.4": 10,
+    "ENEB|seca|TSA": 6,
+    "ENEB|seca|AMM": 7
+  }
+}

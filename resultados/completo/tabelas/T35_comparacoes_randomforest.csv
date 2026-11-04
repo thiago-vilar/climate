@@ -1,0 +1,46 @@
+﻿método,grupo,alvo,caso,índice,comparação,diferença de RPSS (p.p.),IC95 inferior,IC95 superior,p,diferença de acerto (p.p.),IC95 inferior (acerto),IC95 superior (acerto),p (acerto),q (BH),p (nulo)
+Random Forest,A (hipótese),NNEB,ano hidrológico,NINO3.4,L* − sem índice,-1.81118,-10.6247,6.83276,0.693176,2.22222,-4.44444,10.5556,0.65625,1,0.694656
+Random Forest,C,NNEB,ano hidrológico,NINO3.4,L4 − L1,-2.24332,-6.09612,1.31551,0.475098,-7.77778,-12.7778,-2.22222,0.0859375,0.636914,
+Random Forest,A (hipótese),NNEB,ano hidrológico,TSA,L* − sem índice,2.51538,-3.93004,7.95742,0.452698,4.44444,0,8.88889,0.25,0.30916,0.0458015
+Random Forest,A (hipótese),NNEB,ano hidrológico,AMM,L* − sem índice,-0.604952,-2.22041,1.30757,0.607666,1.66667,-8.88889,13.3333,0.867188,1,0.435115
+Random Forest,A (hipótese),NNEB,estação chuvosa,NINO3.4,L* − sem índice,-16.6184,-32.4312,-1.27122,0.0702515,1.33333,-12,14.6667,1,1,1
+Random Forest,A (hipótese),NNEB,estação chuvosa,TSA,L* − sem índice,1.99503,-10.3728,11.9545,0.785156,-4,-20,9.33333,0.736328,0.30916,0.0458015
+Random Forest,C,NNEB,estação chuvosa,TSA,L2 − L1,-6.31334,-14.7559,0.95794,0.285461,-4,-12,2.66667,0.75,0.467119,
+Random Forest,A (hipótese),NNEB,estação chuvosa,AMM,L* − sem índice,-1.50709,-4.71345,1.57701,0.490234,-4,-14.6667,6.66667,0.746094,1,0.381679
+Random Forest,A (hipótese),NNEB,estação seca,NINO3.4,L* − sem índice,5.5784,-4.949,16.1241,0.309448,5.71429,-6.66667,21.9048,0.625,0.206107,0.00763359
+Random Forest,C,NNEB,estação seca,NINO3.4,L4 − L1,-2.27331,-8.31597,3.55009,0.530762,-5.71429,-15.2381,5.71429,0.421875,0.636914,
+Random Forest,A (hipótese),NNEB,estação seca,TSA,L* − sem índice,-1.12732,-7.87725,4.54936,0.733398,-9.52381,-25.7143,5.71429,0.324707,1,0.625954
+Random Forest,A (hipótese),NNEB,estação seca,AMM,L* − sem índice,0.346148,-3.76453,4.1488,0.85968,-0.952381,-12.4048,11.4286,1,1,0.29771
+Random Forest,C,NNEB,estação seca,AMM,L4 − L1,0.38482,-2.6105,3.48161,0.825623,-4.7619,-20,8.57143,0.609131,0.892334,
+Random Forest,A (hipótese),INEB,ano hidrológico,NINO3.4,L* − sem índice,-4.70938,-6.78862,-2.6641,0.00622559,-4.7619,-12.5,2.97619,0.49707,1,0.992366
+Random Forest,C,INEB,ano hidrológico,NINO3.4,L7 − L1,-3.26923,-4.63075,-1.73173,0.0203857,-2.97619,-12.5,5.35714,0.652344,0.183472,
+Random Forest,A (hipótese),INEB,ano hidrológico,TSA,L* − sem índice,0.927102,-0.0332214,1.82475,0.0994873,-0.595238,-3.57143,1.78571,1,0.30916,0.0381679
+Random Forest,C,INEB,ano hidrológico,TSA,L12 − L1,1.03098,-0.0287277,2.00552,0.105713,3.57143,-8.33333,14.2857,0.59375,0.302909,
+Random Forest,A (hipótese),INEB,ano hidrológico,AMM,L* − sem índice,0.390041,-0.865968,1.71738,0.637085,11.3095,2.36607,20.2381,0.0236816,0.652672,0.145038
+Random Forest,A (hipótese),INEB,estação chuvosa,NINO3.4,L* − sem índice,-8.01412,-13.9092,-1.47497,0.0161133,-7.14286,-13.0952,-1.19048,0.15625,1,1
+Random Forest,A (hipótese),INEB,estação chuvosa,TSA,L* − sem índice,-0.869015,-3.91597,2.64436,0.613159,1.19048,-3.57143,7.14286,1,1,0.648855
+Random Forest,C,INEB,estação chuvosa,TSA,L4 − L1,0.339557,-2.30452,3.49958,0.856445,1.19048,-8.33333,9.52381,1,0.892334,
+Random Forest,A (hipótese),INEB,estação chuvosa,AMM,L* − sem índice,-8.54247,-12.8305,-3.75624,0.00183105,4.7619,-4.7619,14.2857,0.53125,1,1
+Random Forest,C,INEB,estação chuvosa,AMM,L4 − L1,-8.00283,-13.6422,-2.34354,0.012085,3.57143,-5.95238,11.9048,0.65625,0.183472,
+Random Forest,A (hipótese),INEB,estação seca,NINO3.4,L* − sem índice,-10.333,-15.8014,-4.394,0.0275879,-8.33333,-19.0476,2.38095,0.435547,1,1
+Random Forest,C,INEB,estação seca,NINO3.4,L10 − L1,-9.99294,-15.645,-3.86837,0.0357666,-3.57143,-19.0476,10.7143,0.756836,0.2146,
+Random Forest,A (hipótese),INEB,estação seca,TSA,L* − sem índice,0.373091,-0.442194,1.00918,0.587646,13.0952,1.19048,23.8095,0.119141,0.577099,0.10687
+Random Forest,C,INEB,estação seca,TSA,L12 − L1,0.130437,-1.81128,2.26678,0.892334,7.14286,2.38095,13.0952,0.0625,0.892334,
+Random Forest,A (hipótese),INEB,estação seca,AMM,L* − sem índice,-4.52907,-11.0311,1.11868,0.328369,9.52381,-3.57143,21.4286,0.265625,1,0.770992
+Random Forest,C,INEB,estação seca,AMM,L2 − L1,-1.44085,-5.12157,3.0981,0.491333,1.19048,-5.95238,9.52381,1,0.636914,
+Random Forest,A (hipótese),ENEB,ano hidrológico,NINO3.4,L* − sem índice,-2.25847,-5.92086,1.7615,0.510986,-1.78571,-8.33333,5.35714,0.794922,1,0.725191
+Random Forest,C,ENEB,ano hidrológico,NINO3.4,L6 − L1,-4.27341,-8.55851,-0.817356,0.143921,-4.16667,-11.9048,2.97619,0.369141,0.323822,
+Random Forest,A (hipótese),ENEB,ano hidrológico,TSA,L* − sem índice,-2.73848,-5.78845,0.126189,0.181641,-7.14286,-16.6667,2.97619,0.158691,1,0.931298
+Random Forest,C,ENEB,ano hidrológico,TSA,L8 − L1,-3.51441,-6.70093,-0.22336,0.0723877,-8.33333,-16.0714,-1.19048,0.116211,0.302909,
+Random Forest,A (hipótese),ENEB,ano hidrológico,AMM,L* − sem índice,-2.04426,-3.58695,-0.543452,0.118774,-6.54762,-14.2857,1.78571,0.158203,1,0.862595
+Random Forest,C,ENEB,ano hidrológico,AMM,L2 − L1,-1.17515,-2.09864,-0.369401,0.117798,-2.38095,-8.33333,2.97619,0.578613,0.302909,
+Random Forest,A (hipótese),ENEB,estação chuvosa,NINO3.4,L* − sem índice,-2.69578,-13.3171,7.41147,0.661377,1.42857,-10,12.8571,1,1,0.587786
+Random Forest,A (hipótese),ENEB,estação chuvosa,TSA,L* − sem índice,-3.24956,-10.0153,3.45464,0.486572,-18.5714,-30,-7.14286,0.0273438,1,0.778626
+Random Forest,C,ENEB,estação chuvosa,TSA,L8 − L1,-5.47575,-10.4492,-0.775152,0.169434,-11.4286,-25.7143,4.28571,0.237305,0.338867,
+Random Forest,A (hipótese),ENEB,estação chuvosa,AMM,L* − sem índice,-10.4697,-17.6463,-4.29601,0.0200195,-4.28571,-14.2857,4.28571,0.6875,1,0.946565
+Random Forest,A (hipótese),ENEB,estação seca,NINO3.4,L* − sem índice,-5.05478,-11.8626,1.84947,0.297241,-4.08163,-13.2653,6.12245,0.549316,1,0.923664
+Random Forest,C,ENEB,estação seca,NINO3.4,L10 − L1,-7.63769,-14.0756,-0.343236,0.0893555,-13.2653,-21.4286,-5.10204,0.0371094,0.302909,
+Random Forest,A (hipótese),ENEB,estação seca,TSA,L* − sem índice,-1.19965,-5.82155,3.72101,0.644165,-1.02041,-14.2857,12.2449,1,1,0.610687
+Random Forest,C,ENEB,estação seca,TSA,L7 − L1,-1.36527,-5.42113,3.29463,0.528687,0,-17.3469,18.3673,1,0.636914,
+Random Forest,A (hipótese),ENEB,estação seca,AMM,L* − sem índice,-4.76582,-10.9789,0.817663,0.197754,-3.06122,-10.2041,4.08163,0.71875,1,0.916031
+Random Forest,C,ENEB,estação seca,AMM,L7 − L1,-4.7458,-10.6835,1.2166,0.204102,-10.2041,-19.3878,-1.02041,0.271484,0.367383,

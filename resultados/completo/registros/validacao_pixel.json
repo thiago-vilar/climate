@@ -1,0 +1,1082 @@
+[
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 38.953962535873536
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 17.19184258709068
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 13.722697410633483
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 35.24063559289249
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 78.40626485330431
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 49.16657843893176
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.12267892644993679,
+    "área com RPSS > 0 sob o nulo (%)": 51.233857959111454
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.04353451133998969,
+    "área com RPSS > 0 sob o nulo (%)": 38.89325616560497
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.1295463544949381,
+    "área com RPSS > 0 sob o nulo (%)": 55.18853736160241
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 30.614637871922472
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 48.50877640588515
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 7.685787701355414
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 42.7926309781558
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.27410745710331
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 41.36585597158565
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 59.64906458001643
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 39.33056259961198
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 68.59512995228648
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 54.2335374837217
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 23.788627408747196
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 37.647779596081584
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 43.809519433911944
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 66.78240600984765
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 44.066475432213174
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 43.5705096699677
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 32.81916054962999
+  },
+  {
+    "deslocamento (meses)": 24,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 55.64236221782905
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 79.96067254143549
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 69.3230307037224
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 56.04477566396656
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 61.58429368917317
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 30.035012188770647
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 54.801281153413676
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 44.61418485162468
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 43.93614025572035
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 50.235696217843376
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 46.95349711433977
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 71.4543177320271
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 45.83577665837071
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 66.66607181451596
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 39.97907916780561
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 62.48157322639963
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 32.342641843573304
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 40.385076373250094
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.011790192354723434,
+    "área com RPSS > 0 sob o nulo (%)": 42.00477652925962
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 58.64710057064058
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 41.48226060565942
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 43.47057610403214
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.853144597662514
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 28.494144237496265
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 61.665917084042846
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.43526308626836435,
+    "área com RPSS > 0 sob o nulo (%)": 22.54284015424069
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.5905248119919678,
+    "área com RPSS > 0 sob o nulo (%)": 31.724576503547766
+  },
+  {
+    "deslocamento (meses)": 152,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.23120158469657678,
+    "área com RPSS > 0 sob o nulo (%)": 53.50939572538084
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 6.409134804350886
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 44.86719565834846
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 61.79322994272806
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 46.689907865158524
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 32.940059432643416
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 45.55102320270726
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 37.15979151107286
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 42.82228080244039
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 52.639116375368054
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 26.25759867797432
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 76.13644434299066
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 74.9170355461791
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.92522101903339
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 38.370520587111514
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 38.37771660644624
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 36.14555410590102
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 18.9031316121077
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 44.275338622939664
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 20.77034991987392
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 35.23574288619769
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 37.05122464987534
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 36.65258088560182
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 45.081152154585105
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 37.94999904869057
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 48.78803789973024
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 65.7968840658657
+  },
+  {
+    "deslocamento (meses)": 280,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 49.71295636518345
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 61.13111343133287
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 57.61863148242224
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 70.67998396914936
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 46.533867000506454
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 51.5090500193942
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 52.40699235312696
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 47.21089918374291
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 55.96277130121111
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 57.74994235706019
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 85.89351267493427
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 59.51169422775568
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 87.23145680185527
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 59.94695639932527
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 49.10606606165474
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 55.64728934235548
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 56.63475764160119
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 45.645918597871265
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 65.56499928257504
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 24.134719985186518
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 40.99242228578702
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 63.32360091776215
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 41.68431296596679
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 47.083885889569764
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 33.12241867315431
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 49.278573243896666
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.04336442009092929,
+    "área com RPSS > 0 sob o nulo (%)": 34.25636059059072
+  },
+  {
+    "deslocamento (meses)": 412,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 44.55879013611152
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 79.81143545081802
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 63.48102684513647
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 75.0742757038759
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 52.722727920418144
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 59.05652448753759
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 64.74880048074027
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 60.8210858343314
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 56.80835641032308
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "ano",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 57.72437891610318
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.674600103879776
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 62.12960214956018
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 55.33404374823632
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 67.49592963424993
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.325772863191766
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 64.12029352600074
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 53.559055466223796
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 38.01530285813297
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "chuvosa",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 48.18402769548362
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 75.02414161640844
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 51.45267803181638
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "NINO3.4",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 87.51894008386127
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 32.2908853363046
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 66.54070644527975
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "TSA",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 63.0137911794122
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "NNEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 48.07428603560817
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "INEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 55.617694884398475
+  },
+  {
+    "deslocamento (meses)": 540,
+    "alvo": "ENEB",
+    "caso": "seca",
+    "índice": "AMM",
+    "área com ganho significativo sob o nulo (%)": 0.0,
+    "área com RPSS > 0 sob o nulo (%)": 56.13069878841839
+  }
+]

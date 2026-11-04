@@ -1,0 +1,7 @@
+﻿correlação plantada,método,RPSS (%),erro-padrão,configuração escolhida,melhor RPSS da grade (%),RPSS com a configuração dos dados reais (%),defasagem plantada recuperada (%)
+0,Ridge,-0.854715,0.307768,"{""penalidade_por_mes"": 100.0}",-0.854715,-0.88587,3.7037
+0,Random Forest,-4.04886,0.546592,"{""profundidade"": 1, ""folha"": 0.3, ""arvores"": 100}",-3.80461,-4.04886,3.7037
+0,Rede neural,-0.236409,0.131518,"{""oculta"": 2, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-0.202751,-0.256051,3.7037
+0.3,Ridge,2.28197,0.59128,"{""penalidade_por_mes"": 1.0}",2.89907,-1.18188,62.963
+0.3,Random Forest,0.79168,0.927144,"{""profundidade"": 1, ""folha"": 0.3, ""arvores"": 100}",1.14123,0.79168,62.963
+0.3,Rede neural,2.61491,0.795906,"{""oculta"": 2, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",2.61491,0.0933722,62.963

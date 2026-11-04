@@ -1,0 +1,7 @@
+﻿método,evento,meses,frequência observada (%),Brier,Brier da climatologia (20 %),confiabilidade agrupada (menor é melhor),resolução agrupada (maior é melhor),incerteza
+Ridge,muito seco (Q1),3096,20.9302,0.16541,0.165581,0.000736561,0.000740822,0.165495
+Ridge,muito chuvoso (Q5),3096,17.2481,0.142993,0.143488,0.000683353,0.00031714,0.142731
+Random Forest,muito seco (Q1),3096,20.9302,0.165949,0.165581,0.00131247,0.000711428,0.165495
+Random Forest,muito chuvoso (Q5),3096,17.2481,0.147517,0.143488,0.00487678,0.000256125,0.142731
+Rede neural,muito seco (Q1),3096,20.9302,0.165202,0.165581,0.000640959,0.000814757,0.165495
+Rede neural,muito chuvoso (Q5),3096,17.2481,0.143489,0.143488,0.000846061,3.23505e-06,0.142731

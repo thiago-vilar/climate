@@ -1,0 +1,17 @@
+﻿entrada,sazonal,filtro,atributos,RPSS (%),erro-padrão,escolhida
+índice em L*,False,bruto,1,0.224975,0.640965,True
+índice em L*,False,sem_tendencia,1,-1.6469,0.677885,False
+índice em L*,True,bruto,3,-0.190391,0.986238,False
+índice em L*,True,sem_tendencia,3,-3.58882,1.26959,False
+média dos 3 meses que terminam em L*,False,bruto,1,0.149874,0.67989,False
+média dos 3 meses que terminam em L*,False,sem_tendencia,1,-1.26843,0.687903,False
+média dos 3 meses que terminam em L*,True,bruto,3,-0.423274,1.0054,False
+média dos 3 meses que terminam em L*,True,sem_tendencia,3,-3.29646,1.22464,False
+índice em L* e variação em 3 meses,False,bruto,2,0.356245,0.667802,False
+índice em L* e variação em 3 meses,False,sem_tendencia,2,-1.03906,0.637385,False
+índice em L* e variação em 3 meses,True,bruto,4,-0.0251341,0.988906,False
+índice em L* e variação em 3 meses,True,sem_tendencia,4,-2.9014,1.21037,False
+os 3 meses que terminam em L*,False,bruto,3,-0.910397,1.13341,False
+os 3 meses que terminam em L*,False,sem_tendencia,3,-3.46591,1.07298,False
+os 3 meses que terminam em L*,True,bruto,5,-1.06067,1.37716,False
+os 3 meses que terminam em L*,True,sem_tendencia,5,-4.82019,1.50844,False

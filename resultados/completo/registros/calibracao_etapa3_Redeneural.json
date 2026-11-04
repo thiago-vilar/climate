@@ -1,0 +1,1142 @@
+[
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "RPSS (%)": 0.14537050528281212,
+    "erro-padrão": 0.06323977267157216,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "RPSS (%)": 0.13638455724048462,
+    "erro-padrão": 0.05505107564548734,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "RPSS (%)": 0.19584022969546386,
+    "erro-padrão": 0.08109870818061758,
+    "segundos": 3.0
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "RPSS (%)": 0.15483201307650907,
+    "erro-padrão": 0.06625896085369287,
+    "segundos": 3.0
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "RPSS (%)": -0.9144263614550289,
+    "erro-padrão": 0.951459756147701,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "RPSS (%)": -0.6229167537499957,
+    "erro-padrão": 0.8351698913537671,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "RPSS (%)": -2.2919483667757743,
+    "erro-padrão": 1.153888482149738,
+    "segundos": 3.3
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "RPSS (%)": -2.14392542428849,
+    "erro-padrão": 1.1488089518756797,
+    "segundos": 3.2
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      2,
+      0,
+      0
+    ],
+    "RPSS (%)": -2.0913562356884627,
+    "erro-padrão": 1.1327564392514953,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "RPSS (%)": -2.144631266797441,
+    "erro-padrão": 1.1241246607283037,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      2,
+      1,
+      0
+    ],
+    "RPSS (%)": -4.803759725731836,
+    "erro-padrão": 1.365926821291005,
+    "segundos": 3.3
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      2,
+      1,
+      1
+    ],
+    "RPSS (%)": -4.2054908192034315,
+    "erro-padrão": 1.4908828777713337,
+    "segundos": 3.1
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      3,
+      0,
+      0
+    ],
+    "RPSS (%)": -2.2174186609709876,
+    "erro-padrão": 1.1499411499513756,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      3,
+      0,
+      1
+    ],
+    "RPSS (%)": -2.30477252381552,
+    "erro-padrão": 1.1530243339349617,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      3,
+      1,
+      0
+    ],
+    "RPSS (%)": -5.12200514044581,
+    "erro-padrão": 1.3834143828678254,
+    "segundos": 3.2
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      3,
+      1,
+      1
+    ],
+    "RPSS (%)": -4.424707124727843,
+    "erro-padrão": 1.5177288962151338,
+    "segundos": 3.0
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      4,
+      0,
+      0
+    ],
+    "RPSS (%)": -2.2300896960033536,
+    "erro-padrão": 1.1516793530506462,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      4,
+      0,
+      1
+    ],
+    "RPSS (%)": -2.3193691254652933,
+    "erro-padrão": 1.1545266020437701,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      4,
+      1,
+      0
+    ],
+    "RPSS (%)": -5.155096738773469,
+    "erro-padrão": 1.3873176266370848,
+    "segundos": 3.2
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 2,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      0,
+      4,
+      1,
+      1
+    ],
+    "RPSS (%)": -4.392451537281413,
+    "erro-padrão": 1.528116430141354,
+    "segundos": 3.2
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "RPSS (%)": 0.29119559393662026,
+    "erro-padrão": 0.11742525285320538,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "RPSS (%)": 0.23085021865474933,
+    "erro-padrão": 0.07006167123524358,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "RPSS (%)": 0.3349426907737001,
+    "erro-padrão": 0.13173721874981956,
+    "segundos": 2.9
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "RPSS (%)": 0.31099119705802586,
+    "erro-padrão": 0.09167177211785962,
+    "segundos": 2.8
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "RPSS (%)": -2.454335856505881,
+    "erro-padrão": 1.1901577478897942,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "RPSS (%)": -2.3270247124802,
+    "erro-padrão": 1.1074305822490547,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "RPSS (%)": -3.730019377802477,
+    "erro-padrão": 1.3812105559669101,
+    "segundos": 2.8
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "RPSS (%)": -3.9292107718050184,
+    "erro-padrão": 1.296631506036482,
+    "segundos": 2.8
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      2,
+      0,
+      0
+    ],
+    "RPSS (%)": -3.4487741294949648,
+    "erro-padrão": 1.3061365529610685,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "RPSS (%)": -4.3633483498375005,
+    "erro-padrão": 1.4355379643762627,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      2,
+      1,
+      0
+    ],
+    "RPSS (%)": -7.027013148996515,
+    "erro-padrão": 1.6932016528024008,
+    "segundos": 2.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "RPSS (%)": -6.480271806712467,
+    "erro-padrão": 1.6546393402750603,
+    "segundos": 3.3
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      3,
+      0,
+      0
+    ],
+    "RPSS (%)": -3.5699748579306574,
+    "erro-padrão": 1.3177776431687365,
+    "segundos": 0.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      3,
+      0,
+      1
+    ],
+    "RPSS (%)": -4.582783535628403,
+    "erro-padrão": 1.4600947327598912,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      3,
+      1,
+      0
+    ],
+    "RPSS (%)": -7.613522751658421,
+    "erro-padrão": 1.7577726965169527,
+    "segundos": 3.2
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      3,
+      1,
+      1
+    ],
+    "RPSS (%)": -6.795638796187384,
+    "erro-padrão": 1.8444314060688736,
+    "segundos": 2.8
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      4,
+      0,
+      0
+    ],
+    "RPSS (%)": -3.582521714749428,
+    "erro-padrão": 1.3189690256574782,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      4,
+      0,
+      1
+    ],
+    "RPSS (%)": -4.603722800094156,
+    "erro-padrão": 1.4642157715089141,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      4,
+      1,
+      0
+    ],
+    "RPSS (%)": -7.674010627643091,
+    "erro-padrão": 1.7712006754363983,
+    "segundos": 2.8
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 4,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      1,
+      4,
+      1,
+      1
+    ],
+    "RPSS (%)": -6.812509825685281,
+    "erro-padrão": 1.8457259489491373,
+    "segundos": 2.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      0,
+      0,
+      0
+    ],
+    "RPSS (%)": 0.4777984797934491,
+    "erro-padrão": 0.21134105398858902,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 10.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      0,
+      0,
+      1
+    ],
+    "RPSS (%)": 0.42044324683786793,
+    "erro-padrão": 0.1424480802512879,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      0,
+      1,
+      0
+    ],
+    "RPSS (%)": 0.5132763334413608,
+    "erro-padrão": 0.24050516329550864,
+    "segundos": 2.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 10.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      0,
+      1,
+      1
+    ],
+    "RPSS (%)": 0.4957769565700554,
+    "erro-padrão": 0.1706400013043508,
+    "segundos": 2.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "RPSS (%)": -3.3464812847891086,
+    "erro-padrão": 1.3819580284153348,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 1.0,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      1,
+      0,
+      1
+    ],
+    "RPSS (%)": -3.729107132032935,
+    "erro-padrão": 1.373701686049777,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "RPSS (%)": -4.921682977465736,
+    "erro-padrão": 1.5489537360281913,
+    "segundos": 2.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 1.0,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "RPSS (%)": -5.418491224798308,
+    "erro-padrão": 1.6120225791657445,
+    "segundos": 2.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      2,
+      0,
+      0
+    ],
+    "RPSS (%)": -4.128071722846117,
+    "erro-padrão": 1.4235645507172554,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.1,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      2,
+      0,
+      1
+    ],
+    "RPSS (%)": -5.358419736773178,
+    "erro-padrão": 1.6065395483520357,
+    "segundos": 0.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      2,
+      1,
+      0
+    ],
+    "RPSS (%)": -8.840607431698995,
+    "erro-padrão": 1.7566068310807526,
+    "segundos": 2.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.1,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      2,
+      1,
+      1
+    ],
+    "RPSS (%)": -8.873167847774717,
+    "erro-padrão": 2.0223188095249602,
+    "segundos": 2.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      3,
+      0,
+      0
+    ],
+    "RPSS (%)": -4.266205401139273,
+    "erro-padrão": 1.4343287536054206,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.01,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "RPSS (%)": -5.5811524349756025,
+    "erro-padrão": 1.6253443707922228,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "RPSS (%)": -9.713550799959291,
+    "erro-padrão": 1.8586171800417828,
+    "segundos": 2.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.01,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      3,
+      1,
+      1
+    ],
+    "RPSS (%)": -9.424703557679951,
+    "erro-padrão": 2.0415461126947045,
+    "segundos": 2.7
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      4,
+      0,
+      0
+    ],
+    "RPSS (%)": -4.28110402941076,
+    "erro-padrão": 1.435554582522134,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.001,
+      "passagens": 200,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      4,
+      0,
+      1
+    ],
+    "RPSS (%)": -5.598671659617821,
+    "erro-padrão": 1.6281833379018071,
+    "segundos": 0.5
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "tanh",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      4,
+      1,
+      0
+    ],
+    "RPSS (%)": -9.81348420085081,
+    "erro-padrão": 1.8704700191296457,
+    "segundos": 2.6
+  },
+  {
+    "método": "Rede neural",
+    "parametros": {
+      "oculta": 8,
+      "decaimento": 0.001,
+      "passagens": 1000,
+      "ativacao": "relu",
+      "taxa": 0.01
+    },
+    "ordem": [
+      2,
+      4,
+      1,
+      1
+    ],
+    "RPSS (%)": -9.479315816779113,
+    "erro-padrão": 2.050429891019891,
+    "segundos": 2.4
+  }
+]

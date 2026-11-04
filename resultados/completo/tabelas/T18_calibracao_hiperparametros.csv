@@ -1,0 +1,82 @@
+﻿método,configuração,RPSS (%),erro-padrão,segundos,escolhida
+Ridge,"{""penalidade_por_mes"": 100.0}",0.0446342,0.0496551,0,False
+Ridge,"{""penalidade_por_mes"": 10.0}",0.349196,0.0979776,0,True
+Ridge,"{""penalidade_por_mes"": 1.0}",0.224975,0.640965,0,False
+Ridge,"{""penalidade_por_mes"": 0.1}",-2.54974,1.44522,0,False
+Ridge,"{""penalidade_por_mes"": 0.01}",-3.35061,1.62711,0,False
+Random Forest,"{""profundidade"": 1, ""folha"": 0.3, ""arvores"": 100}",-1.48027,1.17901,4.8,True
+Random Forest,"{""profundidade"": 1, ""folha"": 0.2, ""arvores"": 100}",-1.93846,1.12144,0.7,False
+Random Forest,"{""profundidade"": 1, ""folha"": 0.1, ""arvores"": 100}",-2.28757,1.07862,0.7,False
+Random Forest,"{""profundidade"": 1, ""folha"": 0.05, ""arvores"": 100}",-2.41804,1.07234,0.7,False
+Random Forest,"{""profundidade"": 2, ""folha"": 0.3, ""arvores"": 100}",-2.06308,1.32497,0.7,False
+Random Forest,"{""profundidade"": 2, ""folha"": 0.2, ""arvores"": 100}",-3.53788,1.33954,0.7,False
+Random Forest,"{""profundidade"": 2, ""folha"": 0.1, ""arvores"": 100}",-4.38435,1.30059,0.7,False
+Random Forest,"{""profundidade"": 2, ""folha"": 0.05, ""arvores"": 100}",-5.01918,1.4298,0.7,False
+Random Forest,"{""profundidade"": 4, ""folha"": 0.3, ""arvores"": 100}",-2.06308,1.32497,0.7,False
+Random Forest,"{""profundidade"": 4, ""folha"": 0.2, ""arvores"": 100}",-4.24173,1.36118,0.7,False
+Random Forest,"{""profundidade"": 4, ""folha"": 0.1, ""arvores"": 100}",-7.59333,1.37047,0.7,False
+Random Forest,"{""profundidade"": 4, ""folha"": 0.05, ""arvores"": 100}",-9.62638,1.73542,0.7,False
+Random Forest,"{""profundidade"": null, ""folha"": 0.3, ""arvores"": 100}",-2.06308,1.32497,0.7,False
+Random Forest,"{""profundidade"": null, ""folha"": 0.2, ""arvores"": 100}",-4.24173,1.36118,0.7,False
+Random Forest,"{""profundidade"": null, ""folha"": 0.1, ""arvores"": 100}",-8.03021,1.3695,0.7,False
+Random Forest,"{""profundidade"": null, ""folha"": 0.05, ""arvores"": 100}",-13.0576,1.73597,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.145371,0.0632398,0.6,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.136385,0.0550511,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.19584,0.0810987,3,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.154832,0.066259,3,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-0.914426,0.95146,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-0.622917,0.83517,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-2.29195,1.15389,3.3,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-2.14393,1.14881,3.2,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-2.09136,1.13276,0.6,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-2.14463,1.12412,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-4.80376,1.36593,3.3,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.20549,1.49088,3.1,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-2.21742,1.14994,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-2.30477,1.15302,0.7,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-5.12201,1.38341,3.2,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.42471,1.51773,3,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-2.23009,1.15168,0.6,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-2.31937,1.15453,0.6,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-5.1551,1.38732,3.2,False
+Rede neural,"{""oculta"": 2, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.39245,1.52812,3.2,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.291196,0.117425,0.6,True
+Rede neural,"{""oculta"": 4, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.23085,0.0700617,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.334943,0.131737,2.9,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.310991,0.0916718,2.8,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-2.45434,1.19016,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-2.32702,1.10743,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-3.73002,1.38121,2.8,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-3.92921,1.29663,2.8,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-3.44877,1.30614,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.36335,1.43554,0.5,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-7.02701,1.6932,2.7,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-6.48027,1.65464,3.3,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-3.56997,1.31778,0.7,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.58278,1.46009,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-7.61352,1.75777,3.2,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-6.79564,1.84443,2.8,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-3.58252,1.31897,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-4.60372,1.46422,0.6,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-7.67401,1.7712,2.8,False
+Rede neural,"{""oculta"": 4, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-6.81251,1.84573,2.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.477798,0.211341,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.420443,0.142448,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",0.513276,0.240505,2.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 10.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",0.495777,0.17064,2.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-3.34648,1.38196,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 1.0, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-3.72911,1.3737,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-4.92168,1.54895,2.7,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 1.0, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-5.41849,1.61202,2.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-4.12807,1.42356,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.1, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-5.35842,1.60654,0.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-8.84061,1.75661,2.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.1, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-8.87317,2.02232,2.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-4.26621,1.43433,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.01, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-5.58115,1.62534,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-9.71355,1.85862,2.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.01, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-9.4247,2.04155,2.7,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-4.2811,1.43555,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.001, ""passagens"": 200, ""ativacao"": ""relu"", ""taxa"": 0.01}",-5.59867,1.62818,0.5,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""tanh"", ""taxa"": 0.01}",-9.81348,1.87047,2.6,False
+Rede neural,"{""oculta"": 8, ""decaimento"": 0.001, ""passagens"": 1000, ""ativacao"": ""relu"", ""taxa"": 0.01}",-9.47932,2.05043,2.4,False

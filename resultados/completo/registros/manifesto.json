@@ -1,0 +1,4233 @@
+{
+  "assinatura": {
+    "assinatura": "23f3260ccb7c411799d6b8d67671d7e89ef8ce4943fbab1d45a12f128311f8cc",
+    "codigo": "8c8b2bfcc5bec2e105f1d9b523448adbd2695f2a1802b3145b332cf1e0aec97c",
+    "configuracao": "60f453effe30965df65e6ee08905be46b376b17fc0d58b3b067ca0e8adfc3412",
+    "versoes": {
+      "python": "3.13.15",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "torch": "2.14.1+cpu",
+      "xarray": "2026.9.0",
+      "h5netcdf": "1.8.1",
+      "h5py": "3.16.0",
+      "fsspec": "2026.9.0",
+      "aiohttp": "3.14.5",
+      "requests": "2.34.2",
+      "matplotlib": "3.11.2",
+      "geopandas": "1.2.0",
+      "pyogrio": "0.13.0",
+      "shapely": "2.2.0",
+      "pyproj": "3.8.0",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0",
+      "tqdm": "4.70.1",
+      "pillow": "12.3.0",
+      "sistema": "Windows AMD64",
+      "dispositivo": "cpu",
+      "threads": {
+        "pytorch (intra-op)": 12,
+        "pytorch (inter-op)": 6,
+        "BLAS e OpenMP": "openblas 12; openmp 1; openmp 12",
+        "processos paralelos (joblib)": 12
+      }
+    },
+    "modo": "completo",
+    "dados": "f636abc3aa900ce967c524e5ef27bad7f23716c68909894e0810c02a1ec2a784"
+  },
+  "gerado_utc": "2026-10-31T03:56:46+00:00",
+  "ambiente": {
+    "Python": "3.13.15",
+    "sistema": "Windows-11-10.0.26200-SP0",
+    "arquitetura": "AMD64",
+    "NumPy": "2.5.3",
+    "pandas": "3.0.5",
+    "SciPy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "PyTorch": "2.14.1+cpu",
+    "Matplotlib": "3.11.2",
+    "dispositivo das redes": "cpu",
+    "determinismo do PyTorch": "estrito (use_deterministic_algorithms)",
+    "threads: pytorch (intra-op)": "12",
+    "threads: pytorch (inter-op)": "6",
+    "threads: BLAS e OpenMP": "openblas 12; openmp 1; openmp 12",
+    "threads: processos paralelos (joblib)": "12",
+    "núcleos de CPU": "12",
+    "semente raiz": "42"
+  },
+  "configuracao": {
+    "periodo": {
+      "inicio": "1981-01",
+      "fim": "2025-12",
+      "normal": [
+        1991,
+        2020
+      ],
+      "referencia": [
+        1981,
+        2010
+      ],
+      "anos_referencia_minimo": 30,
+      "meses_indice_antes": 24
+    },
+    "particao": {
+      "treino": [
+        1981,
+        2010
+      ],
+      "teste": [
+        2011,
+        2025
+      ]
+    },
+    "malha": {
+      "resolucao_origem": 0.05,
+      "resolucao": 0.05
+    },
+    "fontes": {
+      "chirps": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.{ano}.monthly.nc",
+      "indices": {
+        "NINO3.4": "https://psl.noaa.gov/data/correlation/nina34.anom.data",
+        "TSA": "https://psl.noaa.gov/data/correlation/tsa.data",
+        "AMM": "https://psl.noaa.gov/data/correlation/amm.data"
+      },
+      "ibge": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022",
+      "ufs": [
+        "MA",
+        "PI",
+        "CE",
+        "RN",
+        "PB",
+        "PE",
+        "AL",
+        "SE",
+        "BA"
+      ]
+    },
+    "dominio": {
+      "alvos": [
+        "NNEB",
+        "INEB",
+        "ENEB"
+      ],
+      "indices": [
+        "NINO3.4",
+        "TSA",
+        "AMM"
+      ],
+      "sinal_esperado": {
+        "NINO3.4": -1,
+        "TSA": 1,
+        "AMM": -1
+      }
+    },
+    "calendario_chuvosa": {
+      "NNEB": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "INEB": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ENEB": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "casos": [
+      "ano",
+      "chuvosa",
+      "seca"
+    ],
+    "quintis": [
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "desequilibrio_classes": 0.05,
+    "homogeneidade": {
+      "alfa": 0.01,
+      "simulacoes": 20000,
+      "testes_para_marcar": 3
+    },
+    "defasagem": {
+      "maxima_ano": 12,
+      "maxima_estacao": 12,
+      "diagnostico_ate": 18,
+      "deslocamento_minimo_meses": 24,
+      "passo_deslocamento": 1,
+      "reamostras": 1000
+    },
+    "calibracao": {
+      "treino": [
+        1981,
+        1995
+      ],
+      "validacao": [
+        1996,
+        2010
+      ],
+      "entradas": [
+        "pontual",
+        "media3",
+        "tendencia",
+        "janela3"
+      ],
+      "sazonal": [
+        false,
+        true
+      ],
+      "filtros": [
+        "bruto",
+        "sem_tendencia"
+      ],
+      "ridge_penalidade_por_mes": [
+        100.0,
+        10.0,
+        1.0,
+        0.1,
+        0.01
+      ],
+      "rf_profundidade": [
+        1,
+        2,
+        4,
+        null
+      ],
+      "rf_folha": [
+        0.3,
+        0.2,
+        0.1,
+        0.05
+      ],
+      "rf_arvores": 100,
+      "rede_oculta": [
+        2,
+        4,
+        8
+      ],
+      "rede_decaimento": [
+        10.0,
+        1.0,
+        0.1,
+        0.01,
+        0.001
+      ],
+      "rede_passagens": [
+        200,
+        1000
+      ],
+      "rede_ativacao": [
+        "tanh",
+        "relu"
+      ],
+      "rede_taxa": 0.01,
+      "sinal_plantado": [
+        0.0,
+        0.3
+      ]
+    },
+    "redes": 3,
+    "pixel": {
+      "lote_redes": 6144,
+      "alfa_fdr": 0.1,
+      "classe_cor": 1.0,
+      "passo_piloto": 40,
+      "deslocamentos_validacao": 5,
+      "custo_relativo": {
+        "Ridge": 1,
+        "Rede neural": 60,
+        "Random Forest": 60
+      }
+    },
+    "avaliacao": {
+      "reamostras": 2000,
+      "alfa": 0.05,
+      "bloco_anos": 3,
+      "passo_nulo": 4,
+      "realizacoes_validade": 200,
+      "blocos_sensibilidade": [
+        2,
+        3,
+        4
+      ]
+    },
+    "figuras": {
+      "dpi": 1200,
+      "dpi_mapas": 600
+    },
+    "relatorio": {
+      "intervalo_segundos": 7200,
+      "segundos_por_unidade": {
+        "Aquisição": 10,
+        "Seção 1": 200,
+        "Seção 2": 5,
+        "Seção 3": 30,
+        "Seção 4": 40,
+        "Seção 5": 3,
+        "Seção 6": 1,
+        "Seção 7": 2,
+        "Seção 8": 8,
+        "Seção 9": 65,
+        "Seção 10": 14,
+        "Fechamento": 60
+      }
+    }
+  },
+  "dados": {
+    "ibge/BR_Regioes_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/Brasil/BR/BR_Regioes_2022.zip",
+      "bytes": 9567918,
+      "sha256": "5891d7f0d4cd9b627212cdd80707f2dc4febf718dda7c73cf3d023262b223381",
+      "acesso_utc": "2026-10-28T17:42:16+00:00"
+    },
+    "ibge/MA_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/MA/MA_Municipios_2022.zip",
+      "bytes": 6071106,
+      "sha256": "d5e3edcd5effff0e1863f1b7b780b60ca35532c5853538d531a15593c7f40fc8",
+      "acesso_utc": "2026-10-28T17:42:18+00:00"
+    },
+    "ibge/PI_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PI/PI_Municipios_2022.zip",
+      "bytes": 1858432,
+      "sha256": "08f7857890d90fde936e2d3011dfc63de6ddaf6366f18aaef5a4881b9dabc0eb",
+      "acesso_utc": "2026-10-28T17:42:20+00:00"
+    },
+    "ibge/CE_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/CE/CE_Municipios_2022.zip",
+      "bytes": 3431440,
+      "sha256": "ce18ef19e7d993b65a6b00ea7a4442e78ac53c827dadd71e81c208accb1dcf30",
+      "acesso_utc": "2026-10-28T17:42:20+00:00"
+    },
+    "ibge/RN_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/RN/RN_Municipios_2022.zip",
+      "bytes": 396209,
+      "sha256": "a0caea4d441d70a6d14ee54c4f6c200b05ae3004a95d6b6199519c35289ce407",
+      "acesso_utc": "2026-10-28T17:42:21+00:00"
+    },
+    "ibge/PB_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PB/PB_Municipios_2022.zip",
+      "bytes": 2804773,
+      "sha256": "2ee1a7ca918d0bb97eb8bdbbc6ba346158bf2ba58e5a8f49415215493fcc09a4",
+      "acesso_utc": "2026-10-28T17:42:22+00:00"
+    },
+    "ibge/PE_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PE/PE_Municipios_2022.zip",
+      "bytes": 1559024,
+      "sha256": "7b78a21c9a430749260fbf6d86c75b4baddc8c719e6a05843877b56760581503",
+      "acesso_utc": "2026-10-28T17:42:22+00:00"
+    },
+    "ibge/AL_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/AL/AL_Municipios_2022.zip",
+      "bytes": 1748114,
+      "sha256": "8a4f915197250ac9267a1b9f812b016355f3e4547711508c44f36909d846f1c3",
+      "acesso_utc": "2026-10-28T17:42:23+00:00"
+    },
+    "ibge/SE_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/SE/SE_Municipios_2022.zip",
+      "bytes": 1470811,
+      "sha256": "b25e4b356a70ecf29b1aaa4016f0dfd00d6b93e859d049680ee2cc02cb5f684c",
+      "acesso_utc": "2026-10-28T17:42:24+00:00"
+    },
+    "ibge/BA_Municipios_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/BA/BA_Municipios_2022.zip",
+      "bytes": 13670266,
+      "sha256": "6559f564071dec2d49e3c55061049190054ea71121cb02e2e6d9cbf8e9bc7c48",
+      "acesso_utc": "2026-10-28T17:42:25+00:00"
+    },
+    "ibge/BR_UF_2022.zip": {
+      "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/Brasil/BR/BR_UF_2022.zip",
+      "bytes": 13717460,
+      "sha256": "282ec7f0f0beeeead45e6609f4ffffce161bda04cb8ee0afcad2316d1c841bcb",
+      "acesso_utc": "2026-10-28T17:42:36+00:00"
+    },
+    "chirps/CHIRPS_1981.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1981.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "cd985f519591179fe9668c770d25cfc8c5e29b94c202fe85fff684c12c5349ec",
+      "acesso_utc": "2026-10-28T17:42:53+00:00",
+      "ano": 1981,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1982.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1982.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "77029cc1cb986bb56b4af04280f04145a2bb991380e5476da3e433c2cb1e60d7",
+      "acesso_utc": "2026-10-28T17:43:08+00:00",
+      "ano": 1982,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1983.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1983.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "96d7dbc9973ef37f711adc05a8e6ea9d54d54cffc96b96aa7cfdcd885321bef8",
+      "acesso_utc": "2026-10-28T17:43:23+00:00",
+      "ano": 1983,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1984.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1984.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "b6d5bb93e462c67408e9d1002269c287b2cedc31962571cbc17bc6495d8bd458",
+      "acesso_utc": "2026-10-28T17:43:39+00:00",
+      "ano": 1984,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1985.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1985.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "0cbf2a047c10a4036b623684a3a35c9b650e45d9e9fce657e40d526795641ab1",
+      "acesso_utc": "2026-10-28T17:43:56+00:00",
+      "ano": 1985,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1986.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1986.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "98b24615c63d7f71511347cc671b77f6c2c1fff19495a8767ca4d4aa40cb12e4",
+      "acesso_utc": "2026-10-28T17:44:10+00:00",
+      "ano": 1986,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1987.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1987.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "e394408cd796b10149bd73665bb22892cb1195d58ddbc3d5b1e8e53b4258a1c5",
+      "acesso_utc": "2026-10-28T17:44:24+00:00",
+      "ano": 1987,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1988.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1988.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "f4551881e3df6a2967bf88808add0cc16a11e75f1aba7bb1016b240703866337",
+      "acesso_utc": "2026-10-28T17:44:40+00:00",
+      "ano": 1988,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1989.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1989.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "94b6e4934759a81d88ba46f2558e1b036992ec7baa15f776436a21c0d61fc4f2",
+      "acesso_utc": "2026-10-28T17:44:56+00:00",
+      "ano": 1989,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1990.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1990.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "ca12492b56c8a932bc500f08f2f2d3b02fe404cc4704c3f1e0d43d745ec2e021",
+      "acesso_utc": "2026-10-28T17:45:11+00:00",
+      "ano": 1990,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1991.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1991.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "e513f9e09899e31029285464dbd6f00f0ddd67dea632eb84b901af477f2228fc",
+      "acesso_utc": "2026-10-28T17:45:47+00:00",
+      "ano": 1991,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1992.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1992.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "281c3df07b39672c419173c50473eaebd64342811ed618c539398784753e090c",
+      "acesso_utc": "2026-10-28T17:46:01+00:00",
+      "ano": 1992,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1993.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1993.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "b26dba290ee8f06d7d7b92c93cd2a46c8aaba6d1ac56e3165f7ce8c8a7462b54",
+      "acesso_utc": "2026-10-28T17:46:24+00:00",
+      "ano": 1993,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1994.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1994.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "7e84c84f1be81ff1486e43c7f2bb9ce8b60cdfab8c3561bd37037f5c1e316d79",
+      "acesso_utc": "2026-10-28T17:46:41+00:00",
+      "ano": 1994,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1995.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1995.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "e91b77ddf1c479e19c6b1b3bb38950fe23ad2682b252c030dce91738383be598",
+      "acesso_utc": "2026-10-28T17:46:55+00:00",
+      "ano": 1995,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1996.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1996.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "67400cfa12dea3ccc329cbf4190b7f8738ab2ebf32de0e9efabced80fa6e96bb",
+      "acesso_utc": "2026-10-28T17:47:10+00:00",
+      "ano": 1996,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1997.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1997.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "31b6ea8efb8563207d248bc029393153504e02ee70602f21b9d5aae9adadb04c",
+      "acesso_utc": "2026-10-28T17:47:25+00:00",
+      "ano": 1997,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1998.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1998.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "600b4459446b72e688ed942309662724500acf782adfd3fe5384bd7100063583",
+      "acesso_utc": "2026-10-28T17:47:40+00:00",
+      "ano": 1998,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_1999.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1999.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "6a6a6b6710207f8b5a92d78d0eca039ed16b056bbf2ffc18a619744a881f635c",
+      "acesso_utc": "2026-10-28T17:47:55+00:00",
+      "ano": 1999,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2000.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2000.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "4449d6aa63321c98afd2ae533a968363777daa15c14f7e7f5fec38b78ae36192",
+      "acesso_utc": "2026-10-28T17:48:10+00:00",
+      "ano": 2000,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2001.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2001.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "ef143f7e6d41f2083eaa11459c89aaf457c94cad14db982a3c2c28171164205d",
+      "acesso_utc": "2026-10-28T17:48:24+00:00",
+      "ano": 2001,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2002.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2002.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "002039186115fe84c575a5a5c6a295e164005a4d26edb5d5d23c4af0a9bf296d",
+      "acesso_utc": "2026-10-28T17:48:39+00:00",
+      "ano": 2002,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2003.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2003.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "582b04f38c4956062dd54f1d4352b1cf1f420410116c2854bf842c18cf5ad725",
+      "acesso_utc": "2026-10-28T17:48:54+00:00",
+      "ano": 2003,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2004.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2004.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "dcb009386258e391b623a7148a96ab27b0fc32107b3b002cc7aca5f1e7afc352",
+      "acesso_utc": "2026-10-28T17:49:09+00:00",
+      "ano": 2004,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2005.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2005.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "82defb7d848fd1c6083acfb362d753bc21d1a1cd14bf009bf90a5dc680600e0b",
+      "acesso_utc": "2026-10-28T17:49:25+00:00",
+      "ano": 2005,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2006.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2006.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "d3ffff3d1d79c24aeec32e526d58f32e8580cb664e8048899bc0a528edf46ecf",
+      "acesso_utc": "2026-10-28T17:49:44+00:00",
+      "ano": 2006,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2007.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2007.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "e2eb3156eb688e9b1f0664a3f6479236a40f3305d872a425229cfdc52f5b6da3",
+      "acesso_utc": "2026-10-28T17:50:01+00:00",
+      "ano": 2007,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2008.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2008.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "826bdffd603b02e4e11985dca19a55b810bed9a57d8797320961c8c840c0c289",
+      "acesso_utc": "2026-10-28T17:50:17+00:00",
+      "ano": 2008,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2009.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2009.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "5f9811f5b351c7501eaf1c1b3e8d654e6cc772aa0ddf5f3e7d389d1520e6bd55",
+      "acesso_utc": "2026-10-28T17:50:30+00:00",
+      "ano": 2009,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2010.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2010.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "c7b16c6aac1482c77c5ee8b497c063cf9282c5212477dd4a6262f769b91646ab",
+      "acesso_utc": "2026-10-28T17:50:45+00:00",
+      "ano": 2010,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2011.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2011.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "dcaca9b9fa8ce34255463ddd20c4287a1c88ca5bff37fc75dd7051573f496be0",
+      "acesso_utc": "2026-10-28T17:50:58+00:00",
+      "ano": 2011,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2012.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2012.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "e5d58e64c0732a343058dc1b511c07f33cc66732726b7769aaf1cd50110577d7",
+      "acesso_utc": "2026-10-28T17:51:12+00:00",
+      "ano": 2012,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2013.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2013.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "fbf49026637de69d90c1d8bbeef58267f422ce964870dae228fb0ba99271fcc9",
+      "acesso_utc": "2026-10-28T17:51:25+00:00",
+      "ano": 2013,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2014.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2014.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "374919daf8fb036a924bc21f8226575d77d2a12083c10e43a212b6386cb18bdb",
+      "acesso_utc": "2026-10-28T17:51:39+00:00",
+      "ano": 2014,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2015.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2015.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "76b761603b7394e300d6c6b9a312a4701d0225d657fc71794be4fa64d3ef67bc",
+      "acesso_utc": "2026-10-28T17:51:54+00:00",
+      "ano": 2015,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2016.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2016.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "8533ad0d816792e9f07bfabaa4710a348f28fd3526a012885f97b5dd731e72af",
+      "acesso_utc": "2026-10-28T17:52:08+00:00",
+      "ano": 2016,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2017.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2017.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "3da02c44a45b5efbd20c68ebd410ec502bdc6cc7dc569db24e9d69824a5b5610",
+      "acesso_utc": "2026-10-28T17:52:21+00:00",
+      "ano": 2017,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2018.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2018.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "9a65dfe9ee2b1d71025dba12f036d725d295f64d77f6ffa827c2a702e56d5463",
+      "acesso_utc": "2026-10-28T17:52:37+00:00",
+      "ano": 2018,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2019.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2019.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "b4fadd88cb12add60360aeeff5d3ae76e8c2d5c685f7b75cff3bd107e7a6b737",
+      "acesso_utc": "2026-10-28T17:52:58+00:00",
+      "ano": 2019,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2020.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2020.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "23045cc560a0ea87a4c913a96581a37f93007c17d6a21c6c76fbd6299d6dbbdf",
+      "acesso_utc": "2026-10-28T17:53:14+00:00",
+      "ano": 2020,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2021.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2021.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "ae4983ac2fdc4e9af59b62e57a3bb99b880b7ab658f7d599a045a23ad2704de5",
+      "acesso_utc": "2026-10-28T17:53:28+00:00",
+      "ano": 2021,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2022.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2022.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "2a82e1176afbeeacee23e316532b27700950aa306deb0be6b57d0c2186f945bf",
+      "acesso_utc": "2026-10-28T17:53:43+00:00",
+      "ano": 2022,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2023.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2023.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "dcf9a0f0883fb1d4617000ff6c5e6cad4dfd379dd45f71531e3671b6d23e3a9f",
+      "acesso_utc": "2026-10-28T17:53:56+00:00",
+      "ano": 2023,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2024.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2024.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "19c610c4fb1db4fe933631c6ee7e552d7c7ffcf9b228011e448523cfc41371d1",
+      "acesso_utc": "2026-10-28T17:54:10+00:00",
+      "ano": 2024,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "chirps/CHIRPS_2025.nc": {
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2025.monthly.nc",
+      "bytes": 5485640,
+      "sha256": "f9bba24c3b84e4ef33a429478197c38f0e1d5fd5d0085e53b29d5bd57f46e0ab",
+      "acesso_utc": "2026-10-28T17:54:23+00:00",
+      "ano": 2025,
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "derivados/chirps_neb_005.npz": {
+      "url": "derivado: recortes anuais do CHIRPS v2.0 na malha de 0.05°",
+      "bytes": 145164514,
+      "sha256": "82886a8dae3ffdaf3de8384bb4cabc446cf676b63f09711e9e586d8dfc5b587c",
+      "acesso_utc": "2026-10-28T17:54:33+00:00",
+      "limites": [
+        -48.800000000000004,
+        -18.35,
+        -32.35,
+        -1.0
+      ]
+    },
+    "indices/nina34.anom.data": {
+      "url": "https://psl.noaa.gov/data/correlation/nina34.anom.data",
+      "bytes": 8362,
+      "sha256": "879cf3cb31d71e576f639ea88af9498f622662bbcaf6c74e79ad5394614696dd",
+      "acesso_utc": "2026-10-28T17:54:33+00:00"
+    },
+    "indices/tsa.data": {
+      "url": "https://psl.noaa.gov/data/correlation/tsa.data",
+      "bytes": 8230,
+      "sha256": "700c0dffda0f19c1254ba482808b345eaa0538f5bf09fc3bc025f46a5fbe3a69",
+      "acesso_utc": "2026-10-28T17:54:34+00:00"
+    },
+    "indices/amm.data": {
+      "url": "https://psl.noaa.gov/data/correlation/amm.data",
+      "bytes": 8286,
+      "sha256": "6df29b79cbc97a45acbf4bd44307c128ec10948be1803e333823443670b3dd85",
+      "acesso_utc": "2026-10-28T17:54:35+00:00"
+    }
+  },
+  "numeracao": {
+    "manifesto_dados": "Tabela 1",
+    "alvos": "Tabela 2",
+    "mapa_alvos": "Figura 1",
+    "calendario": "Tabela 3",
+    "ciclo_anual": "Figura 2",
+    "limites_quintis": "Tabela 4",
+    "casos": "Tabela 5",
+    "serie_mensal": "Tabela 6",
+    "serie_mensal_u": "Figura 3",
+    "indices": "Tabela 7",
+    "series_indices": "Figura 4",
+    "normal_estacao": "Tabela 8",
+    "mapas_normal_estacao": "Figura 5",
+    "sanidade_homogeneidade": "Tabela 9",
+    "sanidade": "Figura 6",
+    "verificacoes": "Tabela 10",
+    "associacao": "Tabela 11",
+    "perfil_defasagens": "Tabela 12",
+    "defasagem_alem_da_janela": "Tabela 13",
+    "perfis_r": "Figura 7",
+    "teste_campo": "Tabela 14",
+    "mapas_r_ano": "Figura 8",
+    "mapas_r_chuvosa": "Figura 9",
+    "mapas_r_seca": "Figura 10",
+    "defasagem_pixel": "Tabela 15",
+    "mapas_defasagem_pixel": "Figura 11",
+    "mapas_sensibilidade_pixel": "Figura 12",
+    "indice_predominante": "Figura 13",
+    "calibracao_entrada": "Tabela 17",
+    "calibracao_hiperparametros": "Tabela 18",
+    "sinal_plantado": "Tabela 19",
+    "calibracao_escolhas": "Tabela 20",
+    "calibracao": "Figura 14",
+    "amostras": "Tabela 21",
+    "desempenho_climatologia": "Tabela 22",
+    "rpss_climatologia": "Figura 15",
+    "comparacao_A0": "Tabela 23",
+    "classes_no_teste": "Tabela 24",
+    "serie_teste": "Figura 16",
+    "unidades_ridge": "Tabela 26",
+    "resposta_ridge": "Figura 17",
+    "metricas_ridge": "Tabela 28",
+    "rpss_ridge": "Figura 18",
+    "comparacoes_ridge": "Tabela 29",
+    "hipotese_ridge": "Tabela 30",
+    "serie_ridge": "Figura 19",
+    "unidades_randomforest": "Tabela 32",
+    "resposta_randomforest": "Figura 20",
+    "metricas_randomforest": "Tabela 34",
+    "rpss_randomforest": "Figura 21",
+    "comparacoes_randomforest": "Tabela 35",
+    "hipotese_randomforest": "Tabela 36",
+    "serie_randomforest": "Figura 22",
+    "unidades_redeneural": "Tabela 38",
+    "resposta_redeneural": "Figura 23",
+    "metricas_redeneural": "Tabela 40",
+    "rpss_redeneural": "Figura 24",
+    "comparacoes_redeneural": "Tabela 41",
+    "hipotese_redeneural": "Tabela 42",
+    "serie_redeneural": "Figura 25",
+    "comparacao_E": "Tabela 44",
+    "comparacao_metodos": "Figura 26",
+    "comparacao_F": "Tabela 45",
+    "rpss_por_caso": "Figura 27",
+    "hipotese_tres_metodos": "Tabela 46",
+    "confiabilidade": "Figura 28",
+    "validade_testes": "Tabela 48",
+    "validade_deslocamento": "Tabela 49",
+    "sensibilidade_blocos": "Tabela 50",
+    "pixel_habilidade": "Tabela 51",
+    "pixel_predominante": "Figura 32",
+    "pixel_validacao": "Tabela 53",
+    "pixel_rpss_ridge": "Figura 29",
+    "pixel_rpss_randomforest": "Figura 30",
+    "pixel_rpss_redeneural": "Figura 31",
+    "respostas": "Tabela 54",
+    "veredito_hipotese": "Tabela 55",
+    "inventario_figuras": "Tabela 56",
+    "tempo_secoes": "Tabela 57"
+  },
+  "arquivos": {
+    "resultados/completo/figuras/F01_mapa_alvos.pdf": {
+      "bytes": 213804,
+      "sha256": "bfee94064cb6d103b8bd8c020f2aae556da315abb82919f3f85b7268e77c5636"
+    },
+    "resultados/completo/figuras/F01_mapa_alvos.png": {
+      "bytes": 344168,
+      "sha256": "63d32a3e191d4e10080192483afe6af09ceb2cb25d64e6e88d5d1a78a336fd4d"
+    },
+    "resultados/completo/figuras/F02_ciclo_anual.pdf": {
+      "bytes": 22115,
+      "sha256": "e9fbafde10ff9015a911c81a4412b3cfb285b7fa4bc549c951662543f8e5ff2a"
+    },
+    "resultados/completo/figuras/F02_ciclo_anual.png": {
+      "bytes": 572827,
+      "sha256": "20e5d64bdc05d03bd6c98928e43aa022ecabf33030f44fc216f41e634b17542a"
+    },
+    "resultados/completo/figuras/F03_serie_mensal_u.pdf": {
+      "bytes": 30423,
+      "sha256": "b234f0bcdab257d762986f6270cadfebf4e73c94ce682fe3229ec1983c500989"
+    },
+    "resultados/completo/figuras/F03_serie_mensal_u.png": {
+      "bytes": 849786,
+      "sha256": "91a2e9970e2bc317003c3206df391d63db72649ee22194a585d6c827f9198f9d"
+    },
+    "resultados/completo/figuras/F04_series_indices.pdf": {
+      "bytes": 35925,
+      "sha256": "4597fc315162aef6ce3570a0863274623844bf08d43982fe7aed6fc5d64858bd"
+    },
+    "resultados/completo/figuras/F04_series_indices.png": {
+      "bytes": 832078,
+      "sha256": "517520b23403035000c6d6e15ac7ec920feb2bd218ca60df8e0f31af3d6e7f4c"
+    },
+    "resultados/completo/figuras/F05_mapas_normal_estacao.pdf": {
+      "bytes": 403765,
+      "sha256": "af45e7649c82ef3e6f886692c5137e4379507761e07b8670540c03be1ca2eaf5"
+    },
+    "resultados/completo/figuras/F05_mapas_normal_estacao.png": {
+      "bytes": 632932,
+      "sha256": "fe17c5c0b8a29260a202a4860d47d9e5e76c448dde353a7fc0faec497e531efc"
+    },
+    "resultados/completo/figuras/F06_sanidade.pdf": {
+      "bytes": 20024,
+      "sha256": "14f35f14e1b3cbbb5bcf77eca0a8ea39c714b3cc59f9479574946a6aa2984d3d"
+    },
+    "resultados/completo/figuras/F06_sanidade.png": {
+      "bytes": 409059,
+      "sha256": "6927fb4a8c55e6c55ded6a67a4da2af8c74732292926f91108fd2845b027a80f"
+    },
+    "resultados/completo/figuras/F07_perfis_r.pdf": {
+      "bytes": 40475,
+      "sha256": "3c166ac47aaf7aeabebc6131dbbf37adee3acbb4b8d540882c4fc6eda0b5b0f3"
+    },
+    "resultados/completo/figuras/F07_perfis_r.png": {
+      "bytes": 1580321,
+      "sha256": "56c6a9f2396bc8e338719f46fdd6344684b3f00743fd63b4c56b6f7cb621d2ef"
+    },
+    "resultados/completo/figuras/F08_mapas_r_ano.pdf": {
+      "bytes": 468628,
+      "sha256": "5627b7f2b28f22045e3f0ef31fa4eff13a521c12fc0f84778eff27749068c0fd"
+    },
+    "resultados/completo/figuras/F08_mapas_r_ano.png": {
+      "bytes": 640805,
+      "sha256": "a094e99cbb7639bad4b84b9d67ef135cc1a04a6802f12b29f41c9bed18cced84"
+    },
+    "resultados/completo/figuras/F09_mapas_r_chuvosa.pdf": {
+      "bytes": 473683,
+      "sha256": "7fbe83d2dbfca8bd01d6a8dfd0b31a4eae65b3e736b0683f7b7e3f86b29c4bc7"
+    },
+    "resultados/completo/figuras/F09_mapas_r_chuvosa.png": {
+      "bytes": 631787,
+      "sha256": "131d5c7aefe9020338a8854d15e36b4754ff08170d6701b049079d4d09af1434"
+    },
+    "resultados/completo/figuras/F10_mapas_r_seca.pdf": {
+      "bytes": 478497,
+      "sha256": "c3a925f0e7657511711dcfa7062e0f3960d141521a5e275b85f03debe57df133"
+    },
+    "resultados/completo/figuras/F10_mapas_r_seca.png": {
+      "bytes": 664234,
+      "sha256": "359a4061103c65259e201778ed33cf397d0b04aa6aa1268768d643d6310e9d56"
+    },
+    "resultados/completo/figuras/F11_mapas_defasagem_pixel.pdf": {
+      "bytes": 1259597,
+      "sha256": "652f5f90b981f786d9ae71ef04d0e68d0435e4a56843c7c7380eb6c51d5283e8"
+    },
+    "resultados/completo/figuras/F11_mapas_defasagem_pixel.png": {
+      "bytes": 1464852,
+      "sha256": "2e23f46e6002dbf8b778a81d1be05d46f7e41a7c435879d8a56df4928a070a9d"
+    },
+    "resultados/completo/figuras/F12_mapas_sensibilidade_pixel.pdf": {
+      "bytes": 1318422,
+      "sha256": "04123ea2cf126191adfe346e47f1a1629cdae1bf0fe7614e893472b43fc5e53c"
+    },
+    "resultados/completo/figuras/F12_mapas_sensibilidade_pixel.png": {
+      "bytes": 1593311,
+      "sha256": "957c2cb30c887808f3fb584347d3f27b8058442aa550884818952c3375382b05"
+    },
+    "resultados/completo/figuras/F13_indice_predominante.pdf": {
+      "bytes": 1263886,
+      "sha256": "65fb39352fbb2ba1f4ee1f4d1f1b76dc39216d1ad276351f6c50ec5b052fcd7b"
+    },
+    "resultados/completo/figuras/F13_indice_predominante.png": {
+      "bytes": 1454198,
+      "sha256": "4d3acc7e2d47df0f337be9fe2ebc1e4ba9dbb36452635327bacb32d3bbc1f518"
+    },
+    "resultados/completo/figuras/F14_calibracao.pdf": {
+      "bytes": 38887,
+      "sha256": "c5eb6a3ade1e557d9f1d19b350301621c5f938b904e0df588435b5ac59c8eaba"
+    },
+    "resultados/completo/figuras/F14_calibracao.png": {
+      "bytes": 1373997,
+      "sha256": "d9dbbc33747950e55552c722c9de45e5400a1d9d0e53bde265d11d84f44c4f3f"
+    },
+    "resultados/completo/figuras/F15_rpss_climatologia.pdf": {
+      "bytes": 21957,
+      "sha256": "ba4dc08e5f2a48edd2b48a4aba14b5d7c19a2584cd736d488627ef5ee9f05d3b"
+    },
+    "resultados/completo/figuras/F15_rpss_climatologia.png": {
+      "bytes": 632323,
+      "sha256": "cd74c5cae20e06e10b6b1fa45d40e6ed6f6b27cb17b461b3aa73f6280067874e"
+    },
+    "resultados/completo/figuras/F16_serie_teste.pdf": {
+      "bytes": 30267,
+      "sha256": "0cb8aa38650103f0a65bc06ab9e2cd3c170557b41ae753b6750ddd9f5ebfe592"
+    },
+    "resultados/completo/figuras/F16_serie_teste.png": {
+      "bytes": 446472,
+      "sha256": "bc1c40a441f3ed65efb70b247aaaba4176849ff454a66e71a338ec42ed1645d9"
+    },
+    "resultados/completo/figuras/F17_resposta_ridge.pdf": {
+      "bytes": 30415,
+      "sha256": "d2e1a596c56b55f5f3c5229ce8c8f57faed07f97b3bf5ff415240de24b10373e"
+    },
+    "resultados/completo/figuras/F17_resposta_ridge.png": {
+      "bytes": 2116023,
+      "sha256": "a09c5ded99ca243e9376ac5c1f43f6a359d64723cda99dea0513225ab2bae97f"
+    },
+    "resultados/completo/figuras/F18_rpss_ridge.pdf": {
+      "bytes": 23786,
+      "sha256": "5b3e9b7dd76c45a936723b429ffcf29b78d1373a9b56bf160a38d6f43a510e82"
+    },
+    "resultados/completo/figuras/F18_rpss_ridge.png": {
+      "bytes": 581164,
+      "sha256": "d043863315c2172c7421be29d91d92114c021670d5a6a54bacdcf1a4ded8508e"
+    },
+    "resultados/completo/figuras/F19_serie_ridge.pdf": {
+      "bytes": 67579,
+      "sha256": "dfbc778913086e4b95c9486f4a26070e4b1a32ff1245a4860168b43a083f2997"
+    },
+    "resultados/completo/figuras/F19_serie_ridge.png": {
+      "bytes": 897655,
+      "sha256": "998624a113b607d28333d040de33c2105f074b465129e8a5521488b3f2e33da1"
+    },
+    "resultados/completo/figuras/F20_resposta_randomforest.pdf": {
+      "bytes": 27380,
+      "sha256": "ad2fcf8288f23639ebd6a39e443a5413ee3062e439f5a15f916b353be5770c02"
+    },
+    "resultados/completo/figuras/F20_resposta_randomforest.png": {
+      "bytes": 1471904,
+      "sha256": "7ee3f0f39bc81044709ca24884fd01be2ea4889402b4f023f029c36a90236d3c"
+    },
+    "resultados/completo/figuras/F21_rpss_randomforest.pdf": {
+      "bytes": 23851,
+      "sha256": "e2d96d1c13d8e6834a1440ce22c270f41022f2e768fc023291fc8365b8adb6db"
+    },
+    "resultados/completo/figuras/F21_rpss_randomforest.png": {
+      "bytes": 615454,
+      "sha256": "94c7b778bb9db44558a6d47260718f4d6f1b4774a2c1db9bed2dcca88027f123"
+    },
+    "resultados/completo/figuras/F22_serie_randomforest.pdf": {
+      "bytes": 61657,
+      "sha256": "e14e752997180c836d55356e3e7584d8985999cc1dd970ee671a2a6780e155b4"
+    },
+    "resultados/completo/figuras/F22_serie_randomforest.png": {
+      "bytes": 1589605,
+      "sha256": "16463484f3c1672f16e8c569479cef7cef71ffed8133b2109445ee5fe61f0295"
+    },
+    "resultados/completo/figuras/F23_resposta_redeneural.pdf": {
+      "bytes": 31027,
+      "sha256": "067f9005083fe9bff41d62e6fe276ae1014685f09e15b61f4883c48b0c8e7255"
+    },
+    "resultados/completo/figuras/F23_resposta_redeneural.png": {
+      "bytes": 2300590,
+      "sha256": "203813f66a04874d54cfedcb6cc9db2220c83adaf427bae9d836519ecc2eed29"
+    },
+    "resultados/completo/figuras/F24_rpss_redeneural.pdf": {
+      "bytes": 23876,
+      "sha256": "2d9ea5893680ef576c4aa327f68db7d74ce3be2cd619ad287ea86b8304098d25"
+    },
+    "resultados/completo/figuras/F24_rpss_redeneural.png": {
+      "bytes": 581436,
+      "sha256": "d967f89ee6682dbbcab85933bdd7ab664dac4284c8c616f790cbe1edcc43dff6"
+    },
+    "resultados/completo/figuras/F25_serie_redeneural.pdf": {
+      "bytes": 68542,
+      "sha256": "48fd2ca8ab397decabf6866e4f83c020cabad28c7e5be9f835630f8702217ab6"
+    },
+    "resultados/completo/figuras/F25_serie_redeneural.png": {
+      "bytes": 931482,
+      "sha256": "e4d9037912bf75763be993fbb78afe4532c8465af5c74a1a5c1feb286653230e"
+    },
+    "resultados/completo/figuras/F26_comparacao_metodos.pdf": {
+      "bytes": 33224,
+      "sha256": "20faa7ed5956035f20af3d0feb44f254bd2cc353cada07fc4127e67370885701"
+    },
+    "resultados/completo/figuras/F26_comparacao_metodos.png": {
+      "bytes": 541525,
+      "sha256": "1f88052a27a3a5b53248e1f168b531eeb115e45a8daaa8189daceba37d814690"
+    },
+    "resultados/completo/figuras/F27_rpss_por_caso.pdf": {
+      "bytes": 25588,
+      "sha256": "3f0f168294e005e2e77a231c35b8cafa9deb3b50224fef446f6fa9504cec9aed"
+    },
+    "resultados/completo/figuras/F27_rpss_por_caso.png": {
+      "bytes": 612833,
+      "sha256": "11a906b8f5758692d252019baebd648cf2823f7df0ea7223c5bca6ee96a76233"
+    },
+    "resultados/completo/figuras/F28_confiabilidade.pdf": {
+      "bytes": 20611,
+      "sha256": "34e20c26de66a6d21ad621fc22801f359e04def787751ae8fd947c20cba3f3d8"
+    },
+    "resultados/completo/figuras/F28_confiabilidade.png": {
+      "bytes": 638292,
+      "sha256": "84480bae27c64f2e0cfdcf58bc58eca4f4a3d6791a7dc57252993445c0f9d4c7"
+    },
+    "resultados/completo/figuras/F29_pixel_rpss_ridge.pdf": {
+      "bytes": 1462253,
+      "sha256": "62118ebfb6b79749bba2b295c83cd560fe069895d62aaf6a15de8741289e12ce"
+    },
+    "resultados/completo/figuras/F29_pixel_rpss_ridge.png": {
+      "bytes": 1799905,
+      "sha256": "02dad4ac54258cce7a50cd7da5435fe9f946e820183539feb4958dd7a149e6e2"
+    },
+    "resultados/completo/figuras/F30_pixel_rpss_randomforest.pdf": {
+      "bytes": 2253251,
+      "sha256": "6e2b7beb4355a64c0d1488c572294daf9b4563b0cfd6c6191022d2ceba244ed9"
+    },
+    "resultados/completo/figuras/F30_pixel_rpss_randomforest.png": {
+      "bytes": 2701029,
+      "sha256": "52567efdea622f11567a8fdf781ffa8c74fa3718cc5ad673738bfdf848359f27"
+    },
+    "resultados/completo/figuras/F31_pixel_rpss_redeneural.pdf": {
+      "bytes": 1550134,
+      "sha256": "e4cde57ec6192de05bbb64c4a3418e850cd0220135a2925ab5d4539523b1a6eb"
+    },
+    "resultados/completo/figuras/F31_pixel_rpss_redeneural.png": {
+      "bytes": 1985820,
+      "sha256": "d87662f6e8111a3362dd649d69a95c970d550bff87a4a1c63f6b400f77c84d02"
+    },
+    "resultados/completo/figuras/F32_pixel_predominante.pdf": {
+      "bytes": 1556863,
+      "sha256": "61494d0a7458f1809336cafa4c9835851b6566fbbb2982a28a702b368ce930db"
+    },
+    "resultados/completo/figuras/F32_pixel_predominante.png": {
+      "bytes": 1819618,
+      "sha256": "c3ccb167ba8550ffdfbe78ede4ce553f1e91182b02700cb385545ad1ece8d7bd"
+    },
+    "resultados/completo/pixels/defasagens_pixel.npz": {
+      "bytes": 48954,
+      "sha256": "6eeac6ec41487c86c4d3ddcd7dbe7a903bf8725aeafc5dba90efa683067474aa"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_ano_AMM_pixel.npz": {
+      "bytes": 147556,
+      "sha256": "e9805de04bfdb69bac72a0c0f7d12bc98894ea31d93370330c92aa356055eb97"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_ano_NINO34_pixel.npz": {
+      "bytes": 149957,
+      "sha256": "c33403b68be8a8ae0dcbbd2a38c03ad35e3b8c0bfbbf24ec59a78795315cd81d"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_ano_TSA_pixel.npz": {
+      "bytes": 149835,
+      "sha256": "787a5967da55630f24ce784125e958d4f865d5a1d053f069f359d1d8addbcf1a"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 147591,
+      "sha256": "56342b24291fe3079584741f6f96a3345a133d9b9d38a4400fe02bb95d2fd99a"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 149224,
+      "sha256": "0d32aa73c1086eba8f51b7aef72b2ec400b7e4f7eb84424fd17321fbf4b10329"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 149490,
+      "sha256": "0accdb2ca17bc3fb7b269f52316716dbc716eef300587c76e1c6dc9123a7600b"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_seca_AMM_pixel.npz": {
+      "bytes": 148222,
+      "sha256": "46112e86cebd769d23701db0b6661ae363998ddeb30eeb8b32563e773c77c472"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_seca_NINO34_pixel.npz": {
+      "bytes": 149761,
+      "sha256": "c4cb61198bb03060e776e12311bd606df4821e15b2b794760107efe9afe336d1"
+    },
+    "resultados/completo/pixels/RandomForest_ENEB_seca_TSA_pixel.npz": {
+      "bytes": 148869,
+      "sha256": "69250ca170ac912fb49b72234f5243ef9ab479dbf71d6322ac72e29a7f7682d1"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_ano_AMM_pixel.npz": {
+      "bytes": 353661,
+      "sha256": "162c7936ac2a73920da001d952092162af2822f88d94616a29dbb2c740033001"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_ano_NINO34_pixel.npz": {
+      "bytes": 358597,
+      "sha256": "58af57f5e5e01231c686adbed5e192adf04c164049ee6d383a5761d2f0290c75"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_ano_TSA_pixel.npz": {
+      "bytes": 357620,
+      "sha256": "6119dcf8fa3b9c3871086f067ea5d110cc33c524653e325b970d644833abad5b"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 355193,
+      "sha256": "a7287eb96086088a6eeeab6e033d59719f63075f3e25c44bc695be430cd37baa"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 356177,
+      "sha256": "58797763c6c895c32f89b522786c63fc5c61ee41041cf7881ca1c119696df502"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 356853,
+      "sha256": "ae675b21cb292f379bcbbda1dca321fabc3e3a283003ee074e8e441bf316ad88"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_seca_AMM_pixel.npz": {
+      "bytes": 356782,
+      "sha256": "052a1edbee214e0939fa7866311eff4263be5e0ea78ddf1e338c3b0480417b55"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_seca_NINO34_pixel.npz": {
+      "bytes": 358342,
+      "sha256": "fa9ecabe8c01140a06363dfe64cb2af8287d4fcf2cc56877e76be1bd0baa5cc6"
+    },
+    "resultados/completo/pixels/RandomForest_INEB_seca_TSA_pixel.npz": {
+      "bytes": 357977,
+      "sha256": "4e13ede19dafbc5238fef4c32247f3642b3de62addc498f3e98170a8e34d6b7e"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_ano_AMM_pixel.npz": {
+      "bytes": 371886,
+      "sha256": "084f86bd11ca83aa6188a3ce88e8572d9a1c54b6757423c28fc04f0ba62ce188"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_ano_NINO34_pixel.npz": {
+      "bytes": 377855,
+      "sha256": "8c8318800b4cef133343b419781e7e61a8b8b55be350d1575a2820429c9632b2"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_ano_TSA_pixel.npz": {
+      "bytes": 376968,
+      "sha256": "6d8872ce200114932a47adf7404b095b4d43756a6ae6c0a90ac246946d9df2a3"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 372275,
+      "sha256": "e3c47f1bc04185b3fb4a968b7fc87c46ca36a893dc8e08d0015c496f5c2a7952"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 373737,
+      "sha256": "95ce6b34abd370c6b23bfd2bece5d2186d626cf3a25eb6a5ebccfb54cb3b1a59"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 377150,
+      "sha256": "a1bdb9bb58c60d90bbc1d87f5e7c8d91e8c95004a52a9353de5a1fe07debea41"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_seca_AMM_pixel.npz": {
+      "bytes": 373282,
+      "sha256": "53a9b1fc58f14a0928534dbe3680c9bb2c1e9f38b2ab0684100d341b3392e33f"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_seca_NINO34_pixel.npz": {
+      "bytes": 377999,
+      "sha256": "ce8feed340b286806eb2483250ce858fafb586435391bc074fa779628c702714"
+    },
+    "resultados/completo/pixels/RandomForest_NNEB_seca_TSA_pixel.npz": {
+      "bytes": 374221,
+      "sha256": "741df9cbeae521aba945f1895271cf2e9b20f48e6ac0abfca4ae68a2d476467c"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_ano_AMM_pixel.npz": {
+      "bytes": 145989,
+      "sha256": "b18955c81ae84bf03763fb33d6f6058186f990d18b69b40dd45efbfb83869cd3"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_ano_NINO34_pixel.npz": {
+      "bytes": 148587,
+      "sha256": "24ec14715bb0531a24bc74267109a3ecf8376e0a26157d09e92fbbf6932b1453"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_ano_TSA_pixel.npz": {
+      "bytes": 148281,
+      "sha256": "d63918cadb75f12ab5e52c401ecc5b99a3c6325ac44d2a7b8d32de1d4262a1cf"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 145777,
+      "sha256": "3d9ab0b8a0cccf39cc8b60e135f29c0efefc7ee366e6d3d4030625a8f348253d"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 147921,
+      "sha256": "d9794bf56ccd489f931cf79537ec01a37b99978c2c80b0b8af1ea7c4f2b7d09a"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 148116,
+      "sha256": "054a020182a041eae07965f541f5a8a1b22354668ca5f3fc20d75964f04202aa"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_seca_AMM_pixel.npz": {
+      "bytes": 146251,
+      "sha256": "980b52d1112a2ab2ee61d052fe283cab3e7acd1d5513921989d33b49e2ba9ba9"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_seca_NINO34_pixel.npz": {
+      "bytes": 148316,
+      "sha256": "18fbd6da0ecb18a9012cfc7801b96b74fce811601a5af1f2b52cc28c46ac644a"
+    },
+    "resultados/completo/pixels/Redeneural_ENEB_seca_TSA_pixel.npz": {
+      "bytes": 147287,
+      "sha256": "2bc3e6115e574bde1707b0110b0a3aeae49520d74096ce7075ff9fc615a9b956"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_ano_AMM_pixel.npz": {
+      "bytes": 349909,
+      "sha256": "39dd17473491bb26f5f43b3b564c37bf485708d22f36c6dafe33be098168e8b8"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_ano_NINO34_pixel.npz": {
+      "bytes": 353881,
+      "sha256": "79aac29f9623fe4bef41da9d5682c9194e2313efc7b093a3a5bf19908fc8647a"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_ano_TSA_pixel.npz": {
+      "bytes": 353379,
+      "sha256": "8e3e24ee3b0081d32441614f5b6dfbb3293ea1eeac5f704198db34b90f7cc272"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 351612,
+      "sha256": "3676828867d517edd61efad20ab6ba9aae844316456fcc3993a42457c70069fd"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 351043,
+      "sha256": "0c585af3fcbca93abc2228be1a57c6d3309841c53a4c21c86e4b5e13fa6f6cf5"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 354007,
+      "sha256": "073b6066d194721e55cc48ce25d3b421fd536e8e7508b3be73f1b802fa04ffd9"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_seca_AMM_pixel.npz": {
+      "bytes": 352471,
+      "sha256": "7af584e35e9d76324a8e839be7ae659c17532beb71790ff57c82c8955cf4af0b"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_seca_NINO34_pixel.npz": {
+      "bytes": 354134,
+      "sha256": "6de467cc2708bfcd387353d7a55f6907443f472798320e7c83af66841f1898e9"
+    },
+    "resultados/completo/pixels/Redeneural_INEB_seca_TSA_pixel.npz": {
+      "bytes": 353958,
+      "sha256": "c6b317a5ca9202133dab645f919c9ca3829c6b687df1ff226231e7f3a7549520"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_ano_AMM_pixel.npz": {
+      "bytes": 367693,
+      "sha256": "87b1fad762d88779af2893f3a382c2f992b1871ead025e77c0a75b36e10101df"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_ano_NINO34_pixel.npz": {
+      "bytes": 373529,
+      "sha256": "0db8406345d83ab1a193cacb8c484183391d1d8d6148c7470f7a897ab7727674"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_ano_TSA_pixel.npz": {
+      "bytes": 373237,
+      "sha256": "5998ac7634676d24ebcd3a9453abcf0c38f38d637418cc0f97cbe9755ab874ae"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 367594,
+      "sha256": "b0fb8314fec579811cd1310f8f4e6119768fbe5c9b239ccc95ccaaf4d0742078"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 371311,
+      "sha256": "da68c04a296d099683cd669dbcdb9e5e7b742a6732cc32b7f48ba800c8766556"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 374667,
+      "sha256": "3fe5eb19ef21be8b984981c10e0abc6b2ada9e1650683c7d3a733f412c035fb3"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_seca_AMM_pixel.npz": {
+      "bytes": 369195,
+      "sha256": "9c417f48e0316f09c1bad81dbac2947201b9ef6e46849818a13aaf3225ae7abb"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_seca_NINO34_pixel.npz": {
+      "bytes": 374467,
+      "sha256": "f74989be1ddd9cba5a817a22c1ee837898402b90aa72da428274b1a5c7027598"
+    },
+    "resultados/completo/pixels/Redeneural_NNEB_seca_TSA_pixel.npz": {
+      "bytes": 370144,
+      "sha256": "26d68e1f8e4e1f0355e560387248b02de03f288c89125ff28de3a6cef7f8d712"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_ano_AMM_pixel.npz": {
+      "bytes": 145194,
+      "sha256": "e045476c0ee44fd18fdb597f248f876078aefd8f4e26f9372d729c76e3757ec5"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_ano_NINO34_pixel.npz": {
+      "bytes": 148213,
+      "sha256": "f5be5d8243dbe548b07ec547ac51f75d873c6f2bacbb0416091485bf56cbb2fb"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_ano_TSA_pixel.npz": {
+      "bytes": 147980,
+      "sha256": "7df624e0c4e7b6967c76da0387065f4495654ebbdb139577cd935e3dca84adb0"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 145072,
+      "sha256": "c9e610bbe94958622990df98255ba11e8309deb71863bdca1820b7b190ac6411"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 147753,
+      "sha256": "05ffb246aca56c3268664dfc11f405db3dc649672de71fa8200e0b379695020e"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 148033,
+      "sha256": "17001131a497af64fce39fe90fac15e57953fda51cceb9bbc8de3929dd8f8d82"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_seca_AMM_pixel.npz": {
+      "bytes": 145740,
+      "sha256": "272b1e3136a3f6e031c0791bde6592dd59768611361b92b5d5b3646e0bf3c3bf"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_seca_NINO34_pixel.npz": {
+      "bytes": 148052,
+      "sha256": "102f544e9e35e499353fb77c942a5da69dc145b4929b5e408818be6c73028ac7"
+    },
+    "resultados/completo/pixels/Ridge_ENEB_seca_TSA_pixel.npz": {
+      "bytes": 146905,
+      "sha256": "56e8ade12608f6b21c5ec3700f89eb60e550adc6d022b473e581892c439a09ea"
+    },
+    "resultados/completo/pixels/Ridge_INEB_ano_AMM_pixel.npz": {
+      "bytes": 347707,
+      "sha256": "fcd96d9c353827a659bfeebcc8d651de38a921e7d192442ab99ed3462ea8214c"
+    },
+    "resultados/completo/pixels/Ridge_INEB_ano_NINO34_pixel.npz": {
+      "bytes": 352005,
+      "sha256": "b5975123794e502ea345c31e86a9d460ec806819e190f8f328d95befac516ac1"
+    },
+    "resultados/completo/pixels/Ridge_INEB_ano_TSA_pixel.npz": {
+      "bytes": 350475,
+      "sha256": "16d1720d8a8b55691bb1bad6d2afd9ebe81ea101ed14a0072b9cfe5e2aa69a47"
+    },
+    "resultados/completo/pixels/Ridge_INEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 348791,
+      "sha256": "a71e2a700625b0b31bf87507206edac0344efd3703443115cde5cf1df667b834"
+    },
+    "resultados/completo/pixels/Ridge_INEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 348899,
+      "sha256": "88c48f7560a3b089a2fcc716dcb1d8873da28e101b1cd39be4844af67127e9c8"
+    },
+    "resultados/completo/pixels/Ridge_INEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 352531,
+      "sha256": "0453fafcb69539b3fbd2a7c31180992b73cef2c01a623d6a41dbb9dcdb7bdbd4"
+    },
+    "resultados/completo/pixels/Ridge_INEB_seca_AMM_pixel.npz": {
+      "bytes": 351428,
+      "sha256": "d54fd8888e4fbb0323c02094261d28eda8202774b7a2e8361212100896294b95"
+    },
+    "resultados/completo/pixels/Ridge_INEB_seca_NINO34_pixel.npz": {
+      "bytes": 353041,
+      "sha256": "c1d8b609c0042cd43773d26aafd20b82cd0220f5fbd47d3e12fc586694c3fcc2"
+    },
+    "resultados/completo/pixels/Ridge_INEB_seca_TSA_pixel.npz": {
+      "bytes": 352580,
+      "sha256": "57a8e2bb0dd6dd06aee343e5bf873049a138219e56f9306f933ea1590b8399fb"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_ano_AMM_pixel.npz": {
+      "bytes": 366249,
+      "sha256": "c79afa72f73574f7a53ee27149f2244650f58e5968b813fde4226d58998eb306"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_ano_NINO34_pixel.npz": {
+      "bytes": 373096,
+      "sha256": "89cdd5c50082ccf7b68840c2af614f24e3aac4c97d9e42963ec61943152efb00"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_ano_TSA_pixel.npz": {
+      "bytes": 372385,
+      "sha256": "ce800be80cf583cff0ae491c2a2f491b2537e2ba14a1f4bf7f2256eab1edbd4e"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_chuvosa_AMM_pixel.npz": {
+      "bytes": 366727,
+      "sha256": "f88254f61a150733432f24e342a072d57041a1a70c6ce3c17f3cbfdfa2170f99"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_chuvosa_NINO34_pixel.npz": {
+      "bytes": 371375,
+      "sha256": "1d61e5bff7f9b25b8c2d099173271984f079da03677fd5de836ab9ec9b24bec6"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_chuvosa_TSA_pixel.npz": {
+      "bytes": 374359,
+      "sha256": "0c533f511235c1f7af2773337b43a0618d6f10c62d4946bcc48b09c87d955e47"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_seca_AMM_pixel.npz": {
+      "bytes": 367688,
+      "sha256": "b97d389a8281c3693cb387d4038472384db8af2c331cf6bc64ddbd3587465364"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_seca_NINO34_pixel.npz": {
+      "bytes": 374201,
+      "sha256": "35bef3a555478e5c19960c3836ec1c258f083283137ea37f8534543d87493533"
+    },
+    "resultados/completo/pixels/Ridge_NNEB_seca_TSA_pixel.npz": {
+      "bytes": 368542,
+      "sha256": "fbe1177a606c9708fe49aa266127aad85c4ca7184f1a9f2c414563cb9541d43a"
+    },
+    "resultados/completo/preditos/amostras_ENEB_ano.npz": {
+      "bytes": 2628,
+      "sha256": "a0b6acbcbf36e9a74ba5489d4fb5fd1b003dfff6466c57d18093c365cca761ec"
+    },
+    "resultados/completo/preditos/amostras_ENEB_chuvosa.npz": {
+      "bytes": 1966,
+      "sha256": "d1d522ca1c79a39334eba80b51c18fce1003b84bfd6ead2cb1f641c4009a22ef"
+    },
+    "resultados/completo/preditos/amostras_ENEB_seca.npz": {
+      "bytes": 2200,
+      "sha256": "16243118906517d617c44688c19e0932a6ed938ccb985237efdbc1c3e411806d"
+    },
+    "resultados/completo/preditos/amostras_INEB_ano.npz": {
+      "bytes": 2613,
+      "sha256": "6e117bb24f5a28e5e8398a4432d85c9d51c7b55a17b141f352e8fa8ee7e6290c"
+    },
+    "resultados/completo/preditos/amostras_INEB_chuvosa.npz": {
+      "bytes": 2097,
+      "sha256": "563853dc7887464b180d171ef3ca58a771ae585dfb2e9a0c3dc9e36e846701c8"
+    },
+    "resultados/completo/preditos/amostras_INEB_seca.npz": {
+      "bytes": 2083,
+      "sha256": "62b5f7ab636067bce0a758f0dbb0a861c76421caeaf95000668a86ffc16bea5e"
+    },
+    "resultados/completo/preditos/amostras_NNEB_ano.npz": {
+      "bytes": 2674,
+      "sha256": "0ceb4c622dca63f60bde4d73231242d68f9a693418dc23dafef01c970a1d2f93"
+    },
+    "resultados/completo/preditos/amostras_NNEB_chuvosa.npz": {
+      "bytes": 2055,
+      "sha256": "fb4fa5f493301a03fad2a77aae5094ccb0038d4b5de284a7c3d9c95ad4fe365d"
+    },
+    "resultados/completo/preditos/amostras_NNEB_seca.npz": {
+      "bytes": 2199,
+      "sha256": "5137fb2c4d4aade03d4449f7930b50453958e85c2eb2aa4f0d01832690723dc5"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_-_N.json": {
+      "bytes": 135,
+      "sha256": "488d32557e3b7c71e1a869e28b9d9acf642a9477d2b954854ab2c72db80d2db2"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_-_N.npz": {
+      "bytes": 236,
+      "sha256": "b74795b248f58faf7254cea514e68967e763395a9b22b4deaf82b1f3101d855a"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_AMM_N.json": {
+      "bytes": 583,
+      "sha256": "3d8b75cc7fb992cac7122ab7a80213a0c75dc76931745e3acc55d813dc98d680"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_AMM_N.npz": {
+      "bytes": 334,
+      "sha256": "cc049e39afc120d4c96e8a7521b4e998961518e97f50aa3b77dd6ecf116a3d40"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_NINO34_N.json": {
+      "bytes": 585,
+      "sha256": "6192dacd7b5781c0ff314a2bee8b5e859bc17f8447dff40232842684036056ce"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_NINO34_N.npz": {
+      "bytes": 320,
+      "sha256": "f2d5cb2e6265707fc979f63a933a4143adaa475669dca225593ec9bcdd3472d3"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_TSA_N.json": {
+      "bytes": 583,
+      "sha256": "100e74105b0397298816d50195db311fb6092335a8ac8de53faec8503aeaed47"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_ano_TSA_N.npz": {
+      "bytes": 342,
+      "sha256": "2994ad77d13638c4acd39690a4f5465f985eefa45fb70fd47e62425b14b061ed"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_-_N.json": {
+      "bytes": 135,
+      "sha256": "4913a18e7718857ca7948daabd0565a69c889af153fefc00df6d991c10e42145"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_-_N.npz": {
+      "bytes": 222,
+      "sha256": "3ea6ed6672db0f9812f64cd598b808e915d66160d157dd96ea540f883ff58a91"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_AMM_N.json": {
+      "bytes": 585,
+      "sha256": "dcb2c48f21d984381f8882ae7352b980d324bc2b429834d5e9e0f5c03262a1d5"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_AMM_N.npz": {
+      "bytes": 291,
+      "sha256": "95d24f0ab143db27a42bd23fa099a2b99be085b3cd2107ca9e78a00d08618242"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_NINO34_N.json": {
+      "bytes": 582,
+      "sha256": "25b8dbecb3431363c3d5382642a558ecee2fbcba0c90e25489d92d2153290912"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_NINO34_N.npz": {
+      "bytes": 289,
+      "sha256": "f6eae389c337dc98d952971f7bb04a2b4934178ce0a62b033257e3ebec1d7d4e"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_TSA_N.json": {
+      "bytes": 584,
+      "sha256": "9cb71e75852e0958d0b5672f3a1e0936905b71c9cc4a18a61426ca04152cb842"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_chuvosa_TSA_N.npz": {
+      "bytes": 301,
+      "sha256": "9089478079be8d183bbe16f00ff7fd83c812a230bccfd2a448b5ee0aa7e9cc28"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_-_N.json": {
+      "bytes": 135,
+      "sha256": "e0e176124440b06c81e257798bd53dee9aad4063dbac3eb66661cbba3903d7e9"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_-_N.npz": {
+      "bytes": 225,
+      "sha256": "ac36f09de436820aa6c67c2a4a8e1d6fc4c672471aa19e87b57880895bd584a0"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_AMM_N.json": {
+      "bytes": 586,
+      "sha256": "2b945a330f6492c08fd20aff88b300014bb17d78c655ab8a08c9f2f849317ff2"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_AMM_N.npz": {
+      "bytes": 310,
+      "sha256": "a16828a30ddba4ec11ba264910632727684759bafe8e3ce0f17fa1ccf79ac1cd"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_NINO34_N.json": {
+      "bytes": 589,
+      "sha256": "d99d1625576d441205b2892b7c331e0daa20c25762cd9a8462a23d7b055c140f"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_NINO34_N.npz": {
+      "bytes": 297,
+      "sha256": "eee36f839b362a40614e88ca9b11a3ba180054893fcde2f4b22c4a05fddafbc7"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_TSA_N.json": {
+      "bytes": 584,
+      "sha256": "bc57c2173ff26bef3c16f5215cd9a6e29367d75bb0946b75f030c3ec308173b9"
+    },
+    "resultados/completo/preditos/Climatologia_ENEB_seca_TSA_N.npz": {
+      "bytes": 311,
+      "sha256": "fa00e7b52d31fd3cc3822c24081e3ca202270b45ce7fb36d7951c3805942e330"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_-_N.json": {
+      "bytes": 135,
+      "sha256": "2ceaadce105953affcf3e93b3c2e04da831cb91dc6ed8622f44890813648ae09"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_-_N.npz": {
+      "bytes": 236,
+      "sha256": "b74795b248f58faf7254cea514e68967e763395a9b22b4deaf82b1f3101d855a"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_AMM_N.json": {
+      "bytes": 581,
+      "sha256": "9af2b262e7b5b4ed3d32770d057082df5b18eb55cfea51fc77edcd37da3f0847"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_AMM_N.npz": {
+      "bytes": 343,
+      "sha256": "99e2d8bebef221e1ab361d43ad70fe402e684fdb05c3832aacf6baa7f33b1dd5"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_NINO34_N.json": {
+      "bytes": 587,
+      "sha256": "f4f955b7631eb43c8f7f2ee59a89c58cfe76361bfd7aa225201de9d8e0c65264"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_NINO34_N.npz": {
+      "bytes": 318,
+      "sha256": "fa61271a7aabf34b5aca01a6a596d97a118f59de6a304c3c56acdd2ca26ee8b9"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_TSA_N.json": {
+      "bytes": 587,
+      "sha256": "848e1a5d5c4579443a7b08ee3248fb7d05a5bd2eb41d40c45ed1f338f530dc54"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_ano_TSA_N.npz": {
+      "bytes": 336,
+      "sha256": "563f61443a13af149d0246845d2fadc02fb2c74a57572abf93ec4e52e828bcff"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_-_N.json": {
+      "bytes": 135,
+      "sha256": "76fc06bed4a88c6dff7e78bba5f922af95b039808bcbdb02ba97f531bb8653e8"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_-_N.npz": {
+      "bytes": 223,
+      "sha256": "b3b0872bbdb6569eeafd7b6c8803eb371ff80770e3082aaab569ee9190c9c2cc"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_AMM_N.json": {
+      "bytes": 578,
+      "sha256": "8d6315b4f52188e205e2c574a69ac09655da6eb1119a01b84becf6e1b860a6a3"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_AMM_N.npz": {
+      "bytes": 307,
+      "sha256": "90351129dd766e16d53c806feeea2932511fb08d1899c1e2983b66909e448f8b"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_NINO34_N.json": {
+      "bytes": 587,
+      "sha256": "6d0ede85d85288e4f31dafb0ce723e2e5e3ea3671fbac9451f19beaca8bf54f5"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_NINO34_N.npz": {
+      "bytes": 291,
+      "sha256": "f8db9e9450ed9176926cebc95c29e26fcec886b23fdd832b001ae3e222d97aa8"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_TSA_N.json": {
+      "bytes": 586,
+      "sha256": "80075b85d7801e1e34dc9fc33b76ac7febbf2a9d95dff71734416f9185856ce0"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_chuvosa_TSA_N.npz": {
+      "bytes": 299,
+      "sha256": "481f8d4fc9381c341459cc14c49c0df7214f23e6e8878c8c242a6686ff3161c3"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_-_N.json": {
+      "bytes": 135,
+      "sha256": "22fee5c135e1cd625d4ae6b8e92a25a043c940f3a863754807b0715d289a06b8"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_-_N.npz": {
+      "bytes": 223,
+      "sha256": "b3b0872bbdb6569eeafd7b6c8803eb371ff80770e3082aaab569ee9190c9c2cc"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_AMM_N.json": {
+      "bytes": 573,
+      "sha256": "35ac9800b4c4c1144bee6f321717eb121c0489c5305270e7d81c58f6f90cbc80"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_AMM_N.npz": {
+      "bytes": 296,
+      "sha256": "6f2656aa245bbd6f30b071a89149caf7d205e40bc00ecc7d6e863f9d80cd056b"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_NINO34_N.json": {
+      "bytes": 591,
+      "sha256": "74e5482e99695f787e9d122a60bd0a4c125cb79d5856457416d01f70dc296f58"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_NINO34_N.npz": {
+      "bytes": 302,
+      "sha256": "8a24b2144a9df7f1ed2f5f75f394269e1bfee3f2a73fb8a22f9c91d7211c2914"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_TSA_N.json": {
+      "bytes": 587,
+      "sha256": "f55f339e8d376e1ddacd8f2f6a94f39bcacf3d51b000680fe08312d02e4cdfb7"
+    },
+    "resultados/completo/preditos/Climatologia_INEB_seca_TSA_N.npz": {
+      "bytes": 279,
+      "sha256": "63f4bc56488f1e09c95582e07fb308e44584f8a339017e5ee970cc43afaedd08"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_-_N.json": {
+      "bytes": 135,
+      "sha256": "5262bfaf120e6e6a97ad70472ede30cc16a259c8c559b969d771da8a80f9d47c"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_-_N.npz": {
+      "bytes": 236,
+      "sha256": "dfe17ebee222a3426b352137a3a0ced83df381ff76cf9d714fbd8246791483bb"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_AMM_N.json": {
+      "bytes": 584,
+      "sha256": "2524119207458f4f30b5db2d75afa4390987b2f697a4d61e4b6f70b3183f4439"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_AMM_N.npz": {
+      "bytes": 343,
+      "sha256": "93efee0804c845b7b03323d48bd085bd64639184246f92e768133146838b0d49"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_NINO34_N.json": {
+      "bytes": 587,
+      "sha256": "0f4c3964a870773486b70939454f354df871a4c98476e949e6a647601e37c6d3"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_NINO34_N.npz": {
+      "bytes": 323,
+      "sha256": "bdcd2192d587465dd811255bfd85c690b31f1b0473f951970e9809114b6e8126"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_TSA_N.json": {
+      "bytes": 585,
+      "sha256": "c2a2ab9ffef14369d61de2a95e6b60bba0157fd4a85691b0caf3f6d89461f697"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_ano_TSA_N.npz": {
+      "bytes": 354,
+      "sha256": "b323027eb1d24229d8a9b2bd58bcf92118dac790f25ae7a62766c321a86c2416"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_-_N.json": {
+      "bytes": 135,
+      "sha256": "3d3a5891298ea4a227a992197b9faefdc3e8e0260fd2d55724562ce61968d470"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_-_N.npz": {
+      "bytes": 222,
+      "sha256": "ca28aee8d5f1085d64f128bf5c70068aef067b76aa7e0f0652c0b9956bb0b4f2"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_AMM_N.json": {
+      "bytes": 573,
+      "sha256": "c752d838a5340bfc54c651c4dd5b57d10cfb721063840aafc7cd173ecd938eaa"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_AMM_N.npz": {
+      "bytes": 292,
+      "sha256": "ccb72c5f708f2b6f9b82b6fc21bd54e735392641fa0410a23134ec365229f00e"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_NINO34_N.json": {
+      "bytes": 586,
+      "sha256": "3771a8d1cb399047cb7801b0a99a451a6a2025ce5badf5d11d77e49d01990131"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_NINO34_N.npz": {
+      "bytes": 293,
+      "sha256": "fcda394a1371dc2491428fa35b3e78e54714ddb7775b9f31c7d3cc2b37b324b7"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_TSA_N.json": {
+      "bytes": 579,
+      "sha256": "09835dcf549171227b04c8c826cdc7ab7bb24c5a41cdce37b3abb8ede90e586a"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_chuvosa_TSA_N.npz": {
+      "bytes": 305,
+      "sha256": "7fd67c337097a7fe4162917dbc08a298df28301ef791aaf69f993a4d530b9d2b"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_-_N.json": {
+      "bytes": 135,
+      "sha256": "285e68bfe111172924ba857e86cea3499e56fd79e9061c5a69d3df3f2f4daf01"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_-_N.npz": {
+      "bytes": 227,
+      "sha256": "aab7b1005d215238c23484f91b3e23af25f38ff8716ad228532694ee2949b1ff"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_AMM_N.json": {
+      "bytes": 584,
+      "sha256": "8ac8b12db100f0adcdd283749cf980c0b10e5213b1e8319814c43880f5b5df4c"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_AMM_N.npz": {
+      "bytes": 309,
+      "sha256": "ab45b1c7228c9e86ab349a4d40dd34cbfa2c8e5886067e68a2cb1adead3b5e2a"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_NINO34_N.json": {
+      "bytes": 587,
+      "sha256": "946db5c3674bb9cb8ce608d9aefc5aff08724d6a5cf9e66b1e70302e256b34f1"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_NINO34_N.npz": {
+      "bytes": 303,
+      "sha256": "eda7f55a572000c01459c449df2ee3c5919f68d985da075b8dfb39fff51e3c86"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_TSA_N.json": {
+      "bytes": 583,
+      "sha256": "8a70650ea1f2d1b593fcca7476a0e277a1664bd9938b6cd96e5ab7d041a3b145"
+    },
+    "resultados/completo/preditos/Climatologia_NNEB_seca_TSA_N.npz": {
+      "bytes": 313,
+      "sha256": "bb1775109fc8316e44f9e1a07e22247c4e2defdb7e3a88aa8adadff2d86da447"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_aferida.json": {
+      "bytes": 2449,
+      "sha256": "e95e0e6c40132c9cd360c93e9992284a60a6323bcc9de94534a903a0e0cf8b95"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_aferida.npz": {
+      "bytes": 824,
+      "sha256": "fb1e4370b72a9f7197ef0a9b5b4701950b898f94076e360f7fc6ef2f2751e478"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "4a32b82716c7a2fe6b31815d242096755767cbbfdc24a2ffb293848364cdd7ee"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_controle.npz": {
+      "bytes": 255,
+      "sha256": "b0f90589361d53d92dccf2bd92f8a41d8807afbafd7c7f9761f14fc4b024bb77"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_L1.json": {
+      "bytes": 2467,
+      "sha256": "2738b2fd4df0616d09a730b2f4cd715b01b975b984c083c6e54ee1f77c7412ff"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_AMM_L1.npz": {
+      "bytes": 912,
+      "sha256": "8a90413c1b1d00e5f78c6f682504774aa6f2f083e178cb03baf25f63e9a3ae1f"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_aferida.json": {
+      "bytes": 2484,
+      "sha256": "14e167d53186daf747f62dcf78fe3dea3ec726c7e539774f299c6e24efa69377"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_aferida.npz": {
+      "bytes": 809,
+      "sha256": "9187ce74ce6caf48e400d037f75237110951c935c3d03c927c9787989f8ff14f"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "57670fa87cf82fe630282e0f5c1b9b9b910488a4220d75450b73a0fd4f511312"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_controle.npz": {
+      "bytes": 255,
+      "sha256": "38a6d9600747058a129f220ea65c6aec53ccb4babd8831fde072cab89fbe406f"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_L1.json": {
+      "bytes": 2481,
+      "sha256": "d7a2d5d94c994bda6cf49f485f90ac57b020ef77cc3b467473b8dadc83316868"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_NINO34_L1.npz": {
+      "bytes": 769,
+      "sha256": "254d9406fcba0032e5079440b7fb27183bb7dfb50eb2466e67a9cd5556858677"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_aferida.json": {
+      "bytes": 2467,
+      "sha256": "c3ef16121d9058602b9aa81332aac93b7b31752da0a53ba305450706a7189ac0"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_aferida.npz": {
+      "bytes": 724,
+      "sha256": "e4390cb3909143e0a9e40ac9d989e8089bd6e4710149b6acf776364f6c2bd380"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "e81ef3124a0a8d4a2f9681bfd4fdd4b028e35c51ff27acc72c3afbd9c270ef63"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_controle.npz": {
+      "bytes": 255,
+      "sha256": "c0cf08c8700b810a9e2aaaf5d66c8891b3d9638c1461eea9b3231c6fe6120601"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_L1.json": {
+      "bytes": 2470,
+      "sha256": "92bbfc1ba6cf8973bdbbe6a1b71c58b355ac7cbfec0e55b98f0c235f11ddc3d8"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_ano_TSA_L1.npz": {
+      "bytes": 843,
+      "sha256": "adfba8cfe8ffe1a233722b673b8313fd6c6654d51a9a3d5cf44a3abf3f96632e"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2487,
+      "sha256": "f72b00c2d9c5696d18bfc016c13794c84eb66624b931355fb7449eaad3de5e28"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 675,
+      "sha256": "76336a8fe2a6dc2debf7761b1207be8805ebf13c76492b99339b3dfbdb711977"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "f832afe7f8e23167f9a58aa6fd16224028854782bf27d4ddace6a069d80fd305"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_controle.npz": {
+      "bytes": 240,
+      "sha256": "971c6f6418e297d3578023de8016e908d0e526c33a72339413b86f1a406416bc"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_L1.json": {
+      "bytes": 2469,
+      "sha256": "cf34fc8e3e40b406eeab3003342ed99bc93289a41242dbce39b65766ad3aac72"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_AMM_L1.npz": {
+      "bytes": 625,
+      "sha256": "87aad914ee56e248ba83fcf144314dc5bc7bf887abbb399297f79021f148bc03"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2491,
+      "sha256": "4e2cf27fae11711153a43dfed09e06b4e3f0f71ea7a9f20f8d0b8cf58cb58a01"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 589,
+      "sha256": "c3dc2a3068b23bd16227fe399ca47f23ce10ddd03f9cdab2882864ad30759772"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "5301c274f61529f03a1c650694d530c9afba098eb2d2cb675e2553a887565735"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 240,
+      "sha256": "b1d4ef2fb977ee564ff36b978b586faef49058e72a67bbc2bae8c5b207b46d25"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2478,
+      "sha256": "95c769dad75b3f6fa41cf7a7ea7fad3cbcaa9afdea1d41582a22e2a3433e875a"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 574,
+      "sha256": "fcd5e64227918a2727e9cc4f1cb6b4b00e736de5e2c8519859d7cd25741bf981"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2480,
+      "sha256": "5039b39f27e16340ec54dc175374899b46357e8b0c76d6bc97331bdd4839131b"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 599,
+      "sha256": "6a8b58c722f49d67e7d38f4bb12b4287410d211255c41f91b5bd950e4f1327d8"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "efb92f9a3b413786ad234d6e210a4cdd25b6cf42e53caf82297a245b1c457b55"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_controle.npz": {
+      "bytes": 240,
+      "sha256": "f9b430f8b371bc297c5fc90122787f13ff96d2800efab3ba1b557b017475b60c"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_L1.json": {
+      "bytes": 2465,
+      "sha256": "612ff72f3591563d66e89e7cbae9864e91e5a28a76843cee73bf49b30231b1cc"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_chuvosa_TSA_L1.npz": {
+      "bytes": 643,
+      "sha256": "39c02d161e83e02aca5b4794714e6783af4c177a5441c77d054a73677fc6ce9c"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_aferida.json": {
+      "bytes": 2466,
+      "sha256": "93b6f31ea6b3fb8e57c6a7736e52dd494e2ebc69699653893cbf9bd39d884dc5"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_aferida.npz": {
+      "bytes": 721,
+      "sha256": "a282381304eff329812af8944cd00f9dfae7e8981153e8ce3811d227bf982dcb"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "90afd9eb628540807c6390b3d5f5dab18ff4614df834a43112a48f7cdc410e6c"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_controle.npz": {
+      "bytes": 244,
+      "sha256": "9bebf5891969ea13692c3430cec2e7aa357471e18e0a7b858529daa9b71319dc"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_L1.json": {
+      "bytes": 2462,
+      "sha256": "b5270946e279eff4090d971672570d5c895fbe5b61722bb3f2e6afa35e231843"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_AMM_L1.npz": {
+      "bytes": 580,
+      "sha256": "fe589eea4fa5dfd1ee32dc2a70b09f6bb403b6af784fcdbe5f257f9f0b95474c"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_aferida.json": {
+      "bytes": 2477,
+      "sha256": "d4e922932ff4640e88ee089f29536d8486fa08486ee19774c44db2feb3305444"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_aferida.npz": {
+      "bytes": 621,
+      "sha256": "84eee92413cb6e8693fb83556474b2864484141e05c97c373610dc1c14b412d4"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "88ec00067c916bdc3c3de7c04ff044f932583d02dbd782f567dd632357067e01"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_controle.npz": {
+      "bytes": 244,
+      "sha256": "263ab18c7a0bf3dce1ff304a5c06655a52e42be6b1426c3a58aac5af457892f3"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_L1.json": {
+      "bytes": 2483,
+      "sha256": "391ceec1a93d87fcb7a796ed9408cfc708440638905cb0149d01a6cdf060b4ce"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_NINO34_L1.npz": {
+      "bytes": 805,
+      "sha256": "8ddadb1df5f39e40d8eafef07eeba14fe1a4e8477f713c6f90820a26edb06aeb"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_aferida.json": {
+      "bytes": 2476,
+      "sha256": "b31a988d24b090d76c7659977c449f9453a75e2448cac7c418dc6ac22db17171"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_aferida.npz": {
+      "bytes": 628,
+      "sha256": "b4a45427e540c6ac84df0c115f72e38451367e0330cf557d6e3e120953da636c"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "16bae271d3b720edba93ceafcfbc7f7a02312b69949fe3641fd4d55c6a7beb08"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_controle.npz": {
+      "bytes": 244,
+      "sha256": "91b07a2057d89b435621d89d42727846506e3b671b40b9e5e23638c40c83fafc"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_L1.json": {
+      "bytes": 2455,
+      "sha256": "f93ece063bc9687fa0c2137dad51170131e6456c48b519c67dea8a4dda33bca9"
+    },
+    "resultados/completo/preditos/RandomForest_ENEB_seca_TSA_L1.npz": {
+      "bytes": 606,
+      "sha256": "dea65cece5ffc3ec65d1a35972985c7d6d1b1014f6ed08d9927faab49d466c84"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_aferida.json": {
+      "bytes": 2477,
+      "sha256": "4b03568f54f8847c20056949c6764c23c8606fbfb8a51adf3278afc7c4bead01"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_aferida.npz": {
+      "bytes": 951,
+      "sha256": "b056d81ed016d71af14d8dd81ee0340fa94fbae74ac4d57e0f54dd3783c73f7c"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "a7e71b145fd9820712e0e21957d74586548689797a9202684007c5e3a655753e"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_controle.npz": {
+      "bytes": 255,
+      "sha256": "22f347b2694fd8ab084967d6a970a936eff7ce9617ea9d1d37446f4a1f7a6caa"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_L1.json": {
+      "bytes": 2458,
+      "sha256": "eecb6e0a85cfffc430cfccfb4f4776ac2b74834e692b88dc8200e91742fa9625"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_AMM_L1.npz": {
+      "bytes": 914,
+      "sha256": "10d421d8109c38b0bfc4eef9bca16a631ddd37f99a012a4844b8ffd2cf65ea84"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_aferida.json": {
+      "bytes": 2470,
+      "sha256": "b500fe4418077a9ba344dde4972ac87305f14b4d8919132858f866061e882d88"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_aferida.npz": {
+      "bytes": 897,
+      "sha256": "bdc3ec1bdeea84e8b29b8c41d6166bf91ced25dfed264d3fc13835ca25f704ba"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "3bd18585f8cee3f8189b8c9c5e4ee0e0cbce606fe3705153bdb1f4f95fb65100"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_controle.npz": {
+      "bytes": 255,
+      "sha256": "6385bbb2e93bc7812c50fd5b7e97008aef87c78de47e0247aafe643e8b3fb3c3"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_L1.json": {
+      "bytes": 2475,
+      "sha256": "b631cb5c8906af624862073ddad6cc781835d4e431fa0792a34e29fcf5f820e4"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_NINO34_L1.npz": {
+      "bytes": 914,
+      "sha256": "60024fe118b6ebbd987d8d594a1c18bfb09560ad2439b9be08cd3b12e1034364"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_aferida.json": {
+      "bytes": 2458,
+      "sha256": "6a0c972d031e462859f64de5214ca13ecfa21d1cb9286b243165b40110ed4bc0"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_aferida.npz": {
+      "bytes": 785,
+      "sha256": "3b85c823c04e44ffd26d6adc3ba22a30f3a9590ba451bcbc780429811d052c9d"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "5f1327554438adc67b2be109399762fdeed548efa1574e2fe3bde58172473fcc"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_controle.npz": {
+      "bytes": 256,
+      "sha256": "d7897ab3b705dade06da4e401abd3f1e5d0d1dc2d5b3cf6e3c3f70ca4f8c5fad"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_L1.json": {
+      "bytes": 2474,
+      "sha256": "407f3deb0c74d55d0c1418f0b19056fab8796159d9caf5fe6daa5bb449515081"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_ano_TSA_L1.npz": {
+      "bytes": 758,
+      "sha256": "61256ee15e03a490015286112c4a7b6475f8f73741bd538de557238b7518f8af"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2476,
+      "sha256": "68ee2c8748eb452bfde90ad1df19a77abe57e7a468c8c8f7905f3148b68b41de"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 616,
+      "sha256": "2df67333851880103f728ddf944ca7d110fe150009d707a990a1df6babc017f0"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "0764cf87aa9dbf28e1a5cecebad63f27751492ae6f9672fc2aa5c8b51da8e02c"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_controle.npz": {
+      "bytes": 242,
+      "sha256": "f3735988ae152c9ecc5f74ce86ba701b5426e4a272592227e9b027b12daca841"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_L1.json": {
+      "bytes": 2466,
+      "sha256": "34327dd170b0c69324962a939d4072cb5a76a9b893852c5177332c2eb8b205bc"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_AMM_L1.npz": {
+      "bytes": 657,
+      "sha256": "14db7ef9ecba9bb6e69990b97a3c287e7eeaa7fa4b16c96d91d1382d9d51775b"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2489,
+      "sha256": "6bb5ebd4a0928e6b3f25b6c8fca17c95fe4ccce45f807e01b68b27d09d360387"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 594,
+      "sha256": "d267eb1553a509ae82e05ce26486483a3ec5c1764713a0a5f9fe0d0a41fa29df"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "110670e77bd9360ee87c58ad863ef449718f4406f662d8edc1ec8fda20f8ddef"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "4df3291577c05f85cd357db46e1fdb8fa617fccd575062b03cd7d1c6aa93c427"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2480,
+      "sha256": "5296e375a20bb15f469919a229ac5f9c6833319ccb5012cb1e7f48f95f3e8eb8"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 578,
+      "sha256": "0874a1ba179e4497b5fdca5e51dd193d660e194893f7c0c369ed7c1e5c79ccaf"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2485,
+      "sha256": "95d6212da2cbd748eb3cad0e79dd93a795dcc62b2426914c171276c863c7907a"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 549,
+      "sha256": "4be960154bd997d0ed1427b6bf1f863111423b4ed9a54b5532b7317de394eb34"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "45b9cf8433c3f1b96d28abdd0c9711eafb5c708e9f7a7f9b5b85f43942ad77c3"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "fc7277996af1b9207d1916301a0902b3a12645ca3a3d0cec20004d3506de9c3c"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_L1.json": {
+      "bytes": 2480,
+      "sha256": "f73c7b2fea1ce70230fd3f3f9e8e58e7a573f01074aab83771d3f30638d7390d"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_chuvosa_TSA_L1.npz": {
+      "bytes": 632,
+      "sha256": "c78dc3ff2ac3e45babd246182b21efee482603414797eab42288a06e7d40dcf9"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_aferida.json": {
+      "bytes": 2442,
+      "sha256": "ba1cf8c960838fcd08c68199c0b11cc9f1f5cab81802e92e6eef395264127b31"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_aferida.npz": {
+      "bytes": 748,
+      "sha256": "92bd51fa781493c6326c3bbe5bfd7b64175bbf947c1df7b6043b01d62c762ffe"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "7556a0b4edf12a7a811a52bb10f034749ced87ed89f6cfcfff82e315c47c231f"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_controle.npz": {
+      "bytes": 242,
+      "sha256": "ce5d33c8a8908ff6a213c8d1bbe865ff2a422151ce3c2f14c8e38209a70fe414"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_L1.json": {
+      "bytes": 2469,
+      "sha256": "1a9113e22cc47996489177b5c9a2aed044bc1fdb0f8b74222acd7d47acf883c4"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_AMM_L1.npz": {
+      "bytes": 651,
+      "sha256": "1cfe545281b0974adef6fd907cda43d73689ecf0f6444652074411d4320dd5e0"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_aferida.json": {
+      "bytes": 2488,
+      "sha256": "bbe715d91d8bcb1570710da4a039c324b803908b5e9d01e034a0e8d8c3f2adc4"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_aferida.npz": {
+      "bytes": 592,
+      "sha256": "bb94962c3edcd39b0bf0640ded3a238d367d8fdc8a1180ae70246ef36cb9d95b"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "b5c900594c7911335273a18300ba1104ad73535cb626fd3d4153572470cda558"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "30063994d74279d3aad0fe631b07f6ca93d41868576d64a4c097fdddcf462022"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_L1.json": {
+      "bytes": 2475,
+      "sha256": "b239c67c4dca7616bc3c7bbf474ebf87a9a89e8700bd6f00ce154220d0a376d4"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_NINO34_L1.npz": {
+      "bytes": 756,
+      "sha256": "df5e4d5dd106447f79bf9b952ecc38e590a5b822f10c9db4661da7099c03c3f9"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_aferida.json": {
+      "bytes": 2486,
+      "sha256": "6a5cfd7de7ee8a6171972214a75df4ac9b5de57f40e992c3af2ac6a47074df78"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_aferida.npz": {
+      "bytes": 635,
+      "sha256": "dffb0da52ce402c10bf15c4bd7c96a88867011361b1cc94f8063f1fb444d47d2"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "e19a1e302dc2a4a46b332cdb390622c5fad83dc023e613fe4a554a84981ac6fe"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "1e5f395a3f4d314dfdba46bbdaed0a28fab3392cc9c9cb57551ea922b250e2bd"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_L1.json": {
+      "bytes": 2446,
+      "sha256": "61357e65130c3adedde21e6c74b4dbac76445d5d2536c707c0e702ed2487f73d"
+    },
+    "resultados/completo/preditos/RandomForest_INEB_seca_TSA_L1.npz": {
+      "bytes": 723,
+      "sha256": "b0702410690cff5d4a0d591ab035e1b1fa678ef2e6e1a81adf24fca9ca1d1d04"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_aferida.json": {
+      "bytes": 2472,
+      "sha256": "e68a3f6b0f8840fb27f9f154c9a5deaf01d34f924ff9542fbb25c471c3d10453"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_aferida.npz": {
+      "bytes": 880,
+      "sha256": "1c2c97c6161f3934400f6820216f218d00fcebd98bb4009a462be2b86ea06fdd"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "8a5471d3796c92c053ff6d1262b889251bc339d76918db82ea22552b4e8a2a42"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_controle.npz": {
+      "bytes": 257,
+      "sha256": "6fd5f2435dd8c1349cea9f9e219bb96c85fc228e79769215b4f4475918e063ed"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_L1.json": {
+      "bytes": 2468,
+      "sha256": "f4673523290f8790a3005b03a1c8f247b7ddc7fb7d59cc542971d32821408b43"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_AMM_L1.npz": {
+      "bytes": 978,
+      "sha256": "f74e5dc4f8d635bed69d95c49bd9b2f8254ed174e17f189d156a8d81f68f9d17"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_aferida.json": {
+      "bytes": 2472,
+      "sha256": "8e5be70f11ef6cf03478385040723414a75b8defec009fac79e1c02c4d654aa1"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_aferida.npz": {
+      "bytes": 657,
+      "sha256": "2ac4b73080a9e7fc83ce6ac6ec3cc97b7d20bbbe24b22c798dc6abc818285b04"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "503a7170f84a0638a60725ccec10d0586f2089c1d7c971d20fb503edb0df9d1b"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_controle.npz": {
+      "bytes": 258,
+      "sha256": "6b5ac194a961048a4dcdb31d6cf6a0c853add7153c014689f0114243f656122a"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_L1.json": {
+      "bytes": 2482,
+      "sha256": "151a010d3a45b78ebc0bde0820a788c7b31aebe65bd959fea59a31056bff6396"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_NINO34_L1.npz": {
+      "bytes": 735,
+      "sha256": "fcf32e23fec3ac8c635c0de5a30f8b2b629f33cbcb9218825b490f955b299965"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_aferida.json": {
+      "bytes": 2485,
+      "sha256": "1abe9fe0543fb3d09b0c58bf9d31927d0b460acde9d7eae66d817b95faebdb1e"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_aferida.npz": {
+      "bytes": 650,
+      "sha256": "fa7d4363e6c8225c6fefc4e455622c3425a32efb858b2a373d849b925f5442fe"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "06c3c6ab8fdb44c14dc12fb455c3001acede04220a60e7a360b484b6c17d46f2"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_controle.npz": {
+      "bytes": 258,
+      "sha256": "47293afb00edc30f14d43e4e3182a426708b4fec3aab308c8966d6c496ccaa86"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_L1.json": {
+      "bytes": 2461,
+      "sha256": "0c318c9aa4a044e567156d2ac544b9eecd4dec6480d37cb9bf55e33f6de9b8e8"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_ano_TSA_L1.npz": {
+      "bytes": 515,
+      "sha256": "8433335590e2ab22979692b4cd5bbaebc4b4ecdbb68ae6cc6152d4f3b927c951"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2478,
+      "sha256": "7522a705b40c28bca3ffeb6f2730f83697fb0c6ce43afd908e9e7b7c5283272f"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 704,
+      "sha256": "59db13b21e9eafc63b0146aa49641cd3ab9f434d0ba3d8e2782358008744c9c9"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "12e5c82e1eadbb805678c8238cb67aa3bafd804fcf5992f94bfa59ad7202a70a"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_controle.npz": {
+      "bytes": 241,
+      "sha256": "5944b85631c33314ec13644432d3da7f27a5e3dd5609a72449bd57906b723c28"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_L1.json": {
+      "bytes": 2478,
+      "sha256": "9b89eaae9fa731e747f1886284a68c8cd96186ea2939edf9279eeddec8eb5983"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_AMM_L1.npz": {
+      "bytes": 709,
+      "sha256": "58dc1afcba4860d22dafbc2646f694f3dea5bdcfe4717ede96766d1a8aff070c"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2458,
+      "sha256": "9dc6c421882d0428b9c4cefa0e279e841818843bd16a5c82b1caefe9cb2a3a1d"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 520,
+      "sha256": "8ea9a0d35187730f35e70cb2917d599b842973721e5a55358f91323d39182959"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "d5d836cfd9ac834d5eec94ee5610064065afb535e7dbe00fa68336e36ffd2482"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 240,
+      "sha256": "421b1553d80da92dffe815a15437201fbf927284ad99823ee53c331269c27a2e"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2482,
+      "sha256": "e5c87b9e2de4b579235fd7d5e41783eee1fc002349e6e4f443b740b683787772"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 548,
+      "sha256": "e798b6ae9c5983bdc7dadc33a12d36dcebd721e355595258452fb4ae9361ca8f"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2480,
+      "sha256": "50e5223535ecefb4b9a0481a1a92e5ab544a9940464d60e60c3867542db3282f"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 532,
+      "sha256": "6a878334daeef1e92730c399404b95afe05fb6e045930abc84a80555b9f92779"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "2d358077ec5d99f6f9ddcf133bbaec323901b032c5778c827b613ced36ef9771"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_controle.npz": {
+      "bytes": 241,
+      "sha256": "f283969d469b4491fbddbf33a47da51d9aace415521db818007393442ff7b6c5"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_L1.json": {
+      "bytes": 2479,
+      "sha256": "ab1bf28aa0cc4869803500447e393ddebfe8fcf2d6afdc546c89b99ebdb26e5e"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_chuvosa_TSA_L1.npz": {
+      "bytes": 603,
+      "sha256": "ce2183b420750e9f2eb94f92ad6d432dcab1b3fe6bc525cbb1ad9bc025b36be8"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_aferida.json": {
+      "bytes": 2484,
+      "sha256": "240e2586eecad487e8deb90e8f8dc9ccfef480e66f047085f98ed56f6876d195"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_aferida.npz": {
+      "bytes": 874,
+      "sha256": "b5c87dd1609d3eee67b3301d7962ea62d18c91543f4f8434648f465cb62e5bc8"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_controle.json": {
+      "bytes": 163,
+      "sha256": "d2c07685cc15d46a1f18555762afd87f332c920f71c9af54024091342635ae79"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_controle.npz": {
+      "bytes": 246,
+      "sha256": "a870433f875f7ce0c2d0254d6dea17e60f2138f0a62c747377406aad3e400fc1"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_L1.json": {
+      "bytes": 2472,
+      "sha256": "6de3873b3ed01978ddf6995724d2e3e684e64b38c8db10b3a235f0c2de5248a8"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_AMM_L1.npz": {
+      "bytes": 677,
+      "sha256": "c3267ad121b0d0a7692c9fa15111e8add36c7c70360e56905f97ddda958e0d55"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_aferida.json": {
+      "bytes": 2485,
+      "sha256": "90f700bf87dad7224acdcc18f6359e03246602b6cff01bf1ef3ca1286679cfed"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_aferida.npz": {
+      "bytes": 608,
+      "sha256": "0e100020fc932cc80bb3b2ae0520f4fde0b97531012bedd9d51210276d29e093"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_controle.json": {
+      "bytes": 167,
+      "sha256": "7ee4a0c78994c01804ce31626957bb9122aae6694c35a52ca9202576216af7c1"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_controle.npz": {
+      "bytes": 247,
+      "sha256": "f341380e75cce32ae061eaa145291b23b4b42b081363b27b2be7d79500bb034f"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_L1.json": {
+      "bytes": 2484,
+      "sha256": "cb4ab77aa595c86d6b7953700d8aae97cac230da596ee0b01af348ba9cc074e3"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_NINO34_L1.npz": {
+      "bytes": 792,
+      "sha256": "f982bfc3714c104665da194c8cf983b62aea391cfb37162d6ba22b9b7222bfd5"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_aferida.json": {
+      "bytes": 2468,
+      "sha256": "e465be519fdaa94a45767f789f99c62c365d25aab2a2fce763c80e990125ade9"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_aferida.npz": {
+      "bytes": 686,
+      "sha256": "5f5146ee0a3c496091cf241f47abf35e29a92282faf55947298369f418bb5afd"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_controle.json": {
+      "bytes": 163,
+      "sha256": "38b17af14e305f35668a82c452849853c47acef42f0ba5db6b6b5efd1df81ac5"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_controle.npz": {
+      "bytes": 247,
+      "sha256": "076fc4fa08536b8a16fdd5ae0cb13e45aa0ae7657300a439136d8e2c139af583"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_L1.json": {
+      "bytes": 2460,
+      "sha256": "fcb7abb902a49ec2b1e9b7d191afe08c07b0a85ac09468d9379b16186b35b570"
+    },
+    "resultados/completo/preditos/RandomForest_NNEB_seca_TSA_L1.npz": {
+      "bytes": 645,
+      "sha256": "2f8f84090da863e4b3f1869e2a5d990019b4ea85aae44a1db81f133005aa05a0"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_aferida.json": {
+      "bytes": 2510,
+      "sha256": "806eaeaf6c77f72e75ca7ffd5c3fa82174a5c2be15a2555040dd3b09629f8210"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_aferida.npz": {
+      "bytes": 2785,
+      "sha256": "2a90b074874642a840517caac0c6459df5c9fd1da671a3490f6d42f74776a7ad"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "2102c588d90d1d9eae992835ad33f8de0e4fe14310d48ef0819547f225c73b72"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_controle.npz": {
+      "bytes": 256,
+      "sha256": "57ce69d8eeaf835ac2898269cb36a60e5ddbf3ebee9294c96fb9084b9d95fd73"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_L1.json": {
+      "bytes": 2517,
+      "sha256": "22b818a1dfb235eba6bd4b4430c51b3c3a1c221b06caa24cd2f37b4f7831ddc7"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_AMM_L1.npz": {
+      "bytes": 2792,
+      "sha256": "2d59dbf453363e267aa2b155542b103a0c74112bf9ea15a840082003cc446849"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_aferida.json": {
+      "bytes": 2520,
+      "sha256": "5c3d75cd46b4595dfde5196dcfdd9ae16e97ba8c7d3f1e4ec9ff1bc0dc407caf"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_aferida.npz": {
+      "bytes": 2429,
+      "sha256": "aae8f122cb0e1a7bd32bc5a46de2250b1260f512c4e645de7f0dcf8fa3c9b997"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "1eab9d50cbd3969216d1cc6eb1e9c9b4d7b475a16bbc60f4884205273500ca91"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_controle.npz": {
+      "bytes": 256,
+      "sha256": "37de178996a0a9294778faa56b86ec4b5ed151028544a97c63cb7c46d8781c25"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_L1.json": {
+      "bytes": 2516,
+      "sha256": "2d304ae2635f711fa0706f196643492177701b36040995700656a6d34e32d1c5"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_NINO34_L1.npz": {
+      "bytes": 2350,
+      "sha256": "c4f1d567bce0994faaac5fe46ce4edfbb0d7af38ad6870662d03ecc1d24e1899"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_aferida.json": {
+      "bytes": 2514,
+      "sha256": "5815f5c1850f820a4c6fdf0618b4a5ef9c05c481c0481938c7573afe201e0685"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_aferida.npz": {
+      "bytes": 1939,
+      "sha256": "45ea50ccb9830f8bfa89df38ad8cdc154988aa30c2e83c697e17254b76e63ba3"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "8dcfcadf9006de9308d7b61f2cb6c2e272060e859e01eb9238f7447e9c9bf2a0"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_controle.npz": {
+      "bytes": 256,
+      "sha256": "f9a7c0cf87ebfd77c21d20b943d39955c18705afd6e2c84b89a2349176161efd"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_L1.json": {
+      "bytes": 2514,
+      "sha256": "75b2a28385c9394f398f835a46591ed801f8946b6528c484061049b3a8ba04c0"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_ano_TSA_L1.npz": {
+      "bytes": 1904,
+      "sha256": "e930473d65c8db88d4e6aa484de5383beb4632711b297e7de2a57294915b96a3"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2525,
+      "sha256": "47b68a2a6eafb40e17bb39bc9b13b024ba44d5ac8b061ce8f2810e82c325083c"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1377,
+      "sha256": "5c085e0de54d02587dfe8021ca7479028642fc4d9dfeb12080a31c47b5d6cf80"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "192ccb85d4221b9d537f9ddebead810bb47668760bf08e176baccb5c02886de0"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_controle.npz": {
+      "bytes": 241,
+      "sha256": "6cd0798d6c3ac756fd30534575b45b7e141847501e349c9e5c6ccee4420dd491"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_L1.json": {
+      "bytes": 2518,
+      "sha256": "f6fdf66ee007ec9564bea6be812831492ac840b0ebf35e0d8840b01b52e49e6f"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1373,
+      "sha256": "fce0724b803388f5aad49c9428b414f534d98c26966a5055e42290c996f17959"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2532,
+      "sha256": "b9058e533f0ab1d85471019f3f1c8b453abb694349c56215245b61967f27ac3f"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1291,
+      "sha256": "dfbff16f54a8ac729f501229846cf0ec937f46be146a049e6fd92c3dd9e3a85a"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "7887677ae5e5606c360c7934002a0893c597ec51f5ce5c21f6b784cb4927fdbe"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 240,
+      "sha256": "fa256200402c570613843c0843cf6da47f62f7db2dee90ba470c23898859f66b"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2523,
+      "sha256": "3badf04970062a2ce2075f30760fdcc86f8a55ed98b868a24ba4f3d6c5425c6c"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1302,
+      "sha256": "832041a01f4c02507021b5b4d343f0c1cd24f188101ce4ba48c80870df04bfdb"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2522,
+      "sha256": "3e18360652d4e712f465cd620e34873f6b962d6d99bebeed21ea8590ae045ea6"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1086,
+      "sha256": "17a1956ca45a0dcf8df10d41031fe31d8c19d08d3de86f7c2eccf421458144a4"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "35d1334b1e17fe2dc56083052b3cb185551d96ecceff8c7884b3da1b16bf09a1"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_controle.npz": {
+      "bytes": 240,
+      "sha256": "7e234f1f37edee10a012901785651a4b7d826faa7f2074c0ba2e34d6b73ec3e2"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_L1.json": {
+      "bytes": 2520,
+      "sha256": "8ce0da4674c4c1abc0960e1c7748387fa13beb3f81f6a6e79f6d9af910597b18"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1218,
+      "sha256": "baa32c284ba8d5591b67f48d57add03b6800ce617436c40cd0d3cc2ebfd8b1a1"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_aferida.json": {
+      "bytes": 2518,
+      "sha256": "1ae5283fe8b2ab5764e2ab08cfeae7ace90947ca453e554755b79949f5b1d8c9"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_aferida.npz": {
+      "bytes": 1772,
+      "sha256": "f6a8f463d57eb88523f2c7f8408cc887dc69d5b12fc4260249c094da1ccb593e"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "0bf5808e2d283a8a6d3ca77cb50b6d354838a8061b7c3fcee407def53fce7a83"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_controle.npz": {
+      "bytes": 244,
+      "sha256": "ce7a03167f5e26f961bdc81375ecefbc378accb08de40ebc95e7e30657db9167"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_L1.json": {
+      "bytes": 2513,
+      "sha256": "aea23c686b3b5fba3aa6710d978d2b1b7b9b24788b1c0def15932c33cc726922"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_AMM_L1.npz": {
+      "bytes": 1765,
+      "sha256": "656b28cf21f3a8da799ccb99f92d9d5ac40cb89f1ff5138dbfb4f1f99dc83ebb"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_aferida.json": {
+      "bytes": 2526,
+      "sha256": "9783b7cded0bae1f03ab0b704b1c41d736d7b316b018c93877cbd7336e20ef41"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_aferida.npz": {
+      "bytes": 1665,
+      "sha256": "a0242538c03591737198f3c535fb41e8e750f78d2c1ed405d609584a8739569e"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "c7d5ce3030836f68616d6af3edcf02fba1019735fd82912a63c96d53060bd51e"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_controle.npz": {
+      "bytes": 244,
+      "sha256": "167eef1b4ec4edc2ec19bad95b7d27f3dbd85b4f60ae35ceabbf650240a5c92c"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_L1.json": {
+      "bytes": 2519,
+      "sha256": "9477985cba2a92e0d5a3ed3a8bcd0c1cacffb0261c268cb54d435a7b235a5b28"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_NINO34_L1.npz": {
+      "bytes": 1667,
+      "sha256": "bf3c34d5c49bbce011d815dad478c2cf725a4ed90902ca332d4c966aa10c2e2c"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_aferida.json": {
+      "bytes": 2522,
+      "sha256": "4c5c667d13f79712f14301b8ee972aa6ae14bd37c695f4487a5cda2408eb5478"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_aferida.npz": {
+      "bytes": 1494,
+      "sha256": "7d7bddbae8a4878a38b248f0cf93149d7d058102012ff7075106d14a3f31a76b"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "5d87427cbd6501a25e5b068647adcc104fa48947dadee96f15cc4d43fa859c3d"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_controle.npz": {
+      "bytes": 244,
+      "sha256": "7a25dfae25485c1da6568c7ce19845148b703cb1c10e22e9c8e3ade9ac92f734"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_L1.json": {
+      "bytes": 2516,
+      "sha256": "6127bba496ead03060c34f8a1e38d5a6022d4425fe2aa31f4ff56e9bb5089df5"
+    },
+    "resultados/completo/preditos/Redeneural_ENEB_seca_TSA_L1.npz": {
+      "bytes": 1339,
+      "sha256": "ef73793fe29e1d3a872e8781516e449f91603586524c86502fed08ff33133078"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_aferida.json": {
+      "bytes": 2512,
+      "sha256": "ec64f43ee7c49652eda28d9b529cae02d2070c22ecd2057a213a3421dd544816"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_aferida.npz": {
+      "bytes": 2806,
+      "sha256": "235cb300eb467471a58c0f802bb7903177a753005a2b75989ff8900ac5117245"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "fbd86460241e1447c79c60461d60f1add693ced791f4042ccaf0fa37bce32580"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_controle.npz": {
+      "bytes": 256,
+      "sha256": "f42fe0a1bac2d282cc736de43195616a036e7153bcd72d770a3e0d69da4c94f5"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_L1.json": {
+      "bytes": 2517,
+      "sha256": "3985092c07241b26408af4be7738d86c03fa6fd99297be189599dc5ac595402d"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_AMM_L1.npz": {
+      "bytes": 2809,
+      "sha256": "ed524b0b78dc3c9be37440c1a74537932d339087397df5848debc3fb6bcb0abf"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_aferida.json": {
+      "bytes": 2519,
+      "sha256": "7547ba7000646b74a240c8aae7d9ea5d8c2eb4daecd24bae02f1a74d8c5ae47d"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_aferida.npz": {
+      "bytes": 2336,
+      "sha256": "fd30ed71d8418e1a9eafcbb08e18fa8467a536f659e5526b742389757b314115"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "674cd8c4f8ea179c3d5a49871b86332476d8d2dc0effa89574f6ef869b88f180"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_controle.npz": {
+      "bytes": 256,
+      "sha256": "abb82fb656ef2ac4e44aab1f7024baf23acc9d9df9fcb2db8d743111b3839d04"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_L1.json": {
+      "bytes": 2516,
+      "sha256": "e61056b00bfd28e200d66a46d1f031440cd4163d8f480311776ec119a1b45a32"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_NINO34_L1.npz": {
+      "bytes": 2363,
+      "sha256": "2d2beffc4a06bbca662abbab3deb44ffa9389336a4c8e168649dacd564754ae0"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_aferida.json": {
+      "bytes": 2516,
+      "sha256": "8e06976f54f11f628c889e4e4fe656181a10838a94430f3a090f2634e948cc97"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_aferida.npz": {
+      "bytes": 1911,
+      "sha256": "43cc65aeefb2de7a30afad80967ce3111311bc8dc7d096677314e50b37838d7a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "b22071d233c85956d1c936fdbf304449ac4083ff7256b6903a33e80b38e6d1e8"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_controle.npz": {
+      "bytes": 255,
+      "sha256": "4c33b34beda8d90afc0e4599e0fd59488e0048963364032604538b02d434ef7c"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_L1.json": {
+      "bytes": 2509,
+      "sha256": "b2779a90f24fa93b37400258d6fdf0c78ec081be0609282c062429c194cc3a56"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_ano_TSA_L1.npz": {
+      "bytes": 1832,
+      "sha256": "2e6016208c3f8eea12c6ca0c32ef020fa21e54f0a058cfacf0fae07b7d9992a7"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2518,
+      "sha256": "b52c1a4990b0d7c9712b88df9e719ad1ac45f97c76212b344603033f1f50d5cc"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1547,
+      "sha256": "3091b38b2bc935a50b34e982f2f415cd6c9757f7b486a2f6222a1c122d5d64d5"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "c500db7111b93247a0aa554cb090e7adfc755d5154a529652920e87a0c60015d"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_controle.npz": {
+      "bytes": 241,
+      "sha256": "f006446dff1d900dccba64bea3a3d2c459daef92c72580278a8225012c7f6f43"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_L1.json": {
+      "bytes": 2513,
+      "sha256": "aefbe85169cd9cb95f102883eaaaa5026451ba801f8619190761c8bdf1afaa30"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1588,
+      "sha256": "c6e7bc177f4853035094cf855742ebcea6e059ca4f5cec468f0207cfcbdbaf7d"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2523,
+      "sha256": "08daec699dbb2143de44dc23111988140777ba866c3d1a896c66c4f33f2802a1"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1427,
+      "sha256": "0ec35a0398036052670f3fbe387bc8c1547ef6ca29872f80ad254fdb111db6f9"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "e4e0e85e28750b0027446319b458724a2d50048a4480f5d45bf2f59923b9da0c"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "f241ad7e813766dcb58c6de63077a100b96d9391438340a30f7668a0d31da95f"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2513,
+      "sha256": "c28a29ce0f60d5694b55d162a396150f42114950287bcf801fcbe1e3d8231ab2"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1435,
+      "sha256": "2cdc737e0285b67ba9cc1741283a249725b92fd9fa986661c1f59f5113489b59"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2519,
+      "sha256": "d1098058785880070aca451baafbffa469034df0d2d8cd430ee4b16501587539"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1199,
+      "sha256": "b6bcfabb03cc3d57954ad0c869462abe77d3c1e53576f0ec0807250730649f3a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "c1bcf9732c4556fe975dbe5ccad5f199aba8afdc14c2a2eb31fe72001cfd360e"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "c7019a568ea4afa86ce8231496aea52a2313224cfe1ef25e8b1f2441de072415"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_L1.json": {
+      "bytes": 2520,
+      "sha256": "ba1341f157e8b5a3491995eec70a61b193acf2bab4843797a4718de7a8a5455c"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1292,
+      "sha256": "dfd6ab7f7ec001c4832954c2c4e361ab845bc46ab4c524feeadd3b19c0b47ca7"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_aferida.json": {
+      "bytes": 2523,
+      "sha256": "78ed35877221efc7b82bbc84573b64dfb16f933d087fec569975e0f8b6db6dd0"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_aferida.npz": {
+      "bytes": 1586,
+      "sha256": "46f39a3f7794fabb5a7635aaf48a6d274432f63209880730eb949a9637e7ff02"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "3607bf4e533684c5979867ecd4bf2bc1a3cf5c5973a90132b510257df1b2a30a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_controle.npz": {
+      "bytes": 242,
+      "sha256": "448be180a199fb34ffa5437a5f8a42a6ccb4fb7ba5720840f85da5b0a287c920"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_L1.json": {
+      "bytes": 2513,
+      "sha256": "1e3c3b4970e7b46bf57f3563f6f667dcca742e90b10eb7d9f625dd6bca20943a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_AMM_L1.npz": {
+      "bytes": 1594,
+      "sha256": "a04bc39f1d752c56cac1929209c3102a90f401b20a614b9f6a57ecb8a7c1607f"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_aferida.json": {
+      "bytes": 2526,
+      "sha256": "909b04337a2c75b266bdef43d145577232980a12ef86e3491a3df384a252026b"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_aferida.npz": {
+      "bytes": 1505,
+      "sha256": "38d5c30aa924d30f245c918f70eb8ed208764f8aee3ebfd86948f8099acb7899"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "93a478d1e65d5197fc92409977e0466d3777861140f1ea3fc0cf170cec444e12"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "ae0240f7bf3057f3d55bdb768d2a1468fc2b8649813c12f70f1ca006110242b9"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_L1.json": {
+      "bytes": 2516,
+      "sha256": "36eb77263c9d83f24633471e2a0e23910ae32195acc452bbf66093350391e93a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_NINO34_L1.npz": {
+      "bytes": 1382,
+      "sha256": "98aeb21faf5fa3c77023c9e829b21dffdb4a624f5f90dad0d55be86bc7a0646a"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_aferida.json": {
+      "bytes": 2522,
+      "sha256": "0866959879cf5afed7ac6593fc312eb3b73502aa147b185eee7f5bb945548231"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_aferida.npz": {
+      "bytes": 1239,
+      "sha256": "4cc92b163c8a624fa375f539d818e640c38412b9bb5f17e693e5b1db2abbfafa"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "65a7d6a3fe56342cec61e91427a3d0a47c351044a6f73908bf0855196717c6eb"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "0bb1d3a93c8bc961cdf88f955de219652cdb8444a7de48aa3359a908fb54bfd7"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_L1.json": {
+      "bytes": 2508,
+      "sha256": "8e571fabbb9a6cb7f431dd2e1fc77552f38c7ef21467b9cb4a7757fe9fef2ea3"
+    },
+    "resultados/completo/preditos/Redeneural_INEB_seca_TSA_L1.npz": {
+      "bytes": 1222,
+      "sha256": "4ccd0520893f5f31f842506cf07040c70853edec97cdceebfca92dd8f74d6d4b"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_aferida.json": {
+      "bytes": 2523,
+      "sha256": "9af93e9da7ef125a36ea1ca4484b129216fc886ce9ccd579e987a41cda6e6ba0"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_aferida.npz": {
+      "bytes": 2993,
+      "sha256": "c102178ddd60d6156e178aac4e729a276470906385a66d21d791eb19c2f9f4eb"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "6c77c768b8b215a86d5d4bfb16d22cd09772db21592722f9a23d97fbf8df61ef"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_controle.npz": {
+      "bytes": 246,
+      "sha256": "79a5a0201365e9b9f5ba172147d01afcd0f77b4c7b08b51da5ed7efa8194350c"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_L1.json": {
+      "bytes": 2518,
+      "sha256": "c7766183ac8514a416817aa53e8b21829e6c4e0be6e71a9593ecb437fe68cbfb"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_AMM_L1.npz": {
+      "bytes": 3012,
+      "sha256": "e2b397d884646577c74f62b9963232827440580a8f9055bcafd78f2b2901e176"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_aferida.json": {
+      "bytes": 2519,
+      "sha256": "c32bbf9df0ed19084b058624d2b07124e52557e24c117a3aefa4debcdcb6ec91"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_aferida.npz": {
+      "bytes": 2507,
+      "sha256": "78c9ae70d0f3f6d783df94ffbefd8a2acfa1306ff864c5baf6966567a6fdc65c"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "4eccb2616cf7c3b06df2147031e830b2c63cdfbd6d18399ab692c8848a1d79af"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_controle.npz": {
+      "bytes": 249,
+      "sha256": "e654ad030f9e8eb245b8dc07f0bba93d550f6c4a52bf2a76155eecbe2079b32d"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_L1.json": {
+      "bytes": 2517,
+      "sha256": "5593a8abc12d344a0ba746bb5c9b236fafe3b800ce8e7c3d4d6566833bff6b85"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_NINO34_L1.npz": {
+      "bytes": 2482,
+      "sha256": "b7ec30522b5f3c971fbc9d5caa612eda54e9db4f601d2d2a2802455880189ada"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_aferida.json": {
+      "bytes": 2519,
+      "sha256": "01b625e127af81105f8474b2d2068f267e6eb6c4445461a6ffacd492d71708c2"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_aferida.npz": {
+      "bytes": 1937,
+      "sha256": "a0af911244af8f72f6576fc717f52c15eb1cebbff3723a953eb9561dcbeb42f2"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "c54ff3701506873043630c8df981b474c84c81d734b497f8b474ed9716d2ba85"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_controle.npz": {
+      "bytes": 248,
+      "sha256": "e63cf0ec7b3ec69beb38757ffc2ba45e0c89da94c28f179061c27b5cee9d44f6"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_L1.json": {
+      "bytes": 2511,
+      "sha256": "f825e00f888a7210263b321a7daaf1a4f4559befec3a403400f173790a5f1991"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_ano_TSA_L1.npz": {
+      "bytes": 1933,
+      "sha256": "166f89f21ff1046104b2b1bcbd980da0ddf542a2e92e2c0591c52641e0dc2371"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2523,
+      "sha256": "a98f1bca0253be12e24d663131761c7982095f7cdcd0d9a781343220ba4ca872"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1468,
+      "sha256": "5dc7be62654db27a272695ca7e4023051e8e5e59fc220ee0470c047c3b668a77"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "eb7cdec3c0995ea2153d6495a242f1f509a3cee6406d3c5c1950f1533e7f559e"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_controle.npz": {
+      "bytes": 232,
+      "sha256": "13113e814efdf1f63a93a3a9683aefdf1543a2d91b10a15c431f739011234209"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_L1.json": {
+      "bytes": 2512,
+      "sha256": "c811943efe9e0e2eb2fe9798601b41618872d9809bb89257d3c2a8a5d216a00b"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1480,
+      "sha256": "7f02a50db7a355ac1c314594d3e6bac4204cb8f3017b0739f4acede761c52446"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2526,
+      "sha256": "aa4b72a1dc7ef99d0477e7ccecf0ddce3ccf616e3cddce1b0bb82c9ccc7bc7ff"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1371,
+      "sha256": "0487b9d9cfadc931538b828a592a41c77893ca63cce713fd6cd4f1945173382d"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "ae18402f18d7ab4f9b8a4e3cebf402120ad64c88f2841f2fe391a2fa673583c8"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 231,
+      "sha256": "367ec7ac6ddecb6b24e184dbaed14a07a4894fd6dd5180018211b8f0f12f8f1c"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2525,
+      "sha256": "ac9126e948baae9bb519d1c03560293b0b96c6f9e0a339c8022e51b3666b77a1"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1377,
+      "sha256": "dec5f46bb9a0f36f1b6afe98cda25536a13c7a934615f55d6b384247349ae3c6"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2524,
+      "sha256": "dbfd260a64abb12200678e388c4791d0b614099a6a3c00f6618fc8588fdecd81"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1233,
+      "sha256": "e4121ca73e089b89e0a669370b0449a70ceb312b9d407629df5ff09a1d1b1e52"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "895e2b8967310a94c0a329a6aafc367b61ccd29dfde50ba7d341a46d2aa5bb7e"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_controle.npz": {
+      "bytes": 231,
+      "sha256": "d74a2baa33b94e20c9e7266651a10ba0cf6505d2ecc1b3e476a2ad20d04bdba6"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_L1.json": {
+      "bytes": 2511,
+      "sha256": "833b43e5d3653cfceadb4853f64c3a5e7ef2600edcb9012ce764c1e0ef94c453"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1267,
+      "sha256": "17e46d1f3ee7e082cde026fe02272451e6e70ff812f1c1843b53a901364870d2"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_aferida.json": {
+      "bytes": 2523,
+      "sha256": "ab480c7d38a3c0efa165179989adba5c31103f4bb977dc435562efdd9d0ab04d"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_aferida.npz": {
+      "bytes": 1868,
+      "sha256": "f707a7c966d76029e169b30540c30bcf1191f0b7e8df53a47d9e591767ace9f1"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_controle.json": {
+      "bytes": 161,
+      "sha256": "743b862d16b3e0ae8b8c5838897b28a5127f5a9dc4ce55ae3bcd50d5185bb2fd"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_controle.npz": {
+      "bytes": 235,
+      "sha256": "898a82baf809314ebb252fb4229f932d203fdd196df1784dd2876a989048ab83"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_L1.json": {
+      "bytes": 2510,
+      "sha256": "4825d4f39d5c840c97284f6db4decd1714cc4f0eb08c07805f3774e7ceff4be4"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_AMM_L1.npz": {
+      "bytes": 1871,
+      "sha256": "129e1f03446a7be76112c7bb7e1c790317de571b451b05797cda2808ff131f47"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_aferida.json": {
+      "bytes": 2516,
+      "sha256": "859474499268ce9ed1b2497668f8c4801413007ce247f22f08111580fe100db2"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_aferida.npz": {
+      "bytes": 1700,
+      "sha256": "e83fe7796929682b823764f01c7acba7c2e0cf8155e7dea3a84c5a5b42de5efa"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_controle.json": {
+      "bytes": 165,
+      "sha256": "ca846b7edad139472ce0ddd8b9ddccfb58567df17b920672cea8b3f2af8b2993"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_controle.npz": {
+      "bytes": 240,
+      "sha256": "60c72790c9b6852ed7082b16461b7be5fb0f2061b56beddf68380cdbee702522"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_L1.json": {
+      "bytes": 2518,
+      "sha256": "2e23c2b765c6ee877506dab0b6e6d110d47ed600bacd294561eba08915f36a8d"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_NINO34_L1.npz": {
+      "bytes": 1686,
+      "sha256": "66876712ee8ab2d807803418589227ef0709907dcfda18f00cdd29d3ae938d5c"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_aferida.json": {
+      "bytes": 2523,
+      "sha256": "20aa82015dcae96ec63881157356681ff376fbb0e85cc34fa31fda0e1eeb674f"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_aferida.npz": {
+      "bytes": 1376,
+      "sha256": "e4979916a5c5d79e474a38c300515588dd531f47a8f53f3e6fb119cc9a5a33e8"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_controle.json": {
+      "bytes": 161,
+      "sha256": "7a9df27bb973462acf08c90a7df67863b758d74f53a4ede0d4024461c28d834e"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_controle.npz": {
+      "bytes": 239,
+      "sha256": "ac2dd70300e111520eab2da2c9b8a63344f821097e2fe2278d955718aa571e64"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_L1.json": {
+      "bytes": 2516,
+      "sha256": "bb8464dbc491bb363fcbaebae1f9a87a6fd6ac75673170bec70685cc34e6fed0"
+    },
+    "resultados/completo/preditos/Redeneural_NNEB_seca_TSA_L1.npz": {
+      "bytes": 1362,
+      "sha256": "219f90b3e440737def305435c633185bfbb662d915a2d2faf60ec865efb004bd"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_aferida.json": {
+      "bytes": 2434,
+      "sha256": "40d2fd28c90c9e19099acd4ff3372bcd987d27e54ad354878a44eb255aaf3161"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_aferida.npz": {
+      "bytes": 2725,
+      "sha256": "abd1768578edde494c9c033897b4cec97ff5ecd8383b544c8940e5f3351a7757"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "7d682da9df0be63892d5b92cf2ce7e7da2b35a9d827d19078d1899902f0313e0"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_controle.npz": {
+      "bytes": 256,
+      "sha256": "88834be25184caeb24b5a3de036de5cf53d31a08afa8ff9b0fe5d07f81bc445b"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_L1.json": {
+      "bytes": 2436,
+      "sha256": "e610c4b4114b2ad65b3da6c515a6c5a85b1e5cce0e91f99250b1f366fec6c682"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_AMM_L1.npz": {
+      "bytes": 2692,
+      "sha256": "0986a0bb83d798c3039dcca0688d24b19ba149540f96662c4be4f9e4b63764e9"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_aferida.json": {
+      "bytes": 2439,
+      "sha256": "35bc405c102f64e2c660391398179058f6a25e46b46c568235ca954d48fb3baf"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_aferida.npz": {
+      "bytes": 2393,
+      "sha256": "caaf8e885bb80b6e366a1b716d26c6d30db39ec1038d3d6a6bea379f24af3922"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "ed1d5dbfde56c490475531f75ec481876102e8c50ea89081fe48b6a4e9b9729d"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_controle.npz": {
+      "bytes": 256,
+      "sha256": "88834be25184caeb24b5a3de036de5cf53d31a08afa8ff9b0fe5d07f81bc445b"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_L1.json": {
+      "bytes": 2432,
+      "sha256": "4ad89b1452845e05826f772762c3e15648320fd7c61acfdf1bc8827134d1523d"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_NINO34_L1.npz": {
+      "bytes": 2300,
+      "sha256": "559132e8a52f139065c56347a74f3485adb0d5afb9ac86f834772cbf604574e7"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_aferida.json": {
+      "bytes": 2435,
+      "sha256": "865489dade00ca929f8269199c2b58c281b090a78937503e40cf86e6094267fd"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_aferida.npz": {
+      "bytes": 1910,
+      "sha256": "1155b62de024ced376479c72f37907119c097a859688ee11ea1bbdba1dc50d07"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "e8287ba66ddfc5d291568f7c26cbfeccda45c54382f83fda69887bf13b95c76e"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_controle.npz": {
+      "bytes": 256,
+      "sha256": "88834be25184caeb24b5a3de036de5cf53d31a08afa8ff9b0fe5d07f81bc445b"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_L1.json": {
+      "bytes": 2428,
+      "sha256": "80107bf6fc19d8cf968d1133a73e5ccc45c2ab755c854eb75166c069218b7231"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_ano_TSA_L1.npz": {
+      "bytes": 1836,
+      "sha256": "ec9df4decec1e2adf13e80474579bd41a5bed6878db5d9720be5d9eb00c4eeaa"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2441,
+      "sha256": "efe41a9700c3dda21d8d2487df9bebe95ae77e734b08a017dae25a2b0f18ab3c"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1355,
+      "sha256": "724356fca4d2261e9da0fdc9016d0d5e84b0f44cae55a9ad32c19757e1cc052c"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "906f583d04d80cd8710f1c26826181578949b33c95a4c86f350396b52e90d970"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_controle.npz": {
+      "bytes": 240,
+      "sha256": "06d3ad79a6d2a2af179a4794fd17ea3fd00f9441edfcf5743c2007be9619f75d"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_L1.json": {
+      "bytes": 2436,
+      "sha256": "cbb7f540485f3b1fd2a04ea3845b6ab86577e6a9fc773a90ff798b3f08843809"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1355,
+      "sha256": "724356fca4d2261e9da0fdc9016d0d5e84b0f44cae55a9ad32c19757e1cc052c"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2444,
+      "sha256": "11ab78301d3942302aaf2ab66edac20e93484a5e800790149fe259ed34b9c326"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1291,
+      "sha256": "d15a6aae86c1bc02d57fdb9666b7b6a18528e19bf24fd2f38a187d2545babb59"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "a142ea4fa940d5287fe03fbf9b776ce566b2aaeb7f70a7f8e6d37456e27af3a5"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 240,
+      "sha256": "06d3ad79a6d2a2af179a4794fd17ea3fd00f9441edfcf5743c2007be9619f75d"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2439,
+      "sha256": "7be338f6ff5d25ac63d0bede1335df1f2be7c7fc55030db042995577219c6e88"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1291,
+      "sha256": "d15a6aae86c1bc02d57fdb9666b7b6a18528e19bf24fd2f38a187d2545babb59"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2435,
+      "sha256": "75f9d04ab9943e5407357b828ad87387b5c09b422c81bee0feea8f88f076f6c5"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1081,
+      "sha256": "c69b77457a92ac37dd9824c07d8288fc4e38e3aa645c001c401deca5233dbdc1"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "40fa649fcd1044b59b4c1ad31d65f37bccd4342304290bb667c637e44957e743"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_controle.npz": {
+      "bytes": 240,
+      "sha256": "06d3ad79a6d2a2af179a4794fd17ea3fd00f9441edfcf5743c2007be9619f75d"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_L1.json": {
+      "bytes": 2427,
+      "sha256": "3178a65cb55843423fa4058166209703fba0c9f14d25a1cb9f61714dad7385f7"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1202,
+      "sha256": "cd0881df49358b53363f9af0e9ebaf15970d484d3b6f6530a8da0c79e0f5dc37"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_aferida.json": {
+      "bytes": 2437,
+      "sha256": "b309346fb7c458da43439e1865609e7c84c297563a6a8c6bcb10f897ff735bdd"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_aferida.npz": {
+      "bytes": 1747,
+      "sha256": "779f282fa0ae1b989421718035f56f89de0af6cb490dd9a443036c093293e45b"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "14e06207a24c69d316a74c70840559dd515f01c81a8ee30ef234da78c27a6ea6"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_controle.npz": {
+      "bytes": 244,
+      "sha256": "7d9011261445b7730402e3004ff9f792c29d0a06d106f5be054b3c2dec7d4787"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_L1.json": {
+      "bytes": 2432,
+      "sha256": "cdd0edcccb24967d4f02c8e714d57d6360d3c7bf794e71951699419dd0201ea1"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_AMM_L1.npz": {
+      "bytes": 1388,
+      "sha256": "e0155fb57ec7da9be2652edb0cac9c19115dcbe53b2b49417829f1aa28b8b676"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_aferida.json": {
+      "bytes": 2442,
+      "sha256": "ad6827d099ee25b62054c1b18d301456315642e8994d31e92237ef7a2df5c4b9"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_aferida.npz": {
+      "bytes": 1616,
+      "sha256": "a1d7a64934a0836595399bc3e55d03d0511b2a2e7ece9ed6252dc22042c066ac"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "22c104d88e9fe53053a7c06817e0cd1c4c296192c7c3458550813db4c5c4b15c"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_controle.npz": {
+      "bytes": 244,
+      "sha256": "7d9011261445b7730402e3004ff9f792c29d0a06d106f5be054b3c2dec7d4787"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_L1.json": {
+      "bytes": 2435,
+      "sha256": "824d34b8588823623967b86b9406d300aacdb2fbe8e2c03391eb19388f31cc63"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_NINO34_L1.npz": {
+      "bytes": 1581,
+      "sha256": "6ffc5b026f0b725b1e4409315a14472189c7f27df1c33992860c7ba5e406a3a9"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_aferida.json": {
+      "bytes": 2431,
+      "sha256": "aaf178cd4e48bc54d9c92b9442ee9e204ec28a9703226c35125cbbb1e10aea78"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_aferida.npz": {
+      "bytes": 1463,
+      "sha256": "850f8456e20d96edbdb41f986503711694ca06dce3e82759ccc5a4d9d28a5df0"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "275f2e7fc0c654ab00cca6c4d8ec41e30c9c8e346807b060f1f66cc4d9acf541"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_controle.npz": {
+      "bytes": 244,
+      "sha256": "7d9011261445b7730402e3004ff9f792c29d0a06d106f5be054b3c2dec7d4787"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_L1.json": {
+      "bytes": 2429,
+      "sha256": "48a3cec7819af1622f42479230f2fc40ff77c60095d5275135d2e0d3174ebaeb"
+    },
+    "resultados/completo/preditos/Ridge_ENEB_seca_TSA_L1.npz": {
+      "bytes": 1248,
+      "sha256": "0fb238e688da275676cfbd3833625bb59362cce3e022f87f7ede9a5dd67aa581"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_aferida.json": {
+      "bytes": 2435,
+      "sha256": "c3675f33653b383b1f8592c8b8421b32562d1f3767c4d6f2eb453d1c3e166edf"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_aferida.npz": {
+      "bytes": 2717,
+      "sha256": "2f57a72dbefd156780824de90d8202e1c1b69451fed6bef8af8fd19cc49d859f"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "786c86999bc9cd70673c0587f1d51a3935a84356d7b31c716d0e020cfc3e9ca3"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_controle.npz": {
+      "bytes": 255,
+      "sha256": "75a9576ba4d2db80cb99774fd4625105912c7364a7fb3ade69901ac195f2e8ae"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_L1.json": {
+      "bytes": 2430,
+      "sha256": "ae990865ece1bccf4c13ee84f0f9abff6811c5f32b0da1e265186e126cbd61ab"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_AMM_L1.npz": {
+      "bytes": 2717,
+      "sha256": "2f57a72dbefd156780824de90d8202e1c1b69451fed6bef8af8fd19cc49d859f"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_aferida.json": {
+      "bytes": 2436,
+      "sha256": "d93760a540c66588bc7afb700b4dd5dac61ffcc6a8dc5df01276b954adf13490"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_aferida.npz": {
+      "bytes": 2294,
+      "sha256": "622eb513d725be3ad1ba6b21c5a6f5e255e8a1868e9528e23665225e00f6f00b"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "24caa7f7b8183c29d3bf7d1f07fb49130b9c54044fc234b9a514fa32c0cd2fb7"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_controle.npz": {
+      "bytes": 255,
+      "sha256": "75a9576ba4d2db80cb99774fd4625105912c7364a7fb3ade69901ac195f2e8ae"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_L1.json": {
+      "bytes": 2434,
+      "sha256": "c403909bb3ac187e5b2353c8408f2357a91d9da2ba4da790a9ef82ba4a80ae2d"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_NINO34_L1.npz": {
+      "bytes": 2302,
+      "sha256": "f04f06ead55d9dc2af564264fb3ae722cb08eb3940e3e791d119405f2ca973ac"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_aferida.json": {
+      "bytes": 2440,
+      "sha256": "6cccc64635ebcf428543522f750e9f00ae3aa7e4f655e86d9d10c428158bc690"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_aferida.npz": {
+      "bytes": 1842,
+      "sha256": "30c3cbc1868f3fab23d6f82c074d556593ccb9681ccd96b619072e3a691fa437"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "9fefb2b4810fbe4d1fe6f6c7b0ab073e82c6c1e666314201368ed2938c7b1564"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_controle.npz": {
+      "bytes": 255,
+      "sha256": "75a9576ba4d2db80cb99774fd4625105912c7364a7fb3ade69901ac195f2e8ae"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_L1.json": {
+      "bytes": 2420,
+      "sha256": "bda2700dbda98a6e49b2a3bfe8b6d937f1216928eeaa099b5c023b54d88bd93c"
+    },
+    "resultados/completo/preditos/Ridge_INEB_ano_TSA_L1.npz": {
+      "bytes": 1707,
+      "sha256": "8f04dc231770822eaa4f59c39cae30cc048f9f1175408e83061cf3cdc08d3322"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2440,
+      "sha256": "99458cdf74d4bf628c352525fbf430eaed997e52ae776c61642a74c306537b26"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1499,
+      "sha256": "814aa121158a1314ede8683edc5c49dfb09dd4c88abec92c50d07322729ca283"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "15122278d2d4611636087eade4bdbf792211ada9d51f8785fe02df71a6d501ed"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_controle.npz": {
+      "bytes": 242,
+      "sha256": "600da95a59921264fd7a0e101571bb2fb15a89c4204dbe5f3d0952336e385652"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_L1.json": {
+      "bytes": 2436,
+      "sha256": "829a766f99f747ae6b4cb36645725abe625f9c643c509ee68621ace482aeb97f"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1315,
+      "sha256": "4f16aaa0a0e07dfb5299e6ff317eb4964d6b0e27caaa00e61dab75d3869d43a7"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2442,
+      "sha256": "6d4bcc6249a353cbcaef936f0bc0097300873841a062acf8e407b4097a2223e6"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1396,
+      "sha256": "2433e56d9f94a7a1c6a8c36ece85c5179b280d495783676e680aa4d66ff6132d"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "4e76805eb10f25c864e034be5ef111ad9dc2e517ebbbc050d326e13667666384"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "600da95a59921264fd7a0e101571bb2fb15a89c4204dbe5f3d0952336e385652"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2437,
+      "sha256": "af591a50b0e4272c7f341252c1c2e9d42f9a67496df98cbdec8844f9f897c88d"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1396,
+      "sha256": "2433e56d9f94a7a1c6a8c36ece85c5179b280d495783676e680aa4d66ff6132d"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2442,
+      "sha256": "020fbcf0d270cdc80256e304f63a68912b981624eb4bb003be33558e75f316e2"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1193,
+      "sha256": "cf1b161c7ca74ed19f02174e50c586fa7dced869c9cf51f5d91aa0f26db2c58c"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "fca56ac8770c8cc7cc1048c11df00fc2634f9dfdaad01ad6f7808830236a5d0a"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "600da95a59921264fd7a0e101571bb2fb15a89c4204dbe5f3d0952336e385652"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_L1.json": {
+      "bytes": 2436,
+      "sha256": "277de0f2680501759bf02cb45a5eef061b7339bcef8ff72bef06a311bc3f0c80"
+    },
+    "resultados/completo/preditos/Ridge_INEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1161,
+      "sha256": "b94f12a447e9717df9d548d0c54d9004008307cb2956c60fd6242341e8be8a4d"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_aferida.json": {
+      "bytes": 2433,
+      "sha256": "4f6c4008b73323c2e9fd36c6f3be87abb91b3685df890630b6b68e32ccfe2d09"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_aferida.npz": {
+      "bytes": 1571,
+      "sha256": "7637698c2fdb5497bc6d9cb72bb2719cba592987aa0cd8fb80815a3e4da4cf03"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "ededa7c7ee7240a822c8067dd2455f1b9daec757c08ef4afde4fc5abd4cd1458"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_controle.npz": {
+      "bytes": 242,
+      "sha256": "dec29716d1d7364edfaaf36f3c72cd5467bf1d54a42c833a44836038219f8ed5"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_L1.json": {
+      "bytes": 2431,
+      "sha256": "4fe07f3e76cc18d99d793a338b8d3de276fade21b3fd9a10cedebed8e4bc671a"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_AMM_L1.npz": {
+      "bytes": 1575,
+      "sha256": "6dff6da0d6b1cfb890bdfa41e4f159de40e09f4a62292c7d18eb32745fb4d938"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_aferida.json": {
+      "bytes": 2441,
+      "sha256": "2a0cbea6f908bdd43d621825d3f776148f479464cc0c27c4bf546a23cd925907"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_aferida.npz": {
+      "bytes": 1455,
+      "sha256": "396ad908f840f939eb4cb68039d8ecfbc430c12f904e8831c3fdc46cb1d99546"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "e369cd56b9be1baf85066dc6fee189a1ce495b3b86b71c5fa9d9ab2dce320a08"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_controle.npz": {
+      "bytes": 242,
+      "sha256": "dec29716d1d7364edfaaf36f3c72cd5467bf1d54a42c833a44836038219f8ed5"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_L1.json": {
+      "bytes": 2436,
+      "sha256": "9c4f9f65ac0f3725a3920669d1af501168b220f5a55d77c12d8c373991dcf8a7"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_NINO34_L1.npz": {
+      "bytes": 1327,
+      "sha256": "ac48f29f1e30783367fd13c2749da69d29fd398de868d2121bcb40943d414311"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_aferida.json": {
+      "bytes": 2432,
+      "sha256": "f659ff296a34b70ff59bcc3554cbb531e668a2dea7cb28fb3b8ecc6d84b95c6e"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_aferida.npz": {
+      "bytes": 1206,
+      "sha256": "cb568e6235d18b7daa2679440970025ae3d5b7f595c5dc58b298f0cd8b7baaf2"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "8aa0ef9e354dc9e50cd9984602306335c8e7ca810027e80b047a15cf575cad5e"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_controle.npz": {
+      "bytes": 242,
+      "sha256": "dec29716d1d7364edfaaf36f3c72cd5467bf1d54a42c833a44836038219f8ed5"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_L1.json": {
+      "bytes": 2432,
+      "sha256": "cf13d6a52089a808837a69834e024b8e89935b9a35db3d4b46ab1a6a4aa883c9"
+    },
+    "resultados/completo/preditos/Ridge_INEB_seca_TSA_L1.npz": {
+      "bytes": 1130,
+      "sha256": "179e23bdb41b7ef694c3b96115c2941d0990ddb60cc90c634232aa7f95541397"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_aferida.json": {
+      "bytes": 2431,
+      "sha256": "a39cfd2600dd5ba0956fd57934a1e12cf53ec14be482060b6e4179035c3a5c5f"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_aferida.npz": {
+      "bytes": 2920,
+      "sha256": "ada73cd05da5228920f5f5c28385d0b95788708372af64d0c35a097ad3ed3421"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "150b10434d261cac19de081976f4a7f74024e5c539b2d542ce6add58fde96343"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_controle.npz": {
+      "bytes": 252,
+      "sha256": "512ff83f7079b2f1c6e9a6a0817e1a32e4bb7f3d8a72ce6447668e56642f0ad2"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_L1.json": {
+      "bytes": 2426,
+      "sha256": "41065810962f9c2459f720ea803c6ed95b7f8adcaefebbdb22665ad8f28c48b4"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_AMM_L1.npz": {
+      "bytes": 2920,
+      "sha256": "ada73cd05da5228920f5f5c28385d0b95788708372af64d0c35a097ad3ed3421"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_aferida.json": {
+      "bytes": 2436,
+      "sha256": "83fe0927c7220558ac61c832841f7732dda2e4b87383922698c6b89d5fc7fd50"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_aferida.npz": {
+      "bytes": 2496,
+      "sha256": "99325f9c3c4c88b7f24c7e636e4a1bfbb708899f20823e98167149582607b754"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "deeee81dc11f37e191bb6442cfdb29c612175dcb13c823543f1ac4637dc27c77"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_controle.npz": {
+      "bytes": 252,
+      "sha256": "512ff83f7079b2f1c6e9a6a0817e1a32e4bb7f3d8a72ce6447668e56642f0ad2"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_L1.json": {
+      "bytes": 2443,
+      "sha256": "e2f614649a7ce5b14a23dd5ffcf657e0071c8403ae512be9384bd48a0ac02c06"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_NINO34_L1.npz": {
+      "bytes": 2483,
+      "sha256": "f77bdfc9575d5ffc1d6adc483d53727f7076e268ca52664004aa39f0b082666b"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_aferida.json": {
+      "bytes": 2435,
+      "sha256": "be81b4cff4bfd2685cb95e029a39f92d126a3b27d7f079954834d61b806bedef"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_aferida.npz": {
+      "bytes": 1931,
+      "sha256": "259e1323b779f70de80ca6ec8ab79f879a93f7997218b26c388744488be91f05"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "86e4fb00dd3132ca9424fc79dd3a6874fd58acde9d57884f30846ef11150c3b3"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_controle.npz": {
+      "bytes": 252,
+      "sha256": "512ff83f7079b2f1c6e9a6a0817e1a32e4bb7f3d8a72ce6447668e56642f0ad2"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_L1.json": {
+      "bytes": 2430,
+      "sha256": "70a28cfd7b29bcffa19b2bdddc6abab60a7444aeca954411c21e2affbd2b2953"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_ano_TSA_L1.npz": {
+      "bytes": 1931,
+      "sha256": "259e1323b779f70de80ca6ec8ab79f879a93f7997218b26c388744488be91f05"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_aferida.json": {
+      "bytes": 2440,
+      "sha256": "80cbb270f01a9a840f671f1e1babfaeca991b5ceb2747fc4dbc5bd9ff9208b86"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_aferida.npz": {
+      "bytes": 1456,
+      "sha256": "b9b77e6f77f24dd889e568472db7a3ade1861bf284025ccb30431c5441074f7b"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "1ecb8cd56011ce85088152c4e0cdf4796bfc8a7df76b402978d69e4cb7c81d84"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_controle.npz": {
+      "bytes": 234,
+      "sha256": "69a70992b6c60d1acf4f377ac8bc99ca674aeafd7ad9d64a5e00825c9891af11"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_L1.json": {
+      "bytes": 2435,
+      "sha256": "de1aeda5b12fd3414de2c2ee9bb892846faada50164ca85b3c205d545c7fcf1e"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_AMM_L1.npz": {
+      "bytes": 1456,
+      "sha256": "b9b77e6f77f24dd889e568472db7a3ade1861bf284025ccb30431c5441074f7b"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_aferida.json": {
+      "bytes": 2445,
+      "sha256": "798e6f4f62485e00d592edefb0b5f8609887462bf6cc4e534edd8bfa3857fbb5"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_aferida.npz": {
+      "bytes": 1363,
+      "sha256": "9d6643b2ecdd267585189464f093f9aac1d919c25032d0afa082ce51918800bf"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "63ffbf4f1784e17f5d204f9c2ce8ece2da39a667470bb4cf933925dc8132254e"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_controle.npz": {
+      "bytes": 234,
+      "sha256": "69a70992b6c60d1acf4f377ac8bc99ca674aeafd7ad9d64a5e00825c9891af11"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_L1.json": {
+      "bytes": 2440,
+      "sha256": "21a064f6799ac44a5b6a05c588a678640c200956af02ae9356cfb09e0a109436"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_NINO34_L1.npz": {
+      "bytes": 1363,
+      "sha256": "9d6643b2ecdd267585189464f093f9aac1d919c25032d0afa082ce51918800bf"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_aferida.json": {
+      "bytes": 2441,
+      "sha256": "76d839cb2f547840916b21d7d82d9b54d56d9d7d08c4859937ac966243f230f7"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_aferida.npz": {
+      "bytes": 1226,
+      "sha256": "502cdd4fd62135652879512300b7e84c433637e8ef2b6543172e3c78acd31560"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "f648a5abb851aa7e89a434d621c825f49cac77e90185fc8a8fef87c69ffbb3e7"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_controle.npz": {
+      "bytes": 234,
+      "sha256": "69a70992b6c60d1acf4f377ac8bc99ca674aeafd7ad9d64a5e00825c9891af11"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_L1.json": {
+      "bytes": 2430,
+      "sha256": "92ac97d36eb71c4777d3290757125b8e048d1f94f3abeba31123a49851eab494"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_chuvosa_TSA_L1.npz": {
+      "bytes": 1264,
+      "sha256": "24d6248c1d3e5fc085a12f5df01aeb731f54cb06082acc63fe020155af129b7f"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_aferida.json": {
+      "bytes": 2426,
+      "sha256": "ac898c2bf32390fdc00932c781e1ed8f2ddad9f089509d0ed72fbf2ff371ca30"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_aferida.npz": {
+      "bytes": 1816,
+      "sha256": "ecc0edc155d163848f1f74f936f8f870f2de0e2c0c9904cb4044ae6009ef01c3"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_controle.json": {
+      "bytes": 155,
+      "sha256": "7d35b57966d04c5b667b2c4a0acabb6e1ee3997d389ea1897fdfb21b8de44cd3"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_controle.npz": {
+      "bytes": 241,
+      "sha256": "690e25d020027d75d8956daf18f40fe142e1ed2ec644b362d39cb9bc175aefad"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_L1.json": {
+      "bytes": 2431,
+      "sha256": "16b0b3bbd33d487736488604873c1f73b71afa8940675b9d2ccc66e2aeb960f8"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_AMM_L1.npz": {
+      "bytes": 1815,
+      "sha256": "d2508050e725f2e7cb69197cebfaebf72d686c697d0cc5ffa98b127160cbc13e"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_aferida.json": {
+      "bytes": 2439,
+      "sha256": "0ba9b66f129fcbc4147c2e636fad4f38fbf91d50d08380fc0782f340f6363022"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_aferida.npz": {
+      "bytes": 1708,
+      "sha256": "71bd32ece7eac3ca328c60c5cf96441d951667e1c62a7b048c35a1e9a1e3b69a"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_controle.json": {
+      "bytes": 159,
+      "sha256": "2d4d0efc0baa90baa81ae376401b35f2bf1a22c7547ef4059acc0093bd5ff664"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_controle.npz": {
+      "bytes": 241,
+      "sha256": "690e25d020027d75d8956daf18f40fe142e1ed2ec644b362d39cb9bc175aefad"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_L1.json": {
+      "bytes": 2426,
+      "sha256": "7300efe59cc9a13a8ebd3af262f0a5552df62f60464130ff71115ffc450948f7"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_NINO34_L1.npz": {
+      "bytes": 1678,
+      "sha256": "130936dbe1023a03cf0b3a52a4f570574f8f7c398d4dd48531dfb420afe72f76"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_aferida.json": {
+      "bytes": 2437,
+      "sha256": "49bbf32d085ec0f5e90f592d7734617c288d6247f0fa75ae725c448b177f27d8"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_aferida.npz": {
+      "bytes": 1369,
+      "sha256": "efc959ad55bbee7c89b84fb323c68d44632e26fb23e290cb0a1585e135dd268d"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_controle.json": {
+      "bytes": 155,
+      "sha256": "2a38f53a11e6804eafd7a2a2569f4bd8f7cd01f1ecb441d32cc6f1481384b411"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_controle.npz": {
+      "bytes": 241,
+      "sha256": "690e25d020027d75d8956daf18f40fe142e1ed2ec644b362d39cb9bc175aefad"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_L1.json": {
+      "bytes": 2432,
+      "sha256": "361e88ce6ab0f022e618e66fc87d83b109e38b0b331945ff944ffcd545c6bc8f"
+    },
+    "resultados/completo/preditos/Ridge_NNEB_seca_TSA_L1.npz": {
+      "bytes": 1369,
+      "sha256": "efc959ad55bbee7c89b84fb323c68d44632e26fb23e290cb0a1585e135dd268d"
+    },
+    "resultados/completo/registros/assinatura.json": {
+      "bytes": 1178,
+      "sha256": "825c56a6e01014c23a5b517c8ae58155b13b2a6a81c5eac5da386ebba611391e"
+    },
+    "resultados/completo/registros/calibracao.json": {
+      "bytes": 1230,
+      "sha256": "1aa0695fbf629bcf5c541b36e251c2159113997c241f0f7af72d932e73ee77df"
+    },
+    "resultados/completo/registros/calibracao_etapa2.json": {
+      "bytes": 3853,
+      "sha256": "136640726730eb0dc612a47e6de2207e9cee97bc04275085c3b48545ac5b087b"
+    },
+    "resultados/completo/registros/calibracao_etapa3_RandomForest.json": {
+      "bytes": 4569,
+      "sha256": "2f9392498d1add2cdb9668c786f2c9262f3bfaaf21c9dae6314507b266631cbc"
+    },
+    "resultados/completo/registros/calibracao_etapa3_Redeneural.json": {
+      "bytes": 21158,
+      "sha256": "07b1dc531eef43c5c743483e526586aee4d0cac11b233d6364edaa248e08e625"
+    },
+    "resultados/completo/registros/calibracao_etapa3_Ridge.json": {
+      "bytes": 1162,
+      "sha256": "573324dc294359b61d4d20080153aac4849b9daf7dce7dea1774413d0f1730b6"
+    },
+    "resultados/completo/registros/calibracao_sinal_plantado.json": {
+      "bytes": 2642,
+      "sha256": "f111710a375a80c90afef6709938fbe0745529204d8718e867dce4e4b2cbdb15"
+    },
+    "resultados/completo/registros/comparacoes_E.csv": {
+      "bytes": 16047,
+      "sha256": "b8219ead5ec7c25cbc1ac6c2c786fdfa7b56c6899de3a0622b4e071d6fdb37c8"
+    },
+    "resultados/completo/registros/comparacoes_randomforest.csv": {
+      "bytes": 9766,
+      "sha256": "49670a04bd84304f7b9affb7d66f55d47bc61d60de62056b1a0c300654f970f0"
+    },
+    "resultados/completo/registros/comparacoes_redeneural.csv": {
+      "bytes": 10211,
+      "sha256": "5b5071bb19e7ad1fda9b6cb1215739ecdd1407ce090d5869ea677227334aeeb6"
+    },
+    "resultados/completo/registros/comparacoes_ridge.csv": {
+      "bytes": 9668,
+      "sha256": "84358894ccb7837a26e175507f3654e618dfa14d69be2bf195919675111680f0"
+    },
+    "resultados/completo/registros/defasagens.json": {
+      "bytes": 895,
+      "sha256": "d31da3d9c05ba131f6a6486409dce95e310c8a90e4e5305333d27607f1d3b83e"
+    },
+    "resultados/completo/registros/hipotese_consolidada.csv": {
+      "bytes": 19517,
+      "sha256": "95c1b19309f2aaed466e4f77f5ba51158a2a22b01e4c93ea1b1370dd53593cc8"
+    },
+    "resultados/completo/registros/metricas_randomforest.csv": {
+      "bytes": 11581,
+      "sha256": "2ee29693200698086f9d5a502d4b48f25c45932202fb46b87b2de472f25ac2a8"
+    },
+    "resultados/completo/registros/metricas_redeneural.csv": {
+      "bytes": 11430,
+      "sha256": "4661f1fe3b25f7d9bd895ee0f28fcb286dfca9b9932eec1aa12b26779a025125"
+    },
+    "resultados/completo/registros/metricas_ridge.csv": {
+      "bytes": 11254,
+      "sha256": "677b7f1459de2c8a33cd5b589656f218598f5a2c09046fc15dd3f8d9e65a3733"
+    },
+    "resultados/completo/registros/nulo_Níndice.json": {
+      "bytes": 180595,
+      "sha256": "df456f4835e5059f4b644c1b1034533ad76a9b2d549581baed8bc158f4ec39f8"
+    },
+    "resultados/completo/registros/nulo_RandomForest.json": {
+      "bytes": 180737,
+      "sha256": "e07894f036065456190c3a3b63adbdbe19a0b18be4cd42a1b732466893cce078"
+    },
+    "resultados/completo/registros/nulo_Redeneural.json": {
+      "bytes": 183143,
+      "sha256": "302ed1f170d6bf642ea94b699c22fb1bf80996eece4a3e8c3fa2d05d255d4b69"
+    },
+    "resultados/completo/registros/nulo_Ridge.json": {
+      "bytes": 183578,
+      "sha256": "e388693c9f550adc7fc67237d50ae0f69fd0f9b03d14e12a308519341d9372d4"
+    },
+    "resultados/completo/registros/pixel_habilidade.csv": {
+      "bytes": 13599,
+      "sha256": "4e8d260f989f53e1265aee2a8084c62829a8a4040e146813b103119a4206d4c3"
+    },
+    "resultados/completo/registros/pixels_suspeitos.csv": {
+      "bytes": 49120,
+      "sha256": "381113267aee738aabcc9aa4bb85bc7d0b78a588c35d4ac80b708978b5f0a5e4"
+    },
+    "resultados/completo/registros/validacao_pixel.json": {
+      "bytes": 31173,
+      "sha256": "50c8c7f1eb5ded0d9f3304e5828927413db221e87066332ec5298d2b9c6727a1"
+    },
+    "resultados/completo/registros/validade_deslocamento.json": {
+      "bytes": 241075,
+      "sha256": "774e6105ff81725e55b9380e9df1b64ac3236f783f745ab3cd2b24173913c3cd"
+    },
+    "resultados/completo/tabelas/T01_manifesto_dados.csv": {
+      "bytes": 11409,
+      "sha256": "ed48916cd4d37e97d09c6fecd4509ccc03b990e08d7f0569e68fbc36d198f60d"
+    },
+    "resultados/completo/tabelas/T02_alvos.csv": {
+      "bytes": 260,
+      "sha256": "81db21a9d867f10fa375963a87cd65bc1938626862f8d023373c0a5078eac0fd"
+    },
+    "resultados/completo/tabelas/T03_calendario.csv": {
+      "bytes": 1801,
+      "sha256": "b7f94745587db46c9c8adcf4c9691a41e88262a6f0a304bc5c9c3579c48ee390"
+    },
+    "resultados/completo/tabelas/T04_limites_quintis.csv": {
+      "bytes": 2877,
+      "sha256": "0b8395394371e976518eaf88f7e6ef9f3162ff0dc5415298dcef25ac2f8d89be"
+    },
+    "resultados/completo/tabelas/T05_casos.csv": {
+      "bytes": 1167,
+      "sha256": "e8b3f1d3e2777ca186dc4ab8a1fef52989e6cd2561186b496837c68b792cfc07"
+    },
+    "resultados/completo/tabelas/T06_serie_mensal.csv": {
+      "bytes": 111998,
+      "sha256": "c7e4e7ebbdfc991d0def50ebbf3952ac83119e5b039c194a328a47d24ba0b8fd"
+    },
+    "resultados/completo/tabelas/T07_indices.csv": {
+      "bytes": 450,
+      "sha256": "f62e825d1af55f2b2259247be2a359c055ade9319ca2293e747a949294d0d6b0"
+    },
+    "resultados/completo/tabelas/T08_normal_estacao.csv": {
+      "bytes": 319,
+      "sha256": "ae9d80269070040054f44c1d6023374d167ca3f42eee1669ef63c01d4ae2ff3f"
+    },
+    "resultados/completo/tabelas/T09_sanidade_homogeneidade.csv": {
+      "bytes": 297,
+      "sha256": "c1315ff70d112bc8950d744cdf08e01c9e407139927e4ef07ce7b051716b6312"
+    },
+    "resultados/completo/tabelas/T10_verificacoes.csv": {
+      "bytes": 2834,
+      "sha256": "66625b112d0c2237ba84a9f88b724ca0a4890943f1e0384d505d9a98f0845a8f"
+    },
+    "resultados/completo/tabelas/T11_associacao.csv": {
+      "bytes": 4090,
+      "sha256": "9fd47e12086d551d3b2bdbae6cd23b9393e4a3914044e650da54d1b6accef995"
+    },
+    "resultados/completo/tabelas/T12_perfil_defasagens.csv": {
+      "bytes": 17212,
+      "sha256": "c8be3b05cd5b0268799d5ba0372074608806ef426ec90c8440fce19065b97afa"
+    },
+    "resultados/completo/tabelas/T13_defasagem_alem_da_janela.csv": {
+      "bytes": 1988,
+      "sha256": "9fd04430232884763fbd8232be6d36d42f3469e628421c9bfcb6a0a6ef567ef5"
+    },
+    "resultados/completo/tabelas/T14_teste_campo.csv": {
+      "bytes": 34211,
+      "sha256": "16e796de8704118219c252747ecebedb26d583c6d3b8413ced7d1e9a23259a21"
+    },
+    "resultados/completo/tabelas/T15_defasagem_pixel.csv": {
+      "bytes": 2169,
+      "sha256": "fac3cc711e1c80794d1db5445965814aff1a3c5ad9fad117ddd321f5f4323a98"
+    },
+    "resultados/completo/tabelas/T16_indice_predominante.csv": {
+      "bytes": 1612,
+      "sha256": "4fb49c56f0e8b628a7735fd14434f4e6e0403c0a20ee72f3de23463909fa1a69"
+    },
+    "resultados/completo/tabelas/T17_calibracao_entrada.csv": {
+      "bytes": 1221,
+      "sha256": "d5210ace3fdb02fa8c977182d193fd1a3c1ce7f2b37be4977acbfe05ae3f139d"
+    },
+    "resultados/completo/tabelas/T18_calibracao_hiperparametros.csv": {
+      "bytes": 10431,
+      "sha256": "baac5d0670db0e454132ae53e1912a71ef14681f40c20716e4c1ad7fb0f281c8"
+    },
+    "resultados/completo/tabelas/T19_sinal_plantado.csv": {
+      "bytes": 911,
+      "sha256": "66f312e2169574e2e1c522ede283ec79a2cb5548a138fc866219479fe9f9b023"
+    },
+    "resultados/completo/tabelas/T20_calibracao_escolhas.csv": {
+      "bytes": 1338,
+      "sha256": "7d5fd5d11d6b70e38702089812428d2a964e5ccfe79e341819cffddd0f8631ff"
+    },
+    "resultados/completo/tabelas/T21_amostras.csv": {
+      "bytes": 1613,
+      "sha256": "e1244263ffd28912c29c8954b14a7b56ed8754803328f3a52a45650bf9fd5214"
+    },
+    "resultados/completo/tabelas/T22_desempenho_climatologia.csv": {
+      "bytes": 4227,
+      "sha256": "d71605fc3b590d629f6c86399b3e5097039c861b99390ad88df420a6ca8ca42b"
+    },
+    "resultados/completo/tabelas/T23_comparacao_A0.csv": {
+      "bytes": 3497,
+      "sha256": "8e204cd089dd86e85fadc63d37b75540f94e1d6cefc79c55b8fbf4403b7de680"
+    },
+    "resultados/completo/tabelas/T24_classes_no_teste.csv": {
+      "bytes": 765,
+      "sha256": "faf01d5580f36a0217184cd5906a257f5c1316f9ff87cd52be2c47643f9c01f8"
+    },
+    "resultados/completo/tabelas/T25_serie_teste.csv": {
+      "bytes": 18562,
+      "sha256": "be5219ad05fec7e3f807d9bed52fe89433ba4d0e84c0089b43de96c178a45f1e"
+    },
+    "resultados/completo/tabelas/T26_unidades_ridge.csv": {
+      "bytes": 3789,
+      "sha256": "828219cafd55fc0ead1f1af11b125c6507468f0c1b1619000c80801026f22338"
+    },
+    "resultados/completo/tabelas/T27_resposta_ridge.csv": {
+      "bytes": 42077,
+      "sha256": "313c9e16fb7dd2cd6868ee9850c4b1e7fe1c7cc447eee2dd7f0b3ce80daa3bdf"
+    },
+    "resultados/completo/tabelas/T28_metricas_ridge.csv": {
+      "bytes": 7792,
+      "sha256": "6af49ff1aac9aed4aa1f29ae3b68336456356768bf95374ba8e0e121498cdfb6"
+    },
+    "resultados/completo/tabelas/T29_comparacoes_ridge.csv": {
+      "bytes": 6533,
+      "sha256": "0a2f1120e5e7457e1f598134b26138f163c0f6a4cc595e2135d883b7993bf7e4"
+    },
+    "resultados/completo/tabelas/T30_hipotese_ridge.csv": {
+      "bytes": 3554,
+      "sha256": "018d3f0d469ddc38cb089c8f5a8fead8c00bf628d470139fdaf94d43895df2f2"
+    },
+    "resultados/completo/tabelas/T31_serie_ridge.csv": {
+      "bytes": 109466,
+      "sha256": "942355ce18ee09263dc71789f2b91cc9ec0dc9263b3019f7ede8df988bccd874"
+    },
+    "resultados/completo/tabelas/T32_unidades_randomforest.csv": {
+      "bytes": 3789,
+      "sha256": "c52f82938884cdc29a175999b4910e1656015cef24d79a02dcba99eac8ad4236"
+    },
+    "resultados/completo/tabelas/T33_resposta_randomforest.csv": {
+      "bytes": 42045,
+      "sha256": "811e3baa5661481b53fb715f8061d148cbe1df7e22a823905858a1da2124696a"
+    },
+    "resultados/completo/tabelas/T34_metricas_randomforest.csv": {
+      "bytes": 8106,
+      "sha256": "e8c79225d3041c98c949d6c512e47e33731626b748b66faa0f2eebad566a493f"
+    },
+    "resultados/completo/tabelas/T35_comparacoes_randomforest.csv": {
+      "bytes": 6699,
+      "sha256": "95b6710c8d916bf3d9ab5d099a3e7690fa65a6745e5eab0edb55dd051cf49c7b"
+    },
+    "resultados/completo/tabelas/T36_hipotese_randomforest.csv": {
+      "bytes": 3600,
+      "sha256": "c1829960c89f96df2272ce6869eded035cbd0a1fde067f7d47ed2922542513c8"
+    },
+    "resultados/completo/tabelas/T37_serie_randomforest.csv": {
+      "bytes": 109652,
+      "sha256": "f43dad10f5201ffe2b33c92b7a8e000715f720cc46e398eec332a4b721a9cd0d"
+    },
+    "resultados/completo/tabelas/T38_unidades_redeneural.csv": {
+      "bytes": 3789,
+      "sha256": "5f266f4950936b8cb0e1e9cff07d410069b7b31346343f7c3ffcc8f918be1221"
+    },
+    "resultados/completo/tabelas/T39_resposta_redeneural.csv": {
+      "bytes": 42090,
+      "sha256": "73301e055e92c7238d2c68ad359b5c62bc8d881d2e7b9a490adc9ec220773744"
+    },
+    "resultados/completo/tabelas/T40_metricas_redeneural.csv": {
+      "bytes": 8028,
+      "sha256": "3113078ff07f564c149bd2d40dcc2ea4bc27d18644e3eed582c26962cee58729"
+    },
+    "resultados/completo/tabelas/T41_comparacoes_redeneural.csv": {
+      "bytes": 6900,
+      "sha256": "cc82adb4cec0bbbf7e1bdc5409d47194c043df8ef3a405676b240a8e873a4f77"
+    },
+    "resultados/completo/tabelas/T42_hipotese_redeneural.csv": {
+      "bytes": 3797,
+      "sha256": "76adcb76ac1e1ca619231360c2c85e15467b4d514bd746c8dadd0af42a3da9e3"
+    },
+    "resultados/completo/tabelas/T43_serie_redeneural.csv": {
+      "bytes": 109515,
+      "sha256": "8f239ae2c0f58be644a17f34f7fd001fc30e445716be2ba74648aff5db0c4870"
+    },
+    "resultados/completo/tabelas/T44_comparacao_E.csv": {
+      "bytes": 10685,
+      "sha256": "dfcd67f248f30109c8f26eec1d5990e7e758dedfd3072266acd3765a8452b180"
+    },
+    "resultados/completo/tabelas/T45_comparacao_F.csv": {
+      "bytes": 1708,
+      "sha256": "c57c10a44586a1e4dad4d5d8ee3048123b33ed6f2e379625bdb542c972e02f23"
+    },
+    "resultados/completo/tabelas/T46_hipotese_tres_metodos.csv": {
+      "bytes": 13233,
+      "sha256": "98d2d36012cba6f5400481b79ef9042c13fa209c9841ff67fc97eeedc20bb12a"
+    },
+    "resultados/completo/tabelas/T47_confiabilidade.csv": {
+      "bytes": 732,
+      "sha256": "15f86e6cc4271dd52e4473800da87fe6da99b9f469b74ca845d0e24ba45a19aa"
+    },
+    "resultados/completo/tabelas/T48_validade_testes.csv": {
+      "bytes": 214,
+      "sha256": "8b7b6704b5780025c8b325a82683b202f9e2af0ecca76ebfcf97c6aab9489515"
+    },
+    "resultados/completo/tabelas/T49_validade_deslocamento.csv": {
+      "bytes": 1760,
+      "sha256": "fd066e5ebd472e10154cedf763d094e6e2f2c643e25c39706c9974bbccd85380"
+    },
+    "resultados/completo/tabelas/T50_sensibilidade_blocos.csv": {
+      "bytes": 348,
+      "sha256": "eac758efce94b48377914dd0c0d11e9f5f3cb428ef662a9f904039bd4506b581"
+    },
+    "resultados/completo/tabelas/T51_pixel_habilidade.csv": {
+      "bytes": 9073,
+      "sha256": "7f61ee4bf8928e8331202de586c402bb78b7b28b8b7e5e9631e0b3eecfb9754e"
+    },
+    "resultados/completo/tabelas/T52_pixel_predominante.csv": {
+      "bytes": 5917,
+      "sha256": "e0c30ed4557572fe6c2bc13c8f55573798a4da093ea9c13ee4ef86d3f556feed"
+    },
+    "resultados/completo/tabelas/T53_pixel_validacao.csv": {
+      "bytes": 1140,
+      "sha256": "e1cac9fad5ab7f321598be5e2cca26b5ce9e5b4cb704df3e35e780098a11054a"
+    },
+    "resultados/completo/tabelas/T54_respostas.csv": {
+      "bytes": 4724,
+      "sha256": "abd1dd1659d1e752c822318d6bdca7ac54c804f2945d00e4820b7c1e579fc320"
+    },
+    "resultados/completo/tabelas/T55_veredito_hipotese.csv": {
+      "bytes": 4382,
+      "sha256": "e91630f7a647a656ffff4dec15bd5d117849b36b539563847f83f62fe2535f70"
+    },
+    "resultados/completo/tabelas/T56_inventario_figuras.csv": {
+      "bytes": 2072,
+      "sha256": "0271a3138f90bd047220c4b7a747e5be17d552af4671ed8149b343ec6a48b2f6"
+    },
+    "resultados/completo/tabelas/T57_tempo_secoes.csv": {
+      "bytes": 280,
+      "sha256": "bc86561f9e956d6214d6d2c8d478305795e4dfa25d488f24a0398d31eb37311c"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+﻿método,grupo,alvo,caso,índice,comparação,diferença de RPSS (p.p.),IC95 inferior,IC95 superior,p,diferença de acerto (p.p.),IC95 inferior (acerto),IC95 superior (acerto),p (acerto),q (BH),p (nulo)
+Rede neural,A (hipótese),NNEB,ano hidrológico,NINO3.4,L* − sem índice,0.800865,-0.0264288,1.68836,0.0883179,6.66667,0,16.1111,0.234375,0.103053,0.00763359
+Rede neural,C,NNEB,ano hidrológico,NINO3.4,L4 − L1,0.0490482,-0.258023,0.351615,0.840576,3.33333,-3.33333,10.5556,0.472656,0.945648,
+Rede neural,A (hipótese),NNEB,ano hidrológico,TSA,L* − sem índice,0.571274,-0.4238,1.47028,0.19873,3.33333,-4.44444,8.88889,0.520508,0.137405,0.0152672
+Rede neural,A (hipótese),NNEB,ano hidrológico,AMM,L* − sem índice,0.0379415,-0.415327,0.623469,0.905518,3.05556,-0.833333,6.94444,0.537476,0.745156,0.358779
+Rede neural,A (hipótese),NNEB,estação chuvosa,NINO3.4,L* − sem índice,-0.128486,-1.3335,1.04313,0.842163,-10.6667,-21.3333,4,0.29834,0.984733,0.793893
+Rede neural,A (hipótese),NNEB,estação chuvosa,TSA,L* − sem índice,1.46005,-0.232033,3.07614,0.132751,-1.33333,-9.33333,9.33333,1,0.103053,0.00763359
+Rede neural,C,NNEB,estação chuvosa,TSA,L2 − L1,0.00607509,-0.737211,0.634995,0.987732,1.33333,-8,9.33333,1,0.987732,
+Rede neural,A (hipótese),NNEB,estação chuvosa,AMM,L* − sem índice,-0.12629,-1.0103,0.740856,0.812927,-10.6667,-26.6667,4,0.277344,0.984733,0.687023
+Rede neural,A (hipótese),NNEB,estação seca,NINO3.4,L* − sem índice,0.914888,0.39348,1.39156,0.00744629,10.4762,-0.952381,22.881,0.257812,0.15458,0.0229008
+Rede neural,C,NNEB,estação seca,NINO3.4,L4 − L1,-0.248195,-0.705616,0.242809,0.418701,-0.952381,-3.80952,2.85714,1,0.745042,
+Rede neural,A (hipótese),NNEB,estação seca,TSA,L* − sem índice,-0.0618651,-0.860813,0.679933,0.892822,13.3333,0,26.6667,0.0625,0.984733,0.763359
+Rede neural,A (hipótese),NNEB,estação seca,AMM,L* − sem índice,0.229381,-0.592633,1.09704,0.578369,0.238095,-3.33929,3.57143,1,0.745156,0.320611
+Rede neural,C,NNEB,estação seca,AMM,L4 − L1,0.0958167,-0.468113,0.657573,0.803101,2.85714,-1.90476,7.61905,0.453125,0.945648,
+Rede neural,A (hipótese),INEB,ano hidrológico,NINO3.4,L* − sem índice,-0.275621,-0.520587,-0.0452327,0.12085,-6.54762,-10.7143,-1.78571,0.128906,0.984733,0.954198
+Rede neural,C,INEB,ano hidrológico,NINO3.4,L7 − L1,-0.342364,-0.602918,-0.0631043,0.0722656,-1.19048,-7.15774,4.16667,0.820312,0.418736,
+Rede neural,A (hipótese),INEB,ano hidrológico,TSA,L* − sem índice,-0.293346,-0.513529,-0.0977904,0.0565186,-9.52381,-16.6667,-2.97619,0.0805664,0.984733,0.954198
+Rede neural,C,INEB,ano hidrológico,TSA,L12 − L1,-0.27238,-0.520858,-0.0711368,0.111572,-14.881,-24.4048,-5.35714,0.0195312,0.418736,
+Rede neural,A (hipótese),INEB,ano hidrológico,AMM,L* − sem índice,0.168568,-0.10505,0.427158,0.314941,0,-10.1339,10.1339,1,0.353326,0.0916031
+Rede neural,A (hipótese),INEB,estação chuvosa,NINO3.4,L* − sem índice,-7.71159e-05,-0.630375,0.830172,1,-3.57143,-13.0952,5.95238,0.625,0.984733,0.572519
+Rede neural,A (hipótese),INEB,estação chuvosa,TSA,L* − sem índice,0.366837,-0.208713,1.0219,0.283813,4.7619,-2.38095,11.9048,0.398438,0.274809,0.0610687
+Rede neural,C,INEB,estação chuvosa,TSA,L4 − L1,0.536013,-0.00511047,1.21102,0.153076,7.14286,1.19048,11.9048,0.270508,0.418736,
+Rede neural,A (hipótese),INEB,estação chuvosa,AMM,L* − sem índice,-0.546372,-0.967276,-0.119185,0.0386963,-4.7619,-11.9048,1.19048,0.5,0.984733,0.954198
+Rede neural,C,INEB,estação chuvosa,AMM,L4 − L1,-0.631502,-1.08928,-0.16845,0.0216064,-9.52381,-20.2381,-1.19048,0.140625,0.194458,
+Rede neural,A (hipótese),INEB,estação seca,NINO3.4,L* − sem índice,-0.524402,-1.08085,0.0754703,0.22229,-8.33333,-15.4762,0,0.171875,0.984733,0.954198
+Rede neural,C,INEB,estação seca,NINO3.4,L10 − L1,-0.654691,-1.2293,-0.0939467,0.158447,-4.7619,-11.9048,3.57143,0.46875,0.418736,
+Rede neural,A (hipótese),INEB,estação seca,TSA,L* − sem índice,-0.629855,-0.882916,-0.328912,0.00439453,-17.8571,-27.381,-7.14286,0.0507812,0.984733,0.946565
+Rede neural,C,INEB,estação seca,TSA,L12 − L1,-0.744987,-1.19472,-0.236059,0.0113525,-15.4762,-26.1905,-4.7619,0.0371094,0.194458,
+Rede neural,A (hipótese),INEB,estação seca,AMM,L* − sem índice,-0.00637689,-0.769931,0.675314,0.989624,-8.33333,-15.4762,-1.19048,0.148438,0.745156,0.351145
+Rede neural,C,INEB,estação seca,AMM,L2 − L1,-0.230522,-0.592613,0.0804276,0.262085,-16.6667,-22.619,-10.7143,0.0078125,0.52417,
+Rede neural,A (hipótese),ENEB,ano hidrológico,NINO3.4,L* − sem índice,0.216309,-0.238018,0.796535,0.605469,-0.595238,-5.95238,5.35714,1,0.360687,0.10687
+Rede neural,C,ENEB,ano hidrológico,NINO3.4,L6 − L1,-0.194273,-0.596932,0.129317,0.538086,-1.78571,-8.92857,5.35714,0.830078,0.745042,
+Rede neural,A (hipótese),ENEB,ano hidrológico,TSA,L* − sem índice,-0.35196,-0.972442,0.264756,0.480591,-1.19048,-4.16667,1.78571,0.75,0.984733,0.984733
+Rede neural,C,ENEB,ano hidrológico,TSA,L8 − L1,-0.643792,-1.36614,0.0135153,0.162842,-2.38095,-6.54762,2.38095,0.515625,0.418736,
+Rede neural,A (hipótese),ENEB,ano hidrológico,AMM,L* − sem índice,-0.192853,-0.52831,0.0776652,0.380859,-1.19048,-6.54762,4.16667,0.878906,0.984733,0.832061
+Rede neural,C,ENEB,ano hidrológico,AMM,L2 − L1,-0.0402431,-0.225786,0.151961,0.729004,1.78571,-1.78571,5.35714,0.695801,0.937291,
+Rede neural,A (hipótese),ENEB,estação chuvosa,NINO3.4,L* − sem índice,0.342873,-0.631412,1.50135,0.608643,-4.28571,-11.4286,2.85714,0.5625,0.458015,0.152672
+Rede neural,A (hipótese),ENEB,estação chuvosa,TSA,L* − sem índice,0.188275,-0.630952,1.16596,0.903687,-11.4286,-21.4286,-1.42857,0.171875,0.745156,0.320611
+Rede neural,C,ENEB,estação chuvosa,TSA,L8 − L1,-0.455224,-1.50565,0.622129,0.504028,-17.1429,-24.2857,-10,0.0390625,0.745042,
+Rede neural,A (hipótese),ENEB,estação chuvosa,AMM,L* − sem índice,-0.782753,-1.33389,-0.341687,0.0450439,-4.28571,-8.57143,0,0.5,0.984733,0.954198
+Rede neural,A (hipótese),ENEB,estação seca,NINO3.4,L* − sem índice,0.460774,-0.148437,0.974281,0.320923,-1.02041,-8.16327,6.12245,1,0.247328,0.0458015
+Rede neural,C,ENEB,estação seca,NINO3.4,L10 − L1,-0.0408227,-0.651638,0.48917,0.919189,-9.18367,-17.3469,-1.02041,0.169922,0.973259,
+Rede neural,A (hipótese),ENEB,estação seca,TSA,L* − sem índice,-0.616935,-1.48301,0.281736,0.338745,5.10204,0,11.2245,0.5,0.984733,0.977099
+Rede neural,C,ENEB,estação seca,TSA,L7 − L1,-0.63675,-1.46777,0.18582,0.224243,5.10204,-11.2245,20.4082,0.545898,0.504547,
+Rede neural,A (hipótese),ENEB,estação seca,AMM,L* − sem índice,-0.175179,-0.637427,0.333898,0.595093,-2.04082,-11.25,6.12245,0.875,0.984733,0.763359
+Rede neural,C,ENEB,estação seca,AMM,L7 − L1,-0.210029,-0.671077,0.285096,0.519287,-4.08163,-12.2449,5.12755,0.625,0.745042,

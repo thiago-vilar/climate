@@ -1,0 +1,65 @@
+{
+  "NNEB|ano": {
+    "L*": {
+      "NINO3.4": 4,
+      "TSA": 1,
+      "AMM": 1
+    }
+  },
+  "NNEB|chuvosa": {
+    "L*": {
+      "NINO3.4": 1,
+      "TSA": 2,
+      "AMM": 1
+    }
+  },
+  "NNEB|seca": {
+    "L*": {
+      "NINO3.4": 4,
+      "TSA": 1,
+      "AMM": 4
+    }
+  },
+  "INEB|ano": {
+    "L*": {
+      "NINO3.4": 7,
+      "TSA": 12,
+      "AMM": 1
+    }
+  },
+  "INEB|chuvosa": {
+    "L*": {
+      "NINO3.4": 1,
+      "TSA": 4,
+      "AMM": 4
+    }
+  },
+  "INEB|seca": {
+    "L*": {
+      "NINO3.4": 10,
+      "TSA": 12,
+      "AMM": 2
+    }
+  },
+  "ENEB|ano": {
+    "L*": {
+      "NINO3.4": 6,
+      "TSA": 8,
+      "AMM": 2
+    }
+  },
+  "ENEB|chuvosa": {
+    "L*": {
+      "NINO3.4": 1,
+      "TSA": 8,
+      "AMM": 1
+    }
+  },
+  "ENEB|seca": {
+    "L*": {
+      "NINO3.4": 10,
+      "TSA": 7,
+      "AMM": 7
+    }
+  }
+}

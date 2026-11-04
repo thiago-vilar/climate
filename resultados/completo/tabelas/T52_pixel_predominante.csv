@@ -1,0 +1,109 @@
+﻿método,alvo,caso,índice,"área em que tem o maior RPSS, positivo (%)",RPSS médio onde predomina (%)
+Ridge,NNEB,ano hidrológico,NINO3.4,52.0743,0.52203
+Ridge,NNEB,ano hidrológico,TSA,42.2395,0.48394
+Ridge,NNEB,ano hidrológico,AMM,5.00608,0.0669991
+Ridge,NNEB,ano hidrológico,nenhum,0.680057,
+Ridge,INEB,ano hidrológico,NINO3.4,24.8344,0.101948
+Ridge,INEB,ano hidrológico,TSA,9.68025,0.112863
+Ridge,INEB,ano hidrológico,AMM,53.1456,0.0598183
+Ridge,INEB,ano hidrológico,nenhum,12.3398,
+Ridge,ENEB,ano hidrológico,NINO3.4,52.8784,0.250822
+Ridge,ENEB,ano hidrológico,TSA,26.6018,0.364761
+Ridge,ENEB,ano hidrológico,AMM,18.7552,0.0881763
+Ridge,ENEB,ano hidrológico,nenhum,1.76452,
+Ridge,NNEB,estação chuvosa,NINO3.4,13.353,0.610368
+Ridge,NNEB,estação chuvosa,TSA,81.1081,1.08038
+Ridge,NNEB,estação chuvosa,AMM,5.05127,0.167974
+Ridge,NNEB,estação chuvosa,nenhum,0.487696,
+Ridge,INEB,estação chuvosa,NINO3.4,17.994,0.202965
+Ridge,INEB,estação chuvosa,TSA,77.505,0.203935
+Ridge,INEB,estação chuvosa,AMM,0.809349,0.0843346
+Ridge,INEB,estação chuvosa,nenhum,3.69175,
+Ridge,ENEB,estação chuvosa,NINO3.4,22.7075,0.255584
+Ridge,ENEB,estação chuvosa,TSA,53.9525,0.680611
+Ridge,ENEB,estação chuvosa,AMM,20.0637,0.0756723
+Ridge,ENEB,estação chuvosa,nenhum,3.27642,
+Ridge,NNEB,estação seca,NINO3.4,70.6558,0.674479
+Ridge,NNEB,estação seca,TSA,14.0128,0.343388
+Ridge,NNEB,estação seca,AMM,13.9672,0.261625
+Ridge,NNEB,estação seca,nenhum,1.36422,
+Ridge,INEB,estação seca,NINO3.4,12.049,0.160952
+Ridge,INEB,estação seca,TSA,19.5929,0.191032
+Ridge,INEB,estação seca,AMM,54.5555,0.188749
+Ridge,INEB,estação seca,nenhum,13.8026,
+Ridge,ENEB,estação seca,NINO3.4,67.4438,0.340225
+Ridge,ENEB,estação seca,TSA,15.4756,0.284919
+Ridge,ENEB,estação seca,AMM,12.4858,0.170656
+Ridge,ENEB,estação seca,nenhum,4.59477,
+Random Forest,NNEB,ano hidrológico,NINO3.4,26.3418,2.01888
+Random Forest,NNEB,ano hidrológico,TSA,48.9795,2.36951
+Random Forest,NNEB,ano hidrológico,AMM,9.11471,0.753114
+Random Forest,NNEB,ano hidrológico,nenhum,15.5639,
+Random Forest,INEB,ano hidrológico,NINO3.4,3.13964,0.594883
+Random Forest,INEB,ano hidrológico,TSA,46.676,1.37732
+Random Forest,INEB,ano hidrológico,AMM,19.5429,0.369511
+Random Forest,INEB,ano hidrológico,nenhum,30.6414,
+Random Forest,ENEB,ano hidrológico,NINO3.4,14.1796,0.949868
+Random Forest,ENEB,ano hidrológico,TSA,34.1128,2.0299
+Random Forest,ENEB,ano hidrológico,AMM,14.6146,0.473999
+Random Forest,ENEB,ano hidrológico,nenhum,37.093,
+Random Forest,NNEB,estação chuvosa,NINO3.4,0.614541,0.953763
+Random Forest,NNEB,estação chuvosa,TSA,59.9779,4.15807
+Random Forest,NNEB,estação chuvosa,AMM,13.704,1.283
+Random Forest,NNEB,estação chuvosa,nenhum,25.7036,
+Random Forest,INEB,estação chuvosa,NINO3.4,6.5878,0.596957
+Random Forest,INEB,estação chuvosa,TSA,33.59,0.864025
+Random Forest,INEB,estação chuvosa,AMM,0.852105,0.789155
+Random Forest,INEB,estação chuvosa,nenhum,58.9701,
+Random Forest,ENEB,estação chuvosa,NINO3.4,7.25466,1.06114
+Random Forest,ENEB,estação chuvosa,TSA,38.5463,2.63551
+Random Forest,ENEB,estação chuvosa,AMM,15.8645,0.735957
+Random Forest,ENEB,estação chuvosa,nenhum,38.3346,
+Random Forest,NNEB,estação seca,NINO3.4,54.0913,3.93418
+Random Forest,NNEB,estação seca,TSA,21.5879,1.7248
+Random Forest,NNEB,estação seca,AMM,18.6536,1.84642
+Random Forest,NNEB,estação seca,nenhum,5.6671,
+Random Forest,INEB,estação seca,NINO3.4,3.5375,1.06269
+Random Forest,INEB,estação seca,TSA,40.1821,2.57829
+Random Forest,INEB,estação seca,AMM,30.2522,1.43878
+Random Forest,INEB,estação seca,nenhum,26.0282,
+Random Forest,ENEB,estação seca,NINO3.4,13.6846,1.69099
+Random Forest,ENEB,estação seca,TSA,39.6492,2.29833
+Random Forest,ENEB,estação seca,AMM,10.4928,0.833121
+Random Forest,ENEB,estação seca,nenhum,36.1734,
+Rede neural,NNEB,ano hidrológico,NINO3.4,48.7565,0.582979
+Rede neural,NNEB,ano hidrológico,TSA,44.887,0.649134
+Rede neural,NNEB,ano hidrológico,AMM,5.30204,0.169669
+Rede neural,NNEB,ano hidrológico,nenhum,1.05446,
+Rede neural,INEB,ano hidrológico,NINO3.4,21.0283,0.167641
+Rede neural,INEB,ano hidrológico,TSA,25.7964,0.195113
+Rede neural,INEB,ano hidrológico,AMM,40.2846,0.105452
+Rede neural,INEB,ano hidrológico,nenhum,12.8907,
+Rede neural,ENEB,ano hidrológico,NINO3.4,51.3374,0.342158
+Rede neural,ENEB,ano hidrológico,TSA,26.1476,0.471396
+Rede neural,ENEB,ano hidrológico,AMM,20.2828,0.145577
+Rede neural,ENEB,ano hidrológico,nenhum,2.23226,
+Rede neural,NNEB,estação chuvosa,NINO3.4,12.3761,0.53213
+Rede neural,NNEB,estação chuvosa,TSA,81.5255,1.08523
+Rede neural,NNEB,estação chuvosa,AMM,5.21173,0.220017
+Rede neural,NNEB,estação chuvosa,nenhum,0.886685,
+Rede neural,INEB,estação chuvosa,NINO3.4,25.0368,0.227344
+Rede neural,INEB,estação chuvosa,TSA,68.194,0.294475
+Rede neural,INEB,estação chuvosa,AMM,2.53053,0.160981
+Rede neural,INEB,estação chuvosa,nenhum,4.23871,
+Rede neural,ENEB,estação chuvosa,NINO3.4,22.6842,0.28534
+Rede neural,ENEB,estação chuvosa,TSA,54.0429,0.646229
+Rede neural,ENEB,estação chuvosa,AMM,18.9836,0.140877
+Rede neural,ENEB,estação chuvosa,nenhum,4.2892,
+Rede neural,NNEB,estação seca,NINO3.4,67.919,0.755191
+Rede neural,NNEB,estação seca,TSA,16.1564,0.519107
+Rede neural,NNEB,estação seca,AMM,14.8792,0.395186
+Rede neural,NNEB,estação seca,nenhum,1.04548,
+Rede neural,INEB,estação seca,NINO3.4,11.1401,0.227605
+Rede neural,INEB,estação seca,TSA,28.2677,0.331076
+Rede neural,INEB,estação seca,AMM,48.6964,0.265179
+Rede neural,INEB,estação seca,nenhum,11.8959,
+Rede neural,ENEB,estação seca,NINO3.4,65.4486,0.445516
+Rede neural,ENEB,estação seca,TSA,16.9429,0.371252
+Rede neural,ENEB,estação seca,AMM,12.2858,0.243057
+Rede neural,ENEB,estação seca,nenhum,5.32266,

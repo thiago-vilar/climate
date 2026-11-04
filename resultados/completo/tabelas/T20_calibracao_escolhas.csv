@@ -1,0 +1,21 @@
+﻿item,escolha
+entrada,índice em L*
+interação com o mês do ano,não
+filtro do índice,bruto
+treino,"único, com anos hidrológicos inteiros dentro das janelas civis (jan/1981–dez/2010 na aplicação; jan/1981–dez/1995 no treino e jan/1996–dez/2010 na validação da calibração)"
+redes por previsão,3
+hiperparâmetros: Ridge,"{""penalidade_por_mes"": 10.0}"
+hiperparâmetros: Random Forest,"{""profundidade"": 1, ""folha"": 0.3, ""arvores"": 100}"
+hiperparâmetros: Rede neural,"{""oculta"": 4, ""decaimento"": 10.0, ""passagens"": 200, ""ativacao"": ""tanh"", ""taxa"": 0.01}"
+cortes (NNEB): treino da calibração,01/1981–12/1995 (15 anos)
+cortes (NNEB): validação da calibração,01/1996–12/2010 (15 anos)
+cortes (NNEB): treino final,01/1981–12/2010 (30 anos)
+cortes (NNEB): teste,01/2011–12/2025 (15 anos)
+cortes (INEB): treino da calibração,11/1981–10/1995 (14 anos)
+cortes (INEB): validação da calibração,11/1996–10/2010 (14 anos)
+cortes (INEB): treino final,11/1981–10/2010 (29 anos)
+cortes (INEB): teste,11/2011–10/2025 (14 anos)
+cortes (ENEB): treino da calibração,03/1981–02/1995 (14 anos)
+cortes (ENEB): validação da calibração,03/1996–02/2010 (14 anos)
+cortes (ENEB): treino final,03/1981–02/2010 (29 anos)
+cortes (ENEB): teste,03/2011–02/2025 (14 anos)

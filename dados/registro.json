@@ -1,0 +1,683 @@
+{
+  "ibge/BR_Regioes_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/Brasil/BR/BR_Regioes_2022.zip",
+    "bytes": 9567918,
+    "sha256": "5891d7f0d4cd9b627212cdd80707f2dc4febf718dda7c73cf3d023262b223381",
+    "acesso_utc": "2026-10-28T17:42:16+00:00"
+  },
+  "ibge/MA_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/MA/MA_Municipios_2022.zip",
+    "bytes": 6071106,
+    "sha256": "d5e3edcd5effff0e1863f1b7b780b60ca35532c5853538d531a15593c7f40fc8",
+    "acesso_utc": "2026-10-28T17:42:18+00:00"
+  },
+  "ibge/PI_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PI/PI_Municipios_2022.zip",
+    "bytes": 1858432,
+    "sha256": "08f7857890d90fde936e2d3011dfc63de6ddaf6366f18aaef5a4881b9dabc0eb",
+    "acesso_utc": "2026-10-28T17:42:20+00:00"
+  },
+  "ibge/CE_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/CE/CE_Municipios_2022.zip",
+    "bytes": 3431440,
+    "sha256": "ce18ef19e7d993b65a6b00ea7a4442e78ac53c827dadd71e81c208accb1dcf30",
+    "acesso_utc": "2026-10-28T17:42:20+00:00"
+  },
+  "ibge/RN_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/RN/RN_Municipios_2022.zip",
+    "bytes": 396209,
+    "sha256": "a0caea4d441d70a6d14ee54c4f6c200b05ae3004a95d6b6199519c35289ce407",
+    "acesso_utc": "2026-10-28T17:42:21+00:00"
+  },
+  "ibge/PB_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PB/PB_Municipios_2022.zip",
+    "bytes": 2804773,
+    "sha256": "2ee1a7ca918d0bb97eb8bdbbc6ba346158bf2ba58e5a8f49415215493fcc09a4",
+    "acesso_utc": "2026-10-28T17:42:22+00:00"
+  },
+  "ibge/PE_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/PE/PE_Municipios_2022.zip",
+    "bytes": 1559024,
+    "sha256": "7b78a21c9a430749260fbf6d86c75b4baddc8c719e6a05843877b56760581503",
+    "acesso_utc": "2026-10-28T17:42:22+00:00"
+  },
+  "ibge/AL_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/AL/AL_Municipios_2022.zip",
+    "bytes": 1748114,
+    "sha256": "8a4f915197250ac9267a1b9f812b016355f3e4547711508c44f36909d846f1c3",
+    "acesso_utc": "2026-10-28T17:42:23+00:00"
+  },
+  "ibge/SE_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/SE/SE_Municipios_2022.zip",
+    "bytes": 1470811,
+    "sha256": "b25e4b356a70ecf29b1aaa4016f0dfd00d6b93e859d049680ee2cc02cb5f684c",
+    "acesso_utc": "2026-10-28T17:42:24+00:00"
+  },
+  "ibge/BA_Municipios_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/UFs/BA/BA_Municipios_2022.zip",
+    "bytes": 13670266,
+    "sha256": "6559f564071dec2d49e3c55061049190054ea71121cb02e2e6d9cbf8e9bc7c48",
+    "acesso_utc": "2026-10-28T17:42:25+00:00"
+  },
+  "ibge/BR_UF_2022.zip": {
+    "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2022/Brasil/BR/BR_UF_2022.zip",
+    "bytes": 13717460,
+    "sha256": "282ec7f0f0beeeead45e6609f4ffffce161bda04cb8ee0afcad2316d1c841bcb",
+    "acesso_utc": "2026-10-28T17:42:36+00:00"
+  },
+  "chirps/CHIRPS_1981.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1981.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "cd985f519591179fe9668c770d25cfc8c5e29b94c202fe85fff684c12c5349ec",
+    "acesso_utc": "2026-10-28T17:42:53+00:00",
+    "ano": 1981,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1982.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1982.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "77029cc1cb986bb56b4af04280f04145a2bb991380e5476da3e433c2cb1e60d7",
+    "acesso_utc": "2026-10-28T17:43:08+00:00",
+    "ano": 1982,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1983.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1983.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "96d7dbc9973ef37f711adc05a8e6ea9d54d54cffc96b96aa7cfdcd885321bef8",
+    "acesso_utc": "2026-10-28T17:43:23+00:00",
+    "ano": 1983,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1984.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1984.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "b6d5bb93e462c67408e9d1002269c287b2cedc31962571cbc17bc6495d8bd458",
+    "acesso_utc": "2026-10-28T17:43:39+00:00",
+    "ano": 1984,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1985.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1985.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "0cbf2a047c10a4036b623684a3a35c9b650e45d9e9fce657e40d526795641ab1",
+    "acesso_utc": "2026-10-28T17:43:56+00:00",
+    "ano": 1985,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1986.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1986.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "98b24615c63d7f71511347cc671b77f6c2c1fff19495a8767ca4d4aa40cb12e4",
+    "acesso_utc": "2026-10-28T17:44:10+00:00",
+    "ano": 1986,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1987.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1987.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "e394408cd796b10149bd73665bb22892cb1195d58ddbc3d5b1e8e53b4258a1c5",
+    "acesso_utc": "2026-10-28T17:44:24+00:00",
+    "ano": 1987,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1988.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1988.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "f4551881e3df6a2967bf88808add0cc16a11e75f1aba7bb1016b240703866337",
+    "acesso_utc": "2026-10-28T17:44:40+00:00",
+    "ano": 1988,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1989.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1989.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "94b6e4934759a81d88ba46f2558e1b036992ec7baa15f776436a21c0d61fc4f2",
+    "acesso_utc": "2026-10-28T17:44:56+00:00",
+    "ano": 1989,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1990.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1990.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "ca12492b56c8a932bc500f08f2f2d3b02fe404cc4704c3f1e0d43d745ec2e021",
+    "acesso_utc": "2026-10-28T17:45:11+00:00",
+    "ano": 1990,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1991.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1991.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "e513f9e09899e31029285464dbd6f00f0ddd67dea632eb84b901af477f2228fc",
+    "acesso_utc": "2026-10-28T17:45:47+00:00",
+    "ano": 1991,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1992.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1992.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "281c3df07b39672c419173c50473eaebd64342811ed618c539398784753e090c",
+    "acesso_utc": "2026-10-28T17:46:01+00:00",
+    "ano": 1992,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1993.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1993.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "b26dba290ee8f06d7d7b92c93cd2a46c8aaba6d1ac56e3165f7ce8c8a7462b54",
+    "acesso_utc": "2026-10-28T17:46:24+00:00",
+    "ano": 1993,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1994.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1994.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "7e84c84f1be81ff1486e43c7f2bb9ce8b60cdfab8c3561bd37037f5c1e316d79",
+    "acesso_utc": "2026-10-28T17:46:41+00:00",
+    "ano": 1994,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1995.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1995.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "e91b77ddf1c479e19c6b1b3bb38950fe23ad2682b252c030dce91738383be598",
+    "acesso_utc": "2026-10-28T17:46:55+00:00",
+    "ano": 1995,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1996.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1996.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "67400cfa12dea3ccc329cbf4190b7f8738ab2ebf32de0e9efabced80fa6e96bb",
+    "acesso_utc": "2026-10-28T17:47:10+00:00",
+    "ano": 1996,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1997.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1997.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "31b6ea8efb8563207d248bc029393153504e02ee70602f21b9d5aae9adadb04c",
+    "acesso_utc": "2026-10-28T17:47:25+00:00",
+    "ano": 1997,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1998.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1998.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "600b4459446b72e688ed942309662724500acf782adfd3fe5384bd7100063583",
+    "acesso_utc": "2026-10-28T17:47:40+00:00",
+    "ano": 1998,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_1999.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.1999.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "6a6a6b6710207f8b5a92d78d0eca039ed16b056bbf2ffc18a619744a881f635c",
+    "acesso_utc": "2026-10-28T17:47:55+00:00",
+    "ano": 1999,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2000.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2000.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "4449d6aa63321c98afd2ae533a968363777daa15c14f7e7f5fec38b78ae36192",
+    "acesso_utc": "2026-10-28T17:48:10+00:00",
+    "ano": 2000,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2001.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2001.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "ef143f7e6d41f2083eaa11459c89aaf457c94cad14db982a3c2c28171164205d",
+    "acesso_utc": "2026-10-28T17:48:24+00:00",
+    "ano": 2001,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2002.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2002.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "002039186115fe84c575a5a5c6a295e164005a4d26edb5d5d23c4af0a9bf296d",
+    "acesso_utc": "2026-10-28T17:48:39+00:00",
+    "ano": 2002,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2003.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2003.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "582b04f38c4956062dd54f1d4352b1cf1f420410116c2854bf842c18cf5ad725",
+    "acesso_utc": "2026-10-28T17:48:54+00:00",
+    "ano": 2003,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2004.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2004.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "dcb009386258e391b623a7148a96ab27b0fc32107b3b002cc7aca5f1e7afc352",
+    "acesso_utc": "2026-10-28T17:49:09+00:00",
+    "ano": 2004,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2005.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2005.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "82defb7d848fd1c6083acfb362d753bc21d1a1cd14bf009bf90a5dc680600e0b",
+    "acesso_utc": "2026-10-28T17:49:25+00:00",
+    "ano": 2005,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2006.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2006.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "d3ffff3d1d79c24aeec32e526d58f32e8580cb664e8048899bc0a528edf46ecf",
+    "acesso_utc": "2026-10-28T17:49:44+00:00",
+    "ano": 2006,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2007.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2007.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "e2eb3156eb688e9b1f0664a3f6479236a40f3305d872a425229cfdc52f5b6da3",
+    "acesso_utc": "2026-10-28T17:50:01+00:00",
+    "ano": 2007,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2008.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2008.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "826bdffd603b02e4e11985dca19a55b810bed9a57d8797320961c8c840c0c289",
+    "acesso_utc": "2026-10-28T17:50:17+00:00",
+    "ano": 2008,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2009.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2009.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "5f9811f5b351c7501eaf1c1b3e8d654e6cc772aa0ddf5f3e7d389d1520e6bd55",
+    "acesso_utc": "2026-10-28T17:50:30+00:00",
+    "ano": 2009,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2010.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2010.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "c7b16c6aac1482c77c5ee8b497c063cf9282c5212477dd4a6262f769b91646ab",
+    "acesso_utc": "2026-10-28T17:50:45+00:00",
+    "ano": 2010,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2011.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2011.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "dcaca9b9fa8ce34255463ddd20c4287a1c88ca5bff37fc75dd7051573f496be0",
+    "acesso_utc": "2026-10-28T17:50:58+00:00",
+    "ano": 2011,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2012.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2012.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "e5d58e64c0732a343058dc1b511c07f33cc66732726b7769aaf1cd50110577d7",
+    "acesso_utc": "2026-10-28T17:51:12+00:00",
+    "ano": 2012,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2013.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2013.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "fbf49026637de69d90c1d8bbeef58267f422ce964870dae228fb0ba99271fcc9",
+    "acesso_utc": "2026-10-28T17:51:25+00:00",
+    "ano": 2013,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2014.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2014.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "374919daf8fb036a924bc21f8226575d77d2a12083c10e43a212b6386cb18bdb",
+    "acesso_utc": "2026-10-28T17:51:39+00:00",
+    "ano": 2014,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2015.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2015.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "76b761603b7394e300d6c6b9a312a4701d0225d657fc71794be4fa64d3ef67bc",
+    "acesso_utc": "2026-10-28T17:51:54+00:00",
+    "ano": 2015,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2016.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2016.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "8533ad0d816792e9f07bfabaa4710a348f28fd3526a012885f97b5dd731e72af",
+    "acesso_utc": "2026-10-28T17:52:08+00:00",
+    "ano": 2016,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2017.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2017.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "3da02c44a45b5efbd20c68ebd410ec502bdc6cc7dc569db24e9d69824a5b5610",
+    "acesso_utc": "2026-10-28T17:52:21+00:00",
+    "ano": 2017,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2018.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2018.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "9a65dfe9ee2b1d71025dba12f036d725d295f64d77f6ffa827c2a702e56d5463",
+    "acesso_utc": "2026-10-28T17:52:37+00:00",
+    "ano": 2018,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2019.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2019.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "b4fadd88cb12add60360aeeff5d3ae76e8c2d5c685f7b75cff3bd107e7a6b737",
+    "acesso_utc": "2026-10-28T17:52:58+00:00",
+    "ano": 2019,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2020.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2020.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "23045cc560a0ea87a4c913a96581a37f93007c17d6a21c6c76fbd6299d6dbbdf",
+    "acesso_utc": "2026-10-28T17:53:14+00:00",
+    "ano": 2020,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2021.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2021.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "ae4983ac2fdc4e9af59b62e57a3bb99b880b7ab658f7d599a045a23ad2704de5",
+    "acesso_utc": "2026-10-28T17:53:28+00:00",
+    "ano": 2021,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2022.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2022.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "2a82e1176afbeeacee23e316532b27700950aa306deb0be6b57d0c2186f945bf",
+    "acesso_utc": "2026-10-28T17:53:43+00:00",
+    "ano": 2022,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2023.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2023.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "dcf9a0f0883fb1d4617000ff6c5e6cad4dfd379dd45f71531e3671b6d23e3a9f",
+    "acesso_utc": "2026-10-28T17:53:56+00:00",
+    "ano": 2023,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2024.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2024.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "19c610c4fb1db4fe933631c6ee7e552d7c7ffcf9b228011e448523cfc41371d1",
+    "acesso_utc": "2026-10-28T17:54:10+00:00",
+    "ano": 2024,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "chirps/CHIRPS_2025.nc": {
+    "url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/netcdf/byYear/chirps-v2.0.2025.monthly.nc",
+    "bytes": 5485640,
+    "sha256": "f9bba24c3b84e4ef33a429478197c38f0e1d5fd5d0085e53b29d5bd57f46e0ab",
+    "acesso_utc": "2026-10-28T17:54:23+00:00",
+    "ano": 2025,
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "derivados/chirps_neb_005.npz": {
+    "url": "derivado: recortes anuais do CHIRPS v2.0 na malha de 0.05°",
+    "bytes": 145164514,
+    "sha256": "82886a8dae3ffdaf3de8384bb4cabc446cf676b63f09711e9e586d8dfc5b587c",
+    "acesso_utc": "2026-10-28T17:54:33+00:00",
+    "limites": [
+      -48.800000000000004,
+      -18.35,
+      -32.35,
+      -1.0
+    ]
+  },
+  "indices/nina34.anom.data": {
+    "url": "https://psl.noaa.gov/data/correlation/nina34.anom.data",
+    "bytes": 8362,
+    "sha256": "879cf3cb31d71e576f639ea88af9498f622662bbcaf6c74e79ad5394614696dd",
+    "acesso_utc": "2026-10-28T17:54:33+00:00"
+  },
+  "indices/tsa.data": {
+    "url": "https://psl.noaa.gov/data/correlation/tsa.data",
+    "bytes": 8230,
+    "sha256": "700c0dffda0f19c1254ba482808b345eaa0538f5bf09fc3bc025f46a5fbe3a69",
+    "acesso_utc": "2026-10-28T17:54:34+00:00"
+  },
+  "indices/amm.data": {
+    "url": "https://psl.noaa.gov/data/correlation/amm.data",
+    "bytes": 8286,
+    "sha256": "6df29b79cbc97a45acbf4bd44307c128ec10948be1803e333823443670b3dd85",
+    "acesso_utc": "2026-10-28T17:54:35+00:00"
+  }
+}

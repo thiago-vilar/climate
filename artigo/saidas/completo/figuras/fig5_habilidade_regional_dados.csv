@@ -1,0 +1,82 @@
+﻿método,alvo,caso,índice,RPSS sobre o controle (%),IC95 inferior,IC95 superior,p (nulo),q,verificação acima de 5 % (Ridge)
+Ridge,NNEB,ano hidrológico,NINO3.4,0.94142,0.0590732,1.90309,0.00763359,0.0687023,False
+Ridge,NNEB,ano hidrológico,TSA,0.582838,-0.269138,1.38053,0.0305344,0.137405,True
+Ridge,NNEB,ano hidrológico,AMM,0.0645367,-0.255169,0.394287,0.274809,0.674532,False
+Ridge,NNEB,estação chuvosa,NINO3.4,-0.0122708,-1.37327,1.41919,0.694656,1.0,False
+Ridge,NNEB,estação chuvosa,TSA,1.53496,0.0622204,3.113,0.00763359,0.0687023,False
+Ridge,NNEB,estação chuvosa,AMM,-0.0701595,-0.878456,0.617529,0.732824,1.0,False
+Ridge,NNEB,estação seca,NINO3.4,1.81215,0.774857,2.66708,0.00763359,0.0687023,False
+Ridge,NNEB,estação seca,TSA,-0.02962,-0.81089,0.725981,0.755725,1.0,True
+Ridge,NNEB,estação seca,AMM,0.134312,-0.317067,0.569432,0.328244,0.73855,False
+Ridge,INEB,ano hidrológico,NINO3.4,-0.186907,-0.398292,-0.00948495,0.984733,1.0,False
+Ridge,INEB,ano hidrológico,TSA,-0.226154,-0.389929,-0.0790254,1.0,1.0,True
+Ridge,INEB,ano hidrológico,AMM,0.0822433,-0.0752625,0.224231,0.0992366,0.267939,False
+Ridge,INEB,estação chuvosa,NINO3.4,-0.036427,-0.507968,0.582505,0.656489,1.0,False
+Ridge,INEB,estação chuvosa,TSA,0.270089,-0.168729,0.741353,0.0534351,0.206107,False
+Ridge,INEB,estação chuvosa,AMM,-0.240097,-0.436541,-0.0535763,0.946565,1.0,False
+Ridge,INEB,estação seca,NINO3.4,-0.364025,-0.789685,0.0541316,0.969466,1.0,False
+Ridge,INEB,estação seca,TSA,-0.260661,-0.360651,-0.141381,0.847328,1.0,True
+Ridge,INEB,estação seca,AMM,0.00868741,-0.638193,0.652202,0.358779,0.745156,True
+Ridge,ENEB,ano hidrológico,NINO3.4,0.228595,-0.12616,0.676529,0.0229008,0.123664,False
+Ridge,ENEB,ano hidrológico,TSA,-0.317337,-0.920971,0.247842,1.0,1.0,False
+Ridge,ENEB,ano hidrológico,AMM,-0.0858603,-0.280325,0.0886412,0.732824,1.0,False
+Ridge,ENEB,estação chuvosa,NINO3.4,0.442233,-0.705659,1.80775,0.0610687,0.206107,False
+Ridge,ENEB,estação chuvosa,TSA,0.464584,-0.352742,1.47594,0.0763359,0.229008,False
+Ridge,ENEB,estação chuvosa,AMM,-0.372482,-0.646598,-0.150531,0.900763,1.0,False
+Ridge,ENEB,estação seca,NINO3.4,0.37865,-0.0682573,0.803925,0.0229008,0.123664,True
+Ridge,ENEB,estação seca,TSA,-0.512927,-1.30457,0.235765,0.977099,1.0,True
+Ridge,ENEB,estação seca,AMM,-0.100905,-0.503593,0.357232,0.755725,1.0,False
+Random Forest,NNEB,ano hidrológico,NINO3.4,-1.81118,-10.6247,6.83276,0.694656,1.0,False
+Random Forest,NNEB,ano hidrológico,TSA,2.51538,-3.93004,7.95742,0.0458015,0.30916,True
+Random Forest,NNEB,ano hidrológico,AMM,-0.604952,-2.22041,1.30757,0.435115,1.0,False
+Random Forest,NNEB,estação chuvosa,NINO3.4,-16.6184,-32.4312,-1.27122,1.0,1.0,False
+Random Forest,NNEB,estação chuvosa,TSA,1.99503,-10.3728,11.9545,0.0458015,0.30916,False
+Random Forest,NNEB,estação chuvosa,AMM,-1.50709,-4.71345,1.57701,0.381679,1.0,False
+Random Forest,NNEB,estação seca,NINO3.4,5.5784,-4.949,16.1241,0.00763359,0.206107,False
+Random Forest,NNEB,estação seca,TSA,-1.12732,-7.87725,4.54936,0.625954,1.0,True
+Random Forest,NNEB,estação seca,AMM,0.346148,-3.76453,4.1488,0.29771,1.0,False
+Random Forest,INEB,ano hidrológico,NINO3.4,-4.70938,-6.78862,-2.6641,0.992366,1.0,False
+Random Forest,INEB,ano hidrológico,TSA,0.927102,-0.0332214,1.82475,0.0381679,0.30916,True
+Random Forest,INEB,ano hidrológico,AMM,0.390041,-0.865968,1.71738,0.145038,0.652672,False
+Random Forest,INEB,estação chuvosa,NINO3.4,-8.01412,-13.9092,-1.47497,1.0,1.0,False
+Random Forest,INEB,estação chuvosa,TSA,-0.869015,-3.91597,2.64436,0.648855,1.0,False
+Random Forest,INEB,estação chuvosa,AMM,-8.54247,-12.8305,-3.75624,1.0,1.0,False
+Random Forest,INEB,estação seca,NINO3.4,-10.333,-15.8014,-4.394,1.0,1.0,False
+Random Forest,INEB,estação seca,TSA,0.373091,-0.442194,1.00918,0.10687,0.577099,True
+Random Forest,INEB,estação seca,AMM,-4.52907,-11.0311,1.11868,0.770992,1.0,True
+Random Forest,ENEB,ano hidrológico,NINO3.4,-2.25847,-5.92086,1.7615,0.725191,1.0,False
+Random Forest,ENEB,ano hidrológico,TSA,-2.73848,-5.78845,0.126189,0.931298,1.0,False
+Random Forest,ENEB,ano hidrológico,AMM,-2.04426,-3.58695,-0.543452,0.862595,1.0,False
+Random Forest,ENEB,estação chuvosa,NINO3.4,-2.69578,-13.3171,7.41147,0.587786,1.0,False
+Random Forest,ENEB,estação chuvosa,TSA,-3.24956,-10.0153,3.45464,0.778626,1.0,False
+Random Forest,ENEB,estação chuvosa,AMM,-10.4697,-17.6463,-4.29601,0.946565,1.0,False
+Random Forest,ENEB,estação seca,NINO3.4,-5.05478,-11.8626,1.84947,0.923664,1.0,True
+Random Forest,ENEB,estação seca,TSA,-1.19965,-5.82155,3.72101,0.610687,1.0,True
+Random Forest,ENEB,estação seca,AMM,-4.76582,-10.9789,0.817663,0.916031,1.0,False
+Rede neural,NNEB,ano hidrológico,NINO3.4,0.800865,-0.0264288,1.68836,0.00763359,0.103053,False
+Rede neural,NNEB,ano hidrológico,TSA,0.571274,-0.4238,1.47028,0.0152672,0.137405,True
+Rede neural,NNEB,ano hidrológico,AMM,0.0379415,-0.415327,0.623469,0.358779,0.745156,False
+Rede neural,NNEB,estação chuvosa,NINO3.4,-0.128486,-1.3335,1.04313,0.793893,0.984733,False
+Rede neural,NNEB,estação chuvosa,TSA,1.46005,-0.232033,3.07614,0.00763359,0.103053,False
+Rede neural,NNEB,estação chuvosa,AMM,-0.12629,-1.0103,0.740856,0.687023,0.984733,False
+Rede neural,NNEB,estação seca,NINO3.4,0.914888,0.39348,1.39156,0.0229008,0.15458,False
+Rede neural,NNEB,estação seca,TSA,-0.0618651,-0.860813,0.679933,0.763359,0.984733,True
+Rede neural,NNEB,estação seca,AMM,0.229381,-0.592633,1.09704,0.320611,0.745156,False
+Rede neural,INEB,ano hidrológico,NINO3.4,-0.275621,-0.520587,-0.0452327,0.954198,0.984733,False
+Rede neural,INEB,ano hidrológico,TSA,-0.293346,-0.513529,-0.0977904,0.954198,0.984733,True
+Rede neural,INEB,ano hidrológico,AMM,0.168568,-0.10505,0.427158,0.0916031,0.353326,False
+Rede neural,INEB,estação chuvosa,NINO3.4,-7.71159e-05,-0.630375,0.830172,0.572519,0.984733,False
+Rede neural,INEB,estação chuvosa,TSA,0.366837,-0.208713,1.0219,0.0610687,0.274809,False
+Rede neural,INEB,estação chuvosa,AMM,-0.546372,-0.967276,-0.119185,0.954198,0.984733,False
+Rede neural,INEB,estação seca,NINO3.4,-0.524402,-1.08085,0.0754703,0.954198,0.984733,False
+Rede neural,INEB,estação seca,TSA,-0.629855,-0.882916,-0.328912,0.946565,0.984733,True
+Rede neural,INEB,estação seca,AMM,-0.00637689,-0.769931,0.675314,0.351145,0.745156,True
+Rede neural,ENEB,ano hidrológico,NINO3.4,0.216309,-0.238018,0.796535,0.10687,0.360687,False
+Rede neural,ENEB,ano hidrológico,TSA,-0.35196,-0.972442,0.264756,0.984733,0.984733,False
+Rede neural,ENEB,ano hidrológico,AMM,-0.192853,-0.52831,0.0776652,0.832061,0.984733,False
+Rede neural,ENEB,estação chuvosa,NINO3.4,0.342873,-0.631412,1.50135,0.152672,0.458015,False
+Rede neural,ENEB,estação chuvosa,TSA,0.188275,-0.630952,1.16596,0.320611,0.745156,False
+Rede neural,ENEB,estação chuvosa,AMM,-0.782753,-1.33389,-0.341687,0.954198,0.984733,False
+Rede neural,ENEB,estação seca,NINO3.4,0.460774,-0.148437,0.974281,0.0458015,0.247328,True
+Rede neural,ENEB,estação seca,TSA,-0.616935,-1.48301,0.281736,0.977099,0.984733,True
+Rede neural,ENEB,estação seca,AMM,-0.175179,-0.637427,0.333898,0.763359,0.984733,False
