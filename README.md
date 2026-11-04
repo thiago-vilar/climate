@@ -13,7 +13,7 @@ São avaliadas três famílias de modelos preditivos: regressão linear regulari
 O desenho separa três coisas:
 
 - **Associação:** correlação defasada, aferida em 1981–2010.
-- **Habilidade preditiva:** RPSS de cada modelo sobre o mesmo modelo sem o índice, em 2011–2025.
+- **Habilidade preditiva:** RPSS de cada modelo sobre a climatologia padrão N (20 % em cada quintil), referência comum que permite comparar os modelos, e sobre o mesmo modelo sem o índice (teste de atribuição), em 2011–2025.
 - **Interpretação física:** é leitura das evidências, sem efeito causal estimado.
 
 ## Resultado principal e limites
@@ -21,7 +21,8 @@ O desenho separa três coisas:
 Números da execução completa publicada (tabelas em `resultados/completo/tabelas`; conferência em `conferencia_publicacao_completo.md`):
 
 - **Associação (1981–2010):** detectada em 11 das 27 combinações de alvo, caso e índice após correção para testes múltiplos (NINO3.4 em 6, TSA em 4, AMM em 1), com |r| de 0,19 a 0,39.
-- **Previsão (2011–2025):** nenhuma das 81 hipóteses de ganho foi confirmada. Os maiores ganhos sobre o controle sem índice ficaram no norte (NNEB), abaixo de 6 % de RPSS, com q ≥ 0,069.
+- **Previsão (2011–2025):** sobre a climatologia padrão, a Ridge ganhou de +1,0 % a +1,8 % de RPSS no norte (NNEB), com o NINO3.4 quatro meses antes e o TSA dois meses antes, com IC95 acima de zero; a rede neural repetiu o ganho, e sem o índice o ganho desaparece (`artigo/saidas/completo/rpss_climatologia.csv`). Nenhuma das 81 hipóteses de ganho passou na correção para testes múltiplos (q ≥ 0,069).
+- **Modelos:** a Ridge foi a mais estável (de −0,5 % a +1,8 % sobre a climatologia), seguida pela rede neural (de −0,6 % a +1,5 %); a Random Forest variou de −16,7 % a +5,5 %.
 - **Previsões perto da climatologia:** na Ridge e na rede neural, as probabilidades ficam a no máximo 3,9 pontos percentuais de 20 %, e os intervalos de confiança da Ridge (condicionais às previsões, não simultâneos) excluem ganhos maiores que 3,1 % de RPSS. Na configuração avaliada, a Random Forest afasta-se até 20,5 pontos de 20 % e varia de −16,6 % a +5,6 % de RPSS sobre o controle, sem nenhum ganho confirmado.
 - **Leitura:** associação defasada não implicou habilidade mensal confirmável com índices isolados, neste protocolo e neste período de teste. Ausência de confirmação não é ausência de efeito.
 
