@@ -1,12 +1,12 @@
-"""Figuras principais do artigo e resumo gráfico, a partir das saídas da execução publicada.
+"""Main figures of the article and graphical abstract, from the outputs of the published run.
 
-Não recalcula o estudo. Lê `resultados/<modo>/tabelas`, `resultados/<modo>/figuras` (mapa dos
-alvos e mapas sazonais, desenhados pelo notebook) e `artigo/saidas/<modo>/diagnosticos_previsoes.csv`
-(de `diagnosticos_artigo.py`). Grava em `artigo/saidas/<modo>/figuras/` cada figura em PNG (300 dpi)
-e PDF, e, ao lado, os dados de origem de cada painel em CSV. A Figura 4 reaproveita os mapas do
-notebook (F13) e só acrescenta a escala de |r|, desenhada com a mesma regra de cor.
+Does not recompute the study. Reads `resultados/<modo>/tabelas`, `resultados/<modo>/figuras` (map of the
+targets and seasonal maps, drawn by the notebook) and `artigo/saidas/<modo>/diagnosticos_previsoes.csv`
+(from `diagnosticos_artigo.py`). Writes to `artigo/saidas/<modo>/figuras/` each figure in PNG (300 dpi)
+and PDF and, alongside, the source data of each panel in CSV. Figure 4 reuses the notebook maps
+(F13) and only adds the |r| scale, drawn with the same colour rule.
 
-Uso: python artigo/figuras_artigo.py [--modo completo|piloto]
+Usage: python artigo/figuras_artigo.py [--modo completo|piloto]
 """
 import argparse
 import json
@@ -21,7 +21,7 @@ from PIL import Image
 
 mm = 1 / 25.4
 mpl.rcParams.update({
-    # sem serifa, como as figuras do notebook que entram no artigo (Figuras 1a, 3 e 4)
+    # sans-serif, like the notebook figures used in the article (Figures 1a, 3 and 4)
     'font.family': 'sans-serif', 'font.sans-serif': ['DejaVu Sans', 'Arial', 'Liberation Sans'],
     'font.size': 8, 'axes.titlesize': 8, 'axes.labelsize': 8, 'xtick.labelsize': 7.5,
     'ytick.labelsize': 7.5, 'legend.fontsize': 7.5, 'axes.spines.top': False,
@@ -29,7 +29,7 @@ mpl.rcParams.update({
     'ytick.major.width': 0.6, 'savefig.bbox': 'tight', 'savefig.pad_inches': 0.02,
     'pdf.fonttype': 42, 'mathtext.fontset': 'dejavusans'})
 
-# paleta de Paul Tol (segura para daltonismo, sem vermelho com verde), a mesma do notebook
+# Paul Tol palette (colour-blind safe, no red with green), the same as the notebook
 COR = {'NINO3.4': '#BB5566', 'TSA': '#004488', 'AMM': '#DDAA33',
        'Ridge': '#004488', 'Random Forest': '#DDAA33', 'Rede neural': '#BB5566',
        'NNEB': '#44AA99', 'INEB': '#DDCC77', 'ENEB': '#004488'}
@@ -67,10 +67,10 @@ def main():
     tab, fig_nb = res / 'tabelas', res / 'figuras'
     saida = Path(__file__).resolve().parent / 'saidas' / modo / 'figuras'
     saida.mkdir(parents=True, exist_ok=True)
-    T = lambda nome: pd.read_csv(next(tab.glob(f'T*_{nome}.csv')))   # pelo nome, não pelo número
+    T = lambda nome: pd.read_csv(next(tab.glob(f'T*_{nome}.csv')))   # by name, not by number
     diag = pd.read_csv(saida.parent / 'diagnosticos_previsoes.csv')
 
-    # ---------- Figura 1: alvos e ciclo anual com a estação chuvosa ----------
+    # ---------- Figure 1: targets and annual cycle with the wet season ----------
     cal = T('calendario')
     fig = plt.figure(figsize=(174 * mm, 92 * mm))
     gs = fig.add_gridspec(3, 2, width_ratios=[1.0, 1.25], wspace=0.30, hspace=0.42)
@@ -83,8 +83,8 @@ def main():
         ax = fig.add_subplot(gs[i, 1])
         c = cal[cal.alvo == alvo].set_index('mês').reindex(MESES_PT)
         chuv = (c['estação'] == 'chuvosa').to_numpy()
-        # cada painel começa no início do ano hidrológico do alvo (primeiro mês da estação
-        # chuvosa); Q (Liebmann e Marengo, 2001) é somada a partir dele e gravada no CSV.
+        # each panel starts at the beginning of the target's hydrological year (first month of the
+        # wet season); Q (Liebmann and Marengo, 2001) is summed from it and written to the CSV.
         ini = next(k for k in range(12) if chuv[k] and not chuv[k - 1])
         ordem = [(ini + k) % 12 for k in range(12)]
         p = c['normal 1981–2010 (mm)'].to_numpy()[ordem]
@@ -96,8 +96,8 @@ def main():
         if i == 1:
             ax.set_ylabel('Rainfall, 1981–2010 (mm/month)')
         ax.set_title(alvo, loc='left', fontweight='bold', pad=2, x=0.03)
-        # regra da estação chuvosa à vista: os meses acima da média mensal do ano. É a mesma
-        # regra da anomalia acumulada Q (Q sobe nesses meses), cujos valores vão no CSV.
+        # wet-season rule made visible: months above the mean monthly rainfall of the year. It is the same
+        # rule as the cumulative anomaly Q (Q rises in those months), whose values go to the CSV.
         ax.axhline(p.mean(), color='k', lw=0.9, ls='--')
         ax.text(11.45, p.mean(), f'{p.mean():.0f} mm', ha='right', va='bottom', fontsize=6.5)
         letra(ax, 'bcd'[i])
@@ -115,7 +115,7 @@ def main():
                bbox_to_anchor=(0.66, 0.035), columnspacing=1.0)
     salvar(fig, saida, 'fig1_alvos_ciclo', pd.concat(dados1, ignore_index=True))
 
-    # ---------- Figura 2: perfis de correlação por defasagem ----------
+    # ---------- Figure 2: correlation profiles by lag ----------
     per, asso = T('perfil_defasagens'), T('associacao')
     fig, axs = plt.subplots(3, 3, figsize=(174 * mm, 120 * mm), sharex=True, sharey=True)
     for i, alvo in enumerate(ALVOS):
@@ -151,25 +151,25 @@ def main():
         asso[['alvo', 'caso', 'índice', 'L* (meses)', 'r(L*)', 'IC95 inferior', 'IC95 superior',
               'q (BH)', 'detectado (q < 0,05)']], on=['alvo', 'caso', 'índice']))
 
-    # ---------- Figura 3: mapas da estação chuvosa (desenhados pelo notebook) ----------
+    # ---------- Figure 3: wet-season maps (drawn by the notebook) ----------
     for ext in ('png', 'pdf'):
         shutil.copyfile(fig_nb / f'F09_mapas_r_chuvosa.{ext}', saida / f'fig3_mapas_chuvosa.{ext}')
 
-    # ---------- Figura 4: índice predominante e a sua defasagem em cada pixel ----------
-    # Os mapas são os do notebook (F13): em cada pixel, o índice de maior |r| entre os três, cada
-    # um na sua defasagem mais forte (L1 a L12, 1981–2010), e essa defasagem. No notebook, a cor do
-    # índice clareia com o |r| pela regra 1 − a·(1 − cor), com a = |r|/0,5 limitado a [0,15; 1].
-    # Aqui a legenda de cores do notebook (faixa superior da imagem) é trocada por uma escala de |r|
-    # desenhada com essa mesma regra, para que a força local possa ser lida no mapa.
+    # ---------- Figure 4: dominant index and its lag in each pixel ----------
+    # The maps are those of the notebook (F13): in each pixel, the index with the largest |r| among the three, each
+    # at its strongest lag (L1 to L12, 1981–2010), and that lag. In the notebook, the colour of the
+    # index lightens with |r| by the rule 1 − a·(1 − colour), with a = |r|/0.5 limited to [0.15; 1].
+    # Here the notebook colour legend (top strip of the image) is replaced by an |r| scale
+    # drawn with that same rule, so that local strength can be read on the map.
     img = np.asarray(Image.open(fig_nb / 'F13_indice_predominante.png').convert('RGB'))
     branco = (img > 245).all(2).all(1)                     # linhas inteiramente brancas
     topo = 0
-    while branco[topo]:                                    # margem branca acima da legenda
+    while branco[topo]:                                    # white margin above the legend
         topo += 1
-    while not branco[topo]:                                # a própria legenda
+    while not branco[topo]:                                # the legend itself
         topo += 1
     img = img[topo:]
-    alt_img = 174 * img.shape[0] / img.shape[1]             # altura dos mapas em mm
+    alt_img = 174 * img.shape[0] / img.shape[1]             # height of the maps in mm
     alt_esc = 14.5
     fig = plt.figure(figsize=(174 * mm, (alt_img + alt_esc) * mm))
     ax = fig.add_axes([0, 0, 1, alt_img / (alt_img + alt_esc)])
@@ -202,10 +202,10 @@ def main():
     T('indice_predominante').to_csv(saida / 'fig4_predominio_defasagem_dados.csv', index=False,
                                     encoding='utf-8-sig')
 
-    # ---------- Figura 5: ganho de cada modelo sobre o seu próprio controle ----------
-    # Um painel por método, cada um com a sua escala: os RPSS de modelos diferentes não se
-    # comparam entre si (cada um tem o seu controle), e a Random Forest varia uma ordem de
-    # grandeza mais que os outros dois.
+    # ---------- Figure 5: gain of each model over its own control ----------
+    # One panel per method, each with its own scale: the RPSS of different models are not
+    # comparable (each has its own control), and the random forest varies an order of
+    # magnitude more than the other two.
     hip = T('hipotese_tres_metodos')
     linhas = [(a, c, i) for a in ALVOS for c in CASOS for i in INDICES]
     CURTO_CASO = {'ano hidrológico': 'year', 'estação chuvosa': 'wet', 'estação seca': 'dry'}
@@ -254,13 +254,13 @@ def main():
                bbox_to_anchor=(0.55, -0.035))
     salvar(fig, saida, 'fig5_habilidade_regional', pd.concat(reg))
 
-    # ---------- Figura 6: regularização, sinal plantado e variação das probabilidades ----------
+    # ---------- Figure 6: regularization, planted signal and variation of the probabilities ----------
     cal5, sp = T('calibracao_hiperparametros'), T('sinal_plantado')
     cfg = cal5['configuração'].map(json.loads)
     fig = plt.figure(figsize=(174 * mm, 105 * mm))
     gs = fig.add_gridspec(2, 3, height_ratios=[1, 1.05], hspace=0.62, wspace=0.42)
     dados5 = []
-    # (a)-(c) RPSS de validação (1996–2010) ao longo da regularização, ± 1 erro-padrão
+    # (a)-(c) validation RPSS (1996–2010) along the regularization path, ± 1 standard error
     eixos = {'Ridge': ('penalidade_por_mes', None, 'Penalty per training month'),
              'Random Forest': ('folha', 'profundidade', 'Minimum leaf fraction'),
              'Rede neural': ('decaimento', 'oculta', 'Weight decay')}
@@ -271,7 +271,7 @@ def main():
         sub = cal5[cal5['método'] == m].assign(**pd.DataFrame(list(cfg[cal5['método'] == m]),
                                                                index=cal5.index[cal5['método'] == m]))
         x, grupo, rotx = eixos[m]
-        if m == 'Rede neural':          # a ativação e as passagens da configuração escolhida
+        if m == 'Rede neural':          # activation and passes of the chosen configuration
             sub = sub[(sub.ativacao == escolhida[m]['ativacao'])
                       & (sub.passagens == escolhida[m]['passagens'])]
         grupos = [None] if grupo is None else sorted(sub[grupo].dropna().unique().tolist()) + (
@@ -321,9 +321,9 @@ def main():
               columnspacing=1.2, handletextpad=0.3)
     letra(ax, 'd')
     dados5.append(sp.assign(painel='d'))
-    # (e) variação das probabilidades emitidas no teste
+    # (e) variation of the probabilities issued in the test period
     ax = fig.add_subplot(gs[1, 2])
-    rng = np.random.default_rng(0)                    # só para espalhar os pontos na horizontal
+    rng = np.random.default_rng(0)                    # only to spread the points horizontally
     for k, m in enumerate(METODOS):
         v = diag.loc[diag['método'] == m, ['dp de P(Q1) com índice (p.p.)',
                                            'dp de P(Q5) com índice (p.p.)']].mean(axis=1)
@@ -337,12 +337,12 @@ def main():
     dados5.append(diag.assign(painel='e'))
     salvar(fig, saida, 'fig6_regularizacao_detectabilidade', pd.concat(dados5, ignore_index=True))
 
-    # ---------- Resumo gráfico: exatamente 50 × 60 mm, rótulos em português ----------
+    # ---------- Graphical abstract: exactly 50 × 60 mm, English labels ----------
     fig = plt.figure(figsize=(50 * mm, 60 * mm))
     ax = fig.add_axes([0.25, 0.20, 0.71, 0.70])
     r_l = asso.set_index(['alvo', 'caso', 'índice'])['r(L*)'].abs()
     det = asso.set_index(['alvo', 'caso', 'índice'])['detectado (q < 0,05)']
-    # ganho sobre a climatologia de referência N (artigo/rpss_climatologia.py)
+    # gain over the reference climatology N (artigo/rpss_climatologia.py)
     rn = pd.read_csv(saida.parent / 'rpss_climatologia.csv')
     rn['caso'] = rn['caso'].map({'ano hidrológico': 'ano hidrológico', 'estação chuvosa': 'estação chuvosa',
                                  'estação seca': 'estação seca'})
@@ -357,18 +357,18 @@ def main():
                    facecolors=[COR[ind] if det.loc[k] else 'white' for k in idx])
     ax.axhline(0, color='k', lw=0.5)
     ax.set_xlim(0, 0.42)
-    ax.set_xlabel('Associação defasada, |r|', fontsize=6.5, labelpad=1)
-    ax.set_ylabel('Ganho sobre a\nclimatologia, RPSS (%)', fontsize=6.5, labelpad=1)
+    ax.set_xlabel('Lagged association, |r|', fontsize=6.5, labelpad=1)
+    ax.set_ylabel('Gain over\nclimatology, RPSS (%)', fontsize=6.5, labelpad=1)
     ax.tick_params(labelsize=6, length=2, pad=1)
     ax.legend(handles=[mpl.lines.Line2D([], [], color=COR[i_], marker=MARCA[i_], ls='', ms=3,
                                         label=i_) for i_ in INDICES],
               frameon=False, fontsize=5.5, loc='upper left', handletextpad=0.1, borderaxespad=0.2,
               labelspacing=0.2)
-    fig.text(0.5, 0.975, f"{int(det.sum())} de {len(det)} associações detectadas", ha='center',
+    fig.text(0.5, 0.975, f"{int(det.sum())} of {len(det)} associations detected", ha='center',
              va='top', fontsize=6.2, fontweight='bold')
-    fig.text(0.5, 0.01, 'Ridge, 2011–2025; cheios: associação\ndetectada; barras: IC95',
+    fig.text(0.5, 0.01, 'Ridge, 2011–2025; filled: association\ndetected; bars: 95% CI',
              ha='center', va='bottom', fontsize=5.2, linespacing=1.0)
-    with mpl.rc_context({'savefig.bbox': 'standard'}):         # tamanho exato de 50 × 60 mm
+    with mpl.rc_context({'savefig.bbox': 'standard'}):         # exact size of 50 × 60 mm
         for ext in ('png', 'pdf'):
             fig.savefig(saida / f'resumo_grafico.{ext}', dpi=300)
     plt.close(fig)
@@ -377,7 +377,7 @@ def main():
                   'IC95 inferior': rid['IC95 inferior'], 'IC95 superior': rid['IC95 superior']}
                  ).reset_index().to_csv(saida / 'resumo_grafico_dados.csv', index=False,
                                         encoding='utf-8-sig')
-    print('figuras gravadas em', saida.relative_to(raiz))
+    print('figures written to', saida.relative_to(raiz))
 
 
 if __name__ == '__main__':

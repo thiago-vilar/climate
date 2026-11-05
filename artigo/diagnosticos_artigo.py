@@ -1,17 +1,17 @@
-"""Diagnósticos do artigo calculados a partir das previsões gravadas pela execução publicada.
+"""Article diagnostics computed from the forecasts stored by the published run.
 
-Não reajusta modelos nem refaz testes: só lê `resultados/<modo>/preditos/` e as tabelas da
-mesma execução. Produz `artigo/saidas/<modo>/diagnosticos_previsoes.csv`, com uma linha por
-método, alvo, caso e índice:
+Does not refit models or redo tests: only reads `resultados/<modo>/preditos/` and the tables of the
+same run. Produces `artigo/saidas/<modo>/diagnosticos_previsoes.csv`, with one row per
+method, target, case and index:
 
-- RPSS (%) da previsão com o índice e do controle sem índice sobre a climatologia de referência N
-  (RPS de Epstein, normalizado por K − 1 e somado nos meses de teste), para separar a habilidade
-  contra a climatologia comum do ganho sobre o controle próprio;
-- RPSS (%) sobre o controle, recalculado, que deve coincidir com a tabela da hipótese;
-- desvio-padrão, ao longo dos meses de teste, das probabilidades emitidas para Q1 e Q5 (p.p.),
-  para descrever o quanto cada previsão se afasta de uma probabilidade constante.
+- RPSS (%) of the forecast with the index and of the no-index control over the reference climatology N
+  (Epstein RPS, normalized by K − 1 and summed over the test months), to separate skill
+  against the common climatology from the gain over each model's own control;
+- RPSS (%) over the control, recomputed, which must match the hypothesis table;
+- standard deviation, across test months, of the probabilities issued for Q1 and Q5 (p.p.),
+  to describe how far each forecast departs from a constant probability.
 
-Uso: python artigo/diagnosticos_artigo.py [--modo completo|piloto]
+Usage: python artigo/diagnosticos_artigo.py [--modo completo|piloto]
 """
 import argparse
 import json
@@ -28,7 +28,7 @@ K = 5
 
 
 def rps(p, classe):
-    """RPS de Epstein por mês, normalizado para [0, 1]."""
+    """Epstein RPS per month, normalized to [0, 1]."""
     obs = np.zeros_like(p)
     obs[np.arange(len(classe)), classe] = 1.0
     return ((np.cumsum(p, 1) - np.cumsum(obs, 1)) ** 2).sum(1) / (K - 1)
@@ -47,7 +47,7 @@ def main():
     modo = ap.parse_args().modo
     raiz = Path(__file__).resolve().parents[1] / 'resultados' / modo
     tab, pre = raiz / 'tabelas', raiz / 'preditos'
-    T = lambda nome: next(tab.glob(f'T*_{nome}.csv'))          # pelo nome, não pelo número
+    T = lambda nome: next(tab.glob(f'T*_{nome}.csv'))          # by name, not by number
     serie = pd.read_csv(T('serie_teste'), parse_dates=['mês'])
     casos = pd.read_csv(T('casos'))
     hip = pd.read_csv(T('hipotese_tres_metodos'))
@@ -86,8 +86,8 @@ def main():
            - d['RPSS sobre o controle, tabela da hipótese (%)']).abs().max()
     if not dif < 1e-4:                          # a tabela guarda 6 algarismos significativos
         raise SystemExit(f'RPSS recalculado difere da tabela da hipótese em {dif:.2e} p.p.')
-    saida = Path(__file__).resolve().parent / 'saidas' / modo        # fora de resultados/, que
-    saida.mkdir(parents=True, exist_ok=True)                           # tem manifesto próprio
+    saida = Path(__file__).resolve().parent / 'saidas' / modo        # outside resultados/, which
+    saida.mkdir(parents=True, exist_ok=True)                           # has its own manifest
     d.to_csv(saida / 'diagnosticos_previsoes.csv', index=False, encoding='utf-8-sig')
     print(f'{len(d)} linhas; maior diferença para a tabela da hipótese: {dif:.1e} p.p.; '
           f'gravado em artigo/saidas/{modo}/diagnosticos_previsoes.csv')

@@ -1,17 +1,16 @@
-"""RPSS de cada modelo sobre a climatologia de referência N, com IC95, a partir das previsões
-gravadas pela execução publicada.
+"""RPSS of each model over the reference climatology N, with 95% CI, from the forecasts
+stored by the published run.
 
-Não reajusta modelos nem refaz testes: só lê `resultados/<modo>/preditos/`. O IC95 segue o
-procedimento do notebook (Seção 9): 2 000 reamostragens conjuntas de blocos circulares de 3 anos
-hidrológicos de teste (Politis e Romano, 1992), com o numerador e o denominador recalculados em
-cada réplica e semente derivada da raiz 42 e do nome da tarefa (SHA-256). Para comparação, a
-tabela traz também o RPSS sobre o controle sem índice, que deve coincidir com a tabela da
-hipótese.
+Does not refit models or redo tests: only reads `resultados/<modo>/preditos/`. The 95% CI follows
+the notebook procedure (Section 9): 2000 joint resamples of circular blocks of 3 test hydrological
+years (Politis and Romano, 1992), with numerator and denominator recomputed in each replicate
+and a seed derived from root 42 and the task name (SHA-256). For comparison, the table also
+gives the RPSS over the no-index control, which must match the hypothesis table.
 
-Produz `artigo/saidas/<modo>/rpss_climatologia.csv`, com uma linha por método, alvo, caso e
-índice. O teste de hipótese (valores p e q) continua sendo o do notebook, sobre o controle.
+Produces `artigo/saidas/<modo>/rpss_climatologia.csv`, with one row per method, target, case and
+index. The hypothesis test (p- and q-values) remains that of the notebook, over the control.
 
-Uso: python artigo/rpss_climatologia.py [--modo completo|piloto]
+Usage: python artigo/rpss_climatologia.py [--modo completo|piloto]
 """
 import argparse
 import hashlib
@@ -33,7 +32,7 @@ def semente(nome):
 
 
 def rps(p, classe):
-    """RPS de Epstein por mês, normalizado para [0, 1]."""
+    """Epstein RPS per month, normalized to [0, 1]."""
     obs = np.zeros_like(p)
     obs[np.arange(len(classe)), classe] = 1.0
     return ((np.cumsum(p, 1) - np.cumsum(obs, 1)) ** 2).sum(1) / (K - 1)
@@ -47,7 +46,7 @@ def blocos_de_anos(n, nome):
 
 
 def rpss_ic(r_mod, r_ref, anos, nome):
-    """100 × (1 − Σ RPS do modelo / Σ RPS da referência), com IC95 por blocos de anos."""
+    """100 × (1 − Σ RPS of the model / Σ RPS of the reference), with 95% CI from blocks of years."""
     unicos = np.unique(anos)
     num = np.array([r_mod[anos == a].sum() for a in unicos])
     den = np.array([r_ref[anos == a].sum() for a in unicos])

@@ -1,10 +1,10 @@
-"""Extrai das tabelas finais todos os números citados no texto do artigo.
+"""Extracts from the final tables every number quoted in the text of the article.
 
-Lê `resultados/<modo>/tabelas` e `artigo/saidas/<modo>/diagnosticos_previsoes.csv` e grava
-`artigo/saidas/<modo>/numeros.json`. O texto do manuscrito usa esses valores pelo nome, de modo
-que artigo e execução não divirjam. Nenhum valor é digitado à mão.
+Reads `resultados/<modo>/tabelas` and `artigo/saidas/<modo>/diagnosticos_previsoes.csv` and writes
+`artigo/saidas/<modo>/numeros.json`. The manuscript text uses these values by name, so that
+article and run do not diverge. No value is typed by hand.
 
-Uso: python artigo/numeros_artigo.py [--modo completo|piloto]
+Usage: python artigo/numeros_artigo.py [--modo completo|piloto]
 """
 import argparse
 import json
@@ -19,7 +19,7 @@ CURTO = {'Ridge': 'ridge', 'Random Forest': 'rf', 'Rede neural': 'rede'}
 
 
 def br(x, casas=1, sinal=False):
-    """Número no formato do texto em português: vírgula decimal e sinal de menos tipográfico."""
+    """Number in the format of the Portuguese text: decimal comma and typographic minus sign."""
     if round(x, casas) == 0:
         x = 0.0                                   # evita "−0,0" e "+0,0"
         sinal = False
@@ -34,11 +34,11 @@ def main():
     raiz = Path(__file__).resolve().parents[1]
     tab = raiz / 'resultados' / modo / 'tabelas'
     saida = Path(__file__).resolve().parent / 'saidas' / modo
-    T = lambda nome: pd.read_csv(next(tab.glob(f'T*_{nome}.csv')))   # pelo nome, não pelo número
+    T = lambda nome: pd.read_csv(next(tab.glob(f'T*_{nome}.csv')))   # by name, not by number
     diag = pd.read_csv(saida / 'diagnosticos_previsoes.csv')
     N = {}
 
-    # associação (Seção 2)
+    # association (Section 2)
     a = T('associacao')
     det = a[a['detectado (q < 0,05)']]
     N['assoc_detectadas'] = len(det)
@@ -59,7 +59,7 @@ def main():
     N['picos_alem_janela'] = int(alem['pico além da janela'].sum())
     N['ganho_alem_janela'] = br(alem['ganho de |r| além da janela'].max(), 3)
 
-    # índices: persistência e tendência
+    # indices: persistence and trend
     ind = T('indices').set_index('índice')
     for i in INDICES:
         N[f'ac3_{i}'] = br(ind.loc[i, 'autocorrelação 3 meses'], 2)
@@ -68,7 +68,7 @@ def main():
         N[f'tend_ic_{i}'] = (f"{br(ind.loc[i, 'IC95 inferior'], 1)} a "
                              f"{br(ind.loc[i, 'IC95 superior'], 1)}")
 
-    # teste de campo nos mapas da estação chuvosa, na defasagem atribuída
+    # field test on the wet-season maps, at the assigned lag
     campo, lstar = T('teste_campo'), a.set_index(['alvo', 'caso', 'índice'])['L* (meses)']
     ch = campo[campo.caso == 'estação chuvosa']
     ch = ch[[lstar.loc[(r.alvo, r.caso, r['índice'])] == r.L for _, r in ch.iterrows()]]
@@ -79,7 +79,7 @@ def main():
     for al in ALVOS:
         N[f'suspeito_{al}'] = br(hom.loc[al, 'suspeito, 3–4 testes, marcado (% da área)'], 1)
 
-    # hipótese (Seções 5 a 9)
+    # hypothesis (Sections 5 to 9)
     h = T('hipotese_tres_metodos')
     N['hipoteses'] = len(h)
     N['sustentadas'] = int(h['hipótese sustentada'].sum())
@@ -89,7 +89,7 @@ def main():
         s = h[h['método'] == m]
         c = CURTO[m]
         N[f'qmin_{c}'] = br(s.q.min(), 3)
-        N[f'no_piso_{c}'] = int((s['p (nulo)'] <= 1 / 131 + 1e-6).sum())     # tabela com 6 algarismos
+        N[f'no_piso_{c}'] = int((s['p (nulo)'] <= 1 / 131 + 1e-6).sum())     # table with 6 digits
         N[f'mediana_{c}'] = br(s['RPSS sobre o modelo sem índice (%)'].median(), 2, True)
         N[f'icsup_max_{c}'] = br(s['IC95 superior'].max(), 1)
         N[f'icsup_mediana_{c}'] = br(s['IC95 superior'].median(), 1)
@@ -106,7 +106,7 @@ def main():
     b = T('sensibilidade_blocos')
     N['blocos_largura'] = f"{br(b['largura mediana do IC95 (p.p.)'].min(), 1)} a {br(b['largura mediana do IC95 (p.p.)'].max(), 1)}"
 
-    # diagnósticos das previsões
+    # forecast diagnostics
     for m in METODOS:
         d, c = diag[diag['método'] == m], CURTO[m]
         sd = d[['dp de P(Q1) com índice (p.p.)', 'dp de P(Q5) com índice (p.p.)']].mean(axis=1)
@@ -120,7 +120,7 @@ def main():
                                     'dp de P(Q5) do controle (p.p.)']].to_numpy().max(), 1)
     N['desvio_max_geral'] = br(diag['maior |P − 20 %| com índice (p.p.)'].max(), 1)
 
-    # calibração e sinal plantado
+    # calibration and planted signal
     cal = T('calibracao_hiperparametros')
     for m in METODOS:
         s, c = cal[cal['método'] == m], CURTO[m]
@@ -138,7 +138,7 @@ def main():
     N['plant_L_recuperada'] = br(sp.loc[sp['correlação plantada'] == 0.3,
                                         'defasagem plantada recuperada (%)'].iloc[0], 0)
 
-    # Brier, N-índice e comparação entre métodos
+    # Brier, N-index and comparison between methods
     br_ = T('confiabilidade')
     N['brier_dif_max'] = br((br_['Brier'] - br_['Brier da climatologia (20 %)']).abs().max(), 4)
     N['resol_min'] = br(br_['resolução agrupada (maior é melhor)'].min(), 5)
@@ -157,7 +157,7 @@ def main():
     N['E_min'], N['E_max'] = br(e[col].min(), 1, True), br(e[col].max(), 1, True)
     N['E_mediana'] = br(e[col].median(), 1, True)
 
-    # verificação do teste por deslocamento (Ridge, alvo inteiro)
+    # check of the shift test (ridge, whole target)
     vd = T('validade_deslocamento')
     lib = vd[vd.leitura == 'acima de 5 %']
     N['liberais'] = len(lib)
@@ -167,7 +167,7 @@ def main():
     N['liberal_taxa_max'] = br(lib['taxa de rejeição (%)'].max(), 1)
     N['substitutos'] = int(vd['realizações'].iloc[0])
 
-    # cortes temporais (tabela de escolhas da calibração) e r(L*) sem tendência (descritivo)
+    # temporal cuts (calibration choices table) and detrended r(L*) (descriptive)
     esc = T('calibracao_escolhas')
     for _, r in esc[esc['item'].str.startswith('cortes (')].iterrows():
         alvo, papel = r['item'][len('cortes ('):].split('): ')
@@ -177,7 +177,7 @@ def main():
             k = f"{r.alvo}_{r.caso.split()[-1]}_{r['índice']}"
             N[f'rst_{k}'] = br(r['r(L*) sem tendência linear (descritivo)'], 2)
 
-    # ---- acréscimos da reescrita de 31/10/2026 ----
+    # ---- additions from the 31/10/2026 rewrite ----
     MESES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
     NOME = dict(zip(MESES, ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho',
                             'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']))
@@ -255,7 +255,7 @@ def main():
     for al in ALVOS:
         N[f'duvidoso_{al}'] = br(hom.loc[al, 'duvidoso, 2 testes (% da área)'], 1)
 
-    # índice predominante por pixel (Figura 4; exploratório, sem teste)
+    # dominant index per pixel (Figure 4; exploratory, untested)
     for _, r in T('indice_predominante').iterrows():
         k = f"{r.alvo}_{r.caso.split()[-1]}_{r['índice']}"
         N[f'pred_area_{k}'] = br(r['área em que predomina (%)'], 0)
@@ -263,7 +263,7 @@ def main():
         N[f'pred_L_{k}'] = int(r['defasagem mais frequente onde predomina'])
         N[f'pred_sinal_{k}'] = br(r['onde predomina, com o sinal esperado (%)'], 0)
     pr = T('indice_predominante')
-    pr = pr[pr['área em que predomina (%)'] >= 5]           # faixa de |r| sem índices quase ausentes
+    pr = pr[pr['área em que predomina (%)'] >= 5]           # |r| range without near-absent indices
     for al in ALVOS:
         g = pr[pr.alvo == al]['|r| médio onde predomina']
         N[f'pred_rmin_{al}'], N[f'pred_rmax_{al}'] = br(g.min(), 2), br(g.max(), 2)

@@ -1,17 +1,17 @@
-"""Pipeline completo do climate, de ponta a ponta, na pasta do repositorio:
+"""Full climate pipeline, end to end, in the repository folder:
 
- 1. registra o kernel 'climate' para o Python de .venv;
- 2. piloto (conferencia rapida do codigo, poucos minutos);
- 3. conferencia do piloto;
- 4. estudo completo (cerca de 5 h 30 min); ao fim, climate.ipynb passa a guardar as saidas;
- 5. conferencia da release (9 verificacoes, inclusive os cortes temporais);
- 6-10. scripts do artigo, que so leem os resultados: diagnosticos, RPSS sobre a climatologia,
-    numeros, figuras e tabelas.
+ 1. registers the 'climate' kernel for the .venv Python;
+ 2. pilot (quick code check, a few minutes);
+ 3. pilot check;
+ 4. full study (about 5 h 30 min); at the end, climate.ipynb stores the outputs;
+ 5. release check (9 checks, including the temporal cuts);
+ 6-10. article scripts, which only read the results: diagnostics, RPSS over climatology,
+    numbers, figures and tables.
 
-Para na primeira etapa com erro. Enquanto roda, pede ao Windows para nao suspender
-(SetThreadExecutionState), sem alterar nenhuma configuracao permanente.
+Stops at the first step with an error. While running, asks Windows not to sleep
+(SetThreadExecutionState), without changing any permanent setting.
 
-Uso: executar_tudo.bat (duplo clique) ou, no PowerShell, dentro da pasta:
+Usage: executar_tudo.bat (double click) or, in PowerShell, inside the folder:
     .\\.venv\\Scripts\\python.exe executar_tudo.py
 """
 import ctypes
@@ -23,23 +23,23 @@ from pathlib import Path
 PASTA = Path(__file__).resolve().parent
 PY = str(PASTA / '.venv' / 'Scripts' / 'python.exe')
 ETAPAS = [
-    ('Registrando o kernel climate', [PY, '-m', 'ipykernel', 'install', '--user', '--name', 'climate',
+    ('Registering the climate kernel', [PY, '-m', 'ipykernel', 'install', '--user', '--name', 'climate',
                                       '--display-name', 'Python (climate)']),
-    ('Piloto (conferencia rapida do codigo)', [PY, 'rodar_climate.py', '--modo', 'piloto']),
-    ('Conferencia do piloto', [PY, 'conferir_publicacao.py', '--modo', 'piloto']),
-    ('Estudo completo (cerca de 5 h 30 min)', [PY, 'rodar_climate.py']),
-    ('Conferencia da release', [PY, 'conferir_publicacao.py']),
-    ('Artigo: diagnosticos das previsoes', [PY, 'artigo/diagnosticos_artigo.py']),
-    ('Artigo: RPSS sobre a climatologia', [PY, 'artigo/rpss_climatologia.py']),
-    ('Artigo: numeros do texto', [PY, 'artigo/numeros_artigo.py']),
-    ('Artigo: figuras', [PY, 'artigo/figuras_artigo.py']),
-    ('Artigo: tabelas', [PY, 'artigo/tabelas_artigo.py']),
+    ('Pilot (quick code check)', [PY, 'rodar_climate.py', '--modo', 'piloto']),
+    ('Pilot check', [PY, 'conferir_publicacao.py', '--modo', 'piloto']),
+    ('Full study (about 5 h 30 min)', [PY, 'rodar_climate.py']),
+    ('Release check', [PY, 'conferir_publicacao.py']),
+    ('Article: forecast diagnostics', [PY, 'artigo/diagnosticos_artigo.py']),
+    ('Article: RPSS over climatology', [PY, 'artigo/rpss_climatologia.py']),
+    ('Article: numbers in the text', [PY, 'artigo/numeros_artigo.py']),
+    ('Article: figures', [PY, 'artigo/figuras_artigo.py']),
+    ('Article: tables', [PY, 'artigo/tabelas_artigo.py']),
 ]
 
 
 def main():
     if sys.platform == 'win32':
-        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)  # nao suspender
+        ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)  # do not sleep
     log = PASTA / 'executar_tudo.log'
     for k, (nome, cmd) in enumerate(ETAPAS, 1):
         linha = f'[{datetime.now():%d/%m %H:%M}] [{k}/{len(ETAPAS)}] {nome}'
@@ -48,12 +48,12 @@ def main():
             f.write(linha + '\n')
         r = subprocess.run(cmd, cwd=PASTA)
         if r.returncode != 0:
-            msg = f'[{datetime.now():%d/%m %H:%M}] parou com erro na etapa {k} (codigo {r.returncode})'
+            msg = f'[{datetime.now():%d/%m %H:%M}] stopped with an error at step {k} (code {r.returncode})'
             print('\n' + msg, flush=True)
             with open(log, 'a', encoding='utf-8') as f:
                 f.write(msg + '\n')
             return r.returncode
-    fim = (f'[{datetime.now():%d/%m %H:%M}] tudo concluido; relatorio: '
+    fim = (f'[{datetime.now():%d/%m %H:%M}] all done; report: '
            'conferencia_publicacao_completo.md')
     print('\n' + fim, flush=True)
     with open(log, 'a', encoding='utf-8') as f:

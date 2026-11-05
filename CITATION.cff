@@ -1,26 +1,26 @@
 cff-version: 1.2.0
-message: "Se usar este código ou estes resultados, cite-os como abaixo."
-title: "climate: índices oceânicos (NINO3.4, TSA, AMM) e previsão mensal da chuva do Nordeste do Brasil em quintis"
+message: "If you use this code or these results, please cite them as below."
+title: "climate: ocean indices (NINO3.4, TSA, AMM) and monthly quintile forecasts of rainfall in Northeast Brazil"
 type: software
 authors:
   - family-names: "Vilar"
     given-names: "Thiago Cabral"
-    affiliation: "Departamento de Oceanografia, Universidade Federal de Pernambuco"
+    affiliation: "Department of Oceanography, Federal University of Pernambuco"
     email: "thiago.vilar@ufpe.br"
     orcid: "https://orcid.org/0009-0005-6181-5961"
   - family-names: "Veleda"
     given-names: "Doris Regina Ayres"
-    affiliation: "Departamento de Oceanografia, Universidade Federal de Pernambuco"
+    affiliation: "Department of Oceanography, Federal University of Pernambuco"
     orcid: "https://orcid.org/0000-0003-2103-5950"
   - family-names: "Silva"
     given-names: "Thiago Luiz do Vale"
-    affiliation: "Departamento de Oceanografia, Universidade Federal de Pernambuco"
+    affiliation: "Department of Oceanography, Federal University of Pernambuco"
     orcid: "https://orcid.org/0000-0001-5326-4622"
 license: MIT
-# version: preencher na release
-# date-released: preencher na release
+# version: fill in at release
+# date-released: fill in at release
 repository-code: "https://github.com/thiago-vilar/climate"
-# doi: preencher na release
+# doi: fill in at release
 keywords:
   - "Northeast Brazil"
   - "monthly rainfall"

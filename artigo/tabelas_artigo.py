@@ -1,11 +1,11 @@
-"""Tabelas do artigo (Tabela 2) e do material suplementar (Tabelas S1 a S7), a partir das saídas
-da execução publicada.
+"""Tables of the article (Table 3) and of the Supporting Information (Tables S1 to S7), from the outputs
+of the published run.
 
-Só lê `resultados/<modo>/tabelas` e `artigo/saidas/<modo>/diagnosticos_previsoes.csv`. Grava em
-`artigo/saidas/<modo>/` os arquivos `tab2.json` e `supl.json`, com o texto de cada célula já
-formatado em português (vírgula decimal, sinal de menos tipográfico). Nenhum valor é digitado à mão.
+Only reads `resultados/<modo>/tabelas` and `artigo/saidas/<modo>/diagnosticos_previsoes.csv`. Writes to
+`artigo/saidas/<modo>/` the files `tab2.json` and `supl.json`, with the text of each cell already
+formatted (decimal comma, typographic minus sign). No value is typed by hand.
 
-Uso: python artigo/tabelas_artigo.py [--modo completo|piloto]
+Usage: python artigo/tabelas_artigo.py [--modo completo|piloto]
 """
 import argparse
 import json
@@ -69,7 +69,7 @@ def main():
     T = lambda nome: pd.read_csv(next(tab.glob(f'T*_{nome}.csv')))
     diag = pd.read_csv(saida / 'diagnosticos_previsoes.csv')
 
-    # Tabela 2: associação defasada
+    # Table 3: lagged association (file tab2.json)
     a = ordenar(T('associacao'), ['alvo', 'caso', 'índice'])
     tab2 = [[r.alvo, CASO[r.caso], r['índice'], str(int(r['L* (meses)'])), br(r['r(L*)'], 2),
              ic(r['IC95 inferior'], r['IC95 superior'], 2),

@@ -1,72 +1,76 @@
 # climate
 
-Índices oceânicos (NINO3.4, TSA e AMM) e previsão mensal da chuva do Nordeste do Brasil em quintis: defasagens aferidas, calibração e três modelos (Ridge, Random Forest e rede neural densa).
+Ocean indices (NINO3.4, TSA and AMM) and monthly quintile forecasts of rainfall in Northeast Brazil: assessed lags, calibration and three models (ridge regression, random forest and a dense neural network).
 
-*English summary.* This repository holds the notebook, runner and checks used to test whether lagged associations between three oceanic indices and monthly CHIRPS rainfall in three regions of Northeast Brazil translate into out-of-sample monthly forecast skill. Each model is compared with the same model without the index. The notebook downloads all input data from the original sources, fixes every random seed and writes a SHA-256 manifest of its outputs.
+This repository holds the notebook, the runner, the checks and the article scripts used to test whether lagged associations between three ocean indices and monthly CHIRPS rainfall in three regions of Northeast Brazil translate into out-of-sample monthly forecast skill. Each model is compared with the same model without the index. The notebook downloads all input data from the original sources, fixes every random seed and writes a SHA-256 manifest of its outputs.
 
-## O que o estudo pergunta
+*Resumo em português:* o repositório reúne o notebook, o executor, as conferências e os scripts do artigo que testam se as associações defasadas entre três índices oceânicos e a chuva mensal do CHIRPS no Nordeste do Brasil se traduzem em habilidade de previsão fora da amostra.
 
-As associações defasadas entre cada índice e a chuva mensal se traduzem em habilidade de previsão fora da amostra? Cada índice é avaliado sozinho, em três alvos (NNEB, INEB e ENEB), em três casos (ano hidrológico, estação chuvosa e estação seca), no alvo inteiro e em cada pixel de 0,05°.
+## Research question
 
-São avaliadas três famílias de modelos preditivos: regressão linear regularizada (Ridge), conjunto de árvores (Random Forest) e rede neural com uma camada oculta.
+Do the lagged associations between each index and monthly rainfall translate into out-of-sample forecast skill? Each index is evaluated alone, in three targets (NNEB, INEB and ENEB), three cases (hydrological year, wet season and dry season), for the whole target and for each 0.05° pixel.
 
-O desenho separa três coisas:
+Three families of predictive models are evaluated: regularized linear regression (ridge), an ensemble of trees (random forest) and a neural network with one hidden layer.
 
-- **Associação:** correlação defasada, aferida em 1981–2010.
-- **Habilidade preditiva:** RPSS de cada modelo sobre a climatologia padrão N (20 % em cada quintil), referência comum que permite comparar os modelos, e sobre o mesmo modelo sem o índice (teste de atribuição), em 2011–2025.
-- **Interpretação física:** é leitura das evidências, sem efeito causal estimado.
+The design separates three things:
 
-## Resultado principal e limites
+- **Association:** lagged correlation, assessed in 1981–2010.
+- **Predictive skill:** RPSS of each model over the standard climatology N (20% in each quintile), the common reference that allows the models to be compared, and over the same model without the index (attribution test), in 2011–2025.
+- **Physical interpretation:** a reading of the evidence, with no causal effect estimated.
 
-Números da execução completa publicada (tabelas em `resultados/completo/tabelas`; conferência em `conferencia_publicacao_completo.md`):
+## Main result and limits
 
-- **Associação (1981–2010):** detectada em 11 das 27 combinações de alvo, caso e índice após correção para testes múltiplos (NINO3.4 em 6, TSA em 4, AMM em 1), com |r| de 0,19 a 0,39.
-- **Previsão (2011–2025):** sobre a climatologia padrão, a Ridge ganhou de +1,0 % a +1,8 % de RPSS no norte (NNEB), com o NINO3.4 quatro meses antes e o TSA dois meses antes, com IC95 acima de zero; a rede neural repetiu o ganho, e sem o índice o ganho desaparece (`artigo/saidas/completo/rpss_climatologia.csv`). Nenhuma das 81 hipóteses de ganho passou na correção para testes múltiplos (q ≥ 0,069).
-- **Modelos:** a Ridge foi a mais estável (de −0,5 % a +1,8 % sobre a climatologia), seguida pela rede neural (de −0,6 % a +1,5 %); a Random Forest variou de −16,7 % a +5,5 %.
-- **Previsões perto da climatologia:** na Ridge e na rede neural, as probabilidades ficam a no máximo 3,9 pontos percentuais de 20 %, e os intervalos de confiança da Ridge (condicionais às previsões, não simultâneos) excluem ganhos maiores que 3,1 % de RPSS. Na configuração avaliada, a Random Forest afasta-se até 20,5 pontos de 20 % e varia de −16,6 % a +5,6 % de RPSS sobre o controle, sem nenhum ganho confirmado.
-- **Leitura:** associação defasada não implicou habilidade mensal confirmável com índices isolados, neste protocolo e neste período de teste. Ausência de confirmação não é ausência de efeito.
+Numbers from the published full run (tables in `resultados/completo/tabelas`; checks in `conferencia_publicacao_completo.md`):
 
-Os limites estão em "Alcance e limites declarados" e em `artigo/LEIAME.md`.
+- **Association (1981–2010):** detected in 11 of the 27 combinations of target, case and index after correction for multiple testing (NINO3.4 in 6, TSA in 4, AMM in 1), with |r| from 0.19 to 0.39.
+- **Forecast (2011–2025):** over the standard climatology, ridge regression gained +1.0% to +1.8% RPSS in the north (NNEB), with NINO3.4 four months ahead and TSA two months ahead, with 95% CI above zero; the neural network repeated the gain, and without the index the gain disappears (`artigo/saidas/completo/rpss_climatologia.csv`). None of the 81 gain hypotheses passed the multiple-testing correction (q ≥ 0.069).
+- **Models:** ridge regression was the most stable (−0.5% to +1.8% over climatology), followed by the neural network (−0.6% to +1.5%); the random forest ranged from −16.7% to +5.5%.
+- **Forecasts close to climatology:** for ridge regression and the neural network, probabilities stay within 3.9 percentage points of 20%, and the ridge confidence intervals (conditional on the forecasts, not simultaneous) exclude gains above 3.1% RPSS. In the evaluated configuration, the random forest departs up to 20.5 points from 20% and ranges from −16.6% to +5.6% RPSS over its control, with no confirmed gain.
+- **Reading:** lagged association did not imply confirmable monthly skill with single indices, under this protocol and in this test period. Absence of confirmation is not absence of effect.
 
-## Períodos
+The limits are listed under "Declared scope and limits" and in `artigo/README.md`.
 
-| uso | anos |
+## Periods
+
+| use | years |
 |---|---|
-| dados de chuva (CHIRPS v2.0 mensal) | 1981–2025 (45 anos) |
-| referência final: quintis, classes, climatologia N, defasagens e ajuste final | jan/1981–dez/2010 |
-| calibração interna: entrada e hiperparâmetros | treino jan/1981–dez/1995 e validação jan/1996–dez/2010, com quantis próprios do treino interno |
-| teste | jan/2011–dez/2025 |
+| rainfall data (monthly CHIRPS v2.0) | 1981–2025 (45 years) |
+| final reference: quintiles, classes, climatology N, lags and final fit | Jan 1981–Dec 2010 |
+| inner calibration: input form and hyperparameters | training Jan 1981–Dec 1995 and validation Jan 1996–Dec 2010, with quantiles from the inner training period |
+| test | Jan 2011–Dec 2025 |
 
-Cada papel é uma janela civil comum aos três alvos, e só entram anos hidrológicos com os 12 meses dentro dela. Por isso o NNEB (ano de jan a dez) tem 30 anos de referência, 15 + 15 de calibração e 15 de teste, e o INEB (nov a out) e o ENEB (mar a fev) têm 29, 14 + 14 e 14. Nenhum mês de teste de qualquer alvo entra na escolha compartilhada da calibração.
+Each role is a calendar window common to the three targets, and only hydrological years with all 12 months inside it are used. NNEB (year from January to December) therefore has 30 reference years, 15 + 15 for calibration and 15 for testing, and INEB (November to October) and ENEB (March to February) have 29, 14 + 14 and 14. No test month of any target enters the shared calibration choice.
 
-## Alcance e limites declarados
+## Declared scope and limits
 
-- O período de teste foi examinado durante o desenvolvimento do estudo. As escolhas de configuração foram fixadas com 1981–2010, mas a avaliação não é um teste inteiramente não visto.
-- O valor-p da hipótese vem do deslocamento circular do índice, com passo de 4 meses por custo computacional. O menor valor-p possível é 1/131; por isso, com Benjamini e Hochberg sobre 27 combinações, um q < 0,05 exige pelo menos cinco combinações do mesmo método com valor-p no piso.
-- O teste por deslocamento foi verificado só com a Ridge, só no alvo inteiro e num cenário com a tendência do índice. Pela hipótese nula declarada, a tendência comum conta como informação do índice; as rejeições nesse cenário medem a sensibilidade do teste à tendência, e não erro tipo I. A verificação não se estende aos outros modelos nem aos mapas.
-- A inferência é condicional à configuração escolhida na calibração, e os intervalos de confiança são marginais e não simultâneos.
-- Os mapas pixel a pixel são exploratórios: a significância é controlada pela taxa de falsas descobertas e lida junto com a magnitude.
+- The test period was examined during the development of the study. Configuration choices were fixed with 1981–2010, but the evaluation is not an entirely unseen test.
+- The p-value of the hypothesis comes from circular shifts of the index, in 4-month steps for computational cost. The smallest possible p-value is 1/131; with Benjamini–Hochberg over 27 combinations, q < 0.05 therefore requires at least five combinations of the same method with the p-value at the floor.
+- The shift test was checked only with ridge regression, only for whole targets and in one scenario containing the index trend. Under the stated null hypothesis, a shared trend counts as information from the index; rejections in that scenario measure the sensitivity of the test to the trend, not type I error. The check does not extend to the other models or to the maps.
+- Inference is conditional on the configuration chosen in calibration, and confidence intervals are marginal, not simultaneous.
+- Pixel maps are exploratory: significance is controlled by the false discovery rate and read together with magnitude.
 
-## Conteúdo
+## Contents
 
-| arquivo | o que é |
+| file | what it is |
 |---|---|
-| `climate.ipynb` | o notebook do estudo, já executado e com todas as saídas (tabelas, figuras e textos): capa metodológica, Aquisição, Seções 1 a 10 e Fechamento |
-| `executar_tudo.bat`, `executar_tudo.py` | pipeline completo: kernel, piloto, conferência do piloto, estudo completo, conferência da release e scripts do artigo |
-| `rodar_climate.py` | executor do notebook no terminal, com previsão de término de cada seção a cada 2 h; ao fim da execução completa, grava as saídas em `climate.ipynb` |
-| `conferir_publicacao.py`, `conferencia_publicacao_completo.md` | conferência da release (ver abaixo) e o seu relatório para esta execução |
-| `requirements.txt` | dependências diretas, com versão fixa |
-| `requirements-lock-windows.txt` | ambiente completo da execução de referência no Windows |
-| `resultados/completo/` | tabelas, figuras, previsões, mapas, registros e manifesto SHA-256 (incluído na release) |
-| `dados/registro.json` | URL, data de acesso, tamanho e SHA-256 de cada arquivo de dados usado |
-| `artigo/` | scripts que leem os resultados e geram os diagnósticos, os números, as figuras e as tabelas do artigo (`artigo/LEIAME.md`) |
-| `LICENSE`, `LICENSE-RESULTADOS.md`, `CITATION.cff` | licenças e citação |
+| `climate.ipynb` | the study notebook, executed and with all outputs (tables, figures and text): methodological cover, Acquisition, Sections 1 to 10 and Closing |
+| `executar_tudo.bat`, `executar_tudo.py` | full pipeline: kernel, pilot, pilot check, full study, release check and article scripts |
+| `rodar_climate.py` | terminal runner for the notebook, with a completion estimate for each section every 2 h; at the end of the full run, it writes the outputs into `climate.ipynb` |
+| `conferir_publicacao.py`, `conferencia_publicacao_completo.md` | release check (see below) and its report for this run |
+| `requirements.txt` | direct dependencies, with pinned versions |
+| `requirements-lock-windows.txt` | full environment of the reference run on Windows |
+| `resultados/completo/` | tables, figures, forecasts, maps, logs and SHA-256 manifest (included in the release) |
+| `dados/registro.json` | URL, access date, size and SHA-256 of each data file used |
+| `artigo/` | scripts that read the results and generate the diagnostics, numbers, figures and tables of the article (`artigo/README.md`) |
+| `LICENSE`, `LICENSE-RESULTADOS.md`, `CITATION.cff` | licences and citation |
 
-## Ambiente
+Documentation, the notebook's text cells and the comments, docstrings and messages of the scripts are in English. Code identifiers, file names and the column names of the result tables are in Portuguese: the notebook code cells are part of the signed code of the published run (the code hash in `resultados/completo/registros/assinatura.json`), and the result tables are covered by the SHA-256 manifest, so changing them would require re-running the full study.
 
-Execução de referência: Windows 11, Python 3.13.15, PyTorch 2.14.1 de CPU, 12 núcleos. O piloto também foi conferido no Linux com Python 3.13.17.
+## Environment
 
-Os comandos abaixo são para o PowerShell, dentro da pasta do repositório. Eles chamam o Python do ambiente diretamente, sem `Activate.ps1`. No Linux ou no macOS, troque `.\.venv\Scripts\python.exe` por `.venv/bin/python`.
+Reference run: Windows 11, Python 3.13.15, PyTorch 2.14.1 (CPU), 12 cores. The pilot was also checked on Linux with Python 3.13.17.
+
+The commands below are for PowerShell, inside the repository folder. They call the environment's Python directly, without `Activate.ps1`. On Linux or macOS, replace `.\.venv\Scripts\python.exe` with `.venv/bin/python`.
 
 ```powershell
 py -3.13 -m venv .venv
@@ -76,70 +80,70 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m ipykernel install --user --name climate --display-name "Python (climate)"
 ```
 
-Para reproduzir exatamente o ambiente de referência no Windows, use `requirements-lock-windows.txt` no lugar das duas linhas de instalação do PyTorch e do `requirements.txt`.
+To reproduce the reference environment exactly on Windows, use `requirements-lock-windows.txt` instead of the two installation lines for PyTorch and `requirements.txt`.
 
-Para conferir o kernel, rode os dois comandos abaixo. A linha `climate` precisa aparecer, e o `argv` precisa começar pelo `python.exe` de `.venv`.
+To check the kernel, run the two commands below. The `climate` line must appear, and `argv` must start with the `python.exe` of `.venv`.
 
 ```powershell
 .\.venv\Scripts\python.exe -m jupyter kernelspec list
 .\.venv\Scripts\python.exe -c "from jupyter_client.kernelspec import KernelSpecManager as K; print(K().get_kernel_spec('climate').argv)"
 ```
 
-O executor também confere isso antes de começar: ele só roda com o Python de `.venv` e com o kernel `climate` apontando para esse mesmo Python.
+The runner also checks this before starting: it only runs with the `.venv` Python and with the `climate` kernel pointing to that same Python.
 
-## Execução
+## Running
 
-O pipeline inteiro roda com um comando, que para na primeira etapa com erro:
+The whole pipeline runs with one command, which stops at the first step with an error:
 
 ```powershell
 .\executar_tudo.bat
 ```
 
-São dez etapas: kernel, piloto, conferência do piloto, estudo completo, conferência da release e os cinco scripts do artigo (diagnósticos, RPSS sobre a climatologia, números, figuras e tabelas). Para rodar só o notebook:
+There are ten steps: kernel, pilot, pilot check, full study, release check and the five article scripts (diagnostics, RPSS over climatology, numbers, figures and tables). To run only the notebook:
 
 ```powershell
-.\.venv\Scripts\python.exe rodar_climate.py --modo piloto   # conferência rápida, resultados/piloto
-.\.venv\Scripts\python.exe rodar_climate.py                 # estudo completo, resultados/completo
+.\.venv\Scripts\python.exe rodar_climate.py --modo piloto   # quick check, resultados/piloto
+.\.venv\Scripts\python.exe rodar_climate.py                 # full study, resultados/completo
 ```
 
-- **Dados:** na primeira execução, o notebook baixa os dados das fontes originais (CHIRPS, NOAA PSL e IBGE) para `dados/` e registra cada arquivo. É preciso internet nessa etapa. Nada é lido de fora da pasta.
-- **Progresso:** o terminal mostra a previsão de término de cada seção a cada 2 h.
-- **Retomada:** Ctrl+C interrompe, e o mesmo comando retoma de onde parou. A pasta de resultados só é reaproveitada se os dados (valores), o código, a configuração, as versões das bibliotecas e o ambiente de execução forem os mesmos. Cada arquivo gravado é conferido pelo conteúdo antes de ser reaproveitado; o que não passa é refeito.
-- **Tempo:** o estudo completo leva cerca de 5 h 30 min na máquina de referência (12 núcleos).
-- **Saídas no notebook:** ao fim da execução completa, `climate.ipynb` recebe as saídas (tabelas, figuras e sínteses), e uma cópia local (`climate_executado.ipynb`, fora do repositório) serve à conferência.
+- **Data:** on the first run, the notebook downloads the data from the original sources (CHIRPS, NOAA PSL and IBGE) into `dados/` and records each file. Internet access is needed for this step. Nothing is read from outside the folder.
+- **Progress:** the terminal shows the completion estimate for each section every 2 h.
+- **Resuming:** Ctrl+C interrupts, and the same command resumes where it stopped. The results folder is reused only if the data (values), code, configuration, library versions and execution environment are the same. Each stored file is checked by content before reuse; whatever fails is redone.
+- **Time:** the full study takes about 5 h 30 min on the reference machine (12 cores).
+- **Notebook outputs:** at the end of the full run, `climate.ipynb` receives the outputs (tables, figures and summaries), and a local copy (`climate_executado.ipynb`, outside the repository) is used by the release check.
 
-## Aleatoriedade
+## Randomness
 
-- **Sementes:** a semente raiz é 42. Cada tarefa usa uma semente derivada da raiz e do nome da tarefa (SHA-256), igual em qualquer máquina.
-- **PyTorch:** roda em modo determinístico estrito (`torch.use_deterministic_algorithms(True)`), na CPU.
-- **Registro do ambiente:** o notebook registra o dispositivo e o número de threads do PyTorch, de BLAS/OpenMP e do joblib. Esses valores entram na assinatura da execução.
-- **Limite:** sementes iguais não garantem números idênticos entre plataformas ou versões de bibliotecas. Na mesma máquina e com as mesmas versões, os números se repetem. Entre o Windows e o Linux, a rede neural diferiu em até 1e-5 no piloto, sem mudar nenhuma conclusão.
+- **Seeds:** the root seed is 42. Each task uses a seed derived from the root and the task name (SHA-256), identical on any machine.
+- **PyTorch:** runs in strict deterministic mode (`torch.use_deterministic_algorithms(True)`), on the CPU.
+- **Environment record:** the notebook records the device and the number of threads of PyTorch, BLAS/OpenMP and joblib. These values enter the run signature.
+- **Limit:** identical seeds do not guarantee identical numbers across platforms or library versions. On the same machine and with the same versions, the numbers repeat. Between Windows and Linux, the neural network differed by up to 1e-5 in the pilot, without changing any conclusion.
 
-## Procedência
+## Provenance
 
-- **Dados:** cada arquivo baixado tem URL, data de acesso e SHA-256 em `dados/registro.json`. Downloads em datas ou sistemas diferentes podem ter bytes diferentes com os mesmos valores; por isso a assinatura da execução usa um SHA-256 dos valores lidos.
-- **Resultados:** cada arquivo de `resultados/completo/` está no manifesto SHA-256 (`resultados/completo/registros/manifesto.json`), junto com a configuração, o ambiente e a numeração das tabelas e figuras.
+- **Data:** each downloaded file has its URL, access date and SHA-256 in `dados/registro.json`. Downloads on different dates or systems may have different bytes with the same values; the run signature therefore uses a SHA-256 of the values read.
+- **Results:** every file in `resultados/completo/` is in the SHA-256 manifest (`resultados/completo/registros/manifesto.json`), together with the configuration, the environment and the numbering of tables and figures.
 
-## Conferência da release
+## Release check
 
-Depois da execução completa:
+After the full run:
 
 ```powershell
 .\.venv\Scripts\python.exe conferir_publicacao.py
 ```
 
-O script confere nove pontos e grava o relatório em `conferencia_publicacao_completo.md`:
+The script checks nine points and writes the report to `conferencia_publicacao_completo.md`:
 
-1. o notebook rodou sem erro e em ordem;
-2. o código do notebook executado é o mesmo do fonte e o da assinatura;
-3. o manifesto SHA-256 confere com os arquivos;
-4. o RPSS de cada modelo, recalculado das previsões gravadas, é igual ao da tabela da hipótese;
-5. o veredito segue a regra declarada;
-6. cada figura existe em PNG e PDF;
-7. as saídas não contêm caminhos da máquina;
-8. os cortes temporais: a escolha compartilhada da calibração termina antes da validação, a validação e o treino final terminam até dez/2010, e o teste de todos os alvos começa depois disso;
-9. nenhum modelo com índice é idêntico ao seu controle sem índice (um modelo que não usa o índice não testa a hipótese).
+1. the notebook ran without errors and in order;
+2. the code of the executed notebook is the same as the source and as the signature;
+3. the SHA-256 manifest matches the files;
+4. the RPSS of each model, recomputed from the stored forecasts, equals that of the hypothesis table;
+5. the verdict follows the declared rule;
+6. each figure exists in PNG and PDF;
+7. the outputs contain no machine paths;
+8. the temporal cuts: the shared calibration choice ends before validation, validation and final training end by December 2010, and the test of every target starts after that;
+9. no model with the index is identical to its no-index control (a model that does not use the index does not test the hypothesis).
 
-## Citação e licença
+## Citation and licence
 
-Cite pelo `CITATION.cff`. O código está sob a licença MIT, e os resultados sob CC BY 4.0 (`LICENSE-RESULTADOS.md`).
+Cite via `CITATION.cff`. The code is under the MIT licence, and the results under CC BY 4.0 (`LICENSE-RESULTADOS.md`).

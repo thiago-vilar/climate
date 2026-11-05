@@ -1,31 +1,31 @@
-# ambiente e caches
+# environment and caches
 .venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# dados de entrada: baixados pelo notebook das fontes originais; só o registro é publicado
+# input data: downloaded by the notebook from the original sources; only the record is published
 dados/*
 !dados/registro.json
 
-# retomada e registros locais da execução
+# resume files and local run logs
 *.tmp
 *.invalido
 nbconvert_*.log
 resultados/*/pixels/parcial_*
 
-# pilotos: conferência do código, não resultado do estudo
+# pilots: code checks, not study results
 resultados/piloto/
 climate_piloto.ipynb
 conferencia_publicacao_piloto.md
 
-# notas de trabalho locais
+# local working notes
 AUDITORIA*.md
 auditoria*/
 
-# registro local do pipeline
+# local pipeline log
 executar_tudo.log
 
-# cópias locais e ferramentas de acompanhamento
+# local copies and monitoring tools
 climate_executado.ipynb
 acompanhar.py
