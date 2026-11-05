@@ -4,7 +4,7 @@ This folder links the manuscript to the notebook run. The scripts only **read** 
 
 ## Manuscript files
 
-The manuscript (`Article_climate_IJoC.docx`) and its Supporting Information (`Supporting_information_climate_IJoC.docx`) are kept locally in this folder, next to the Portuguese source (version 1), and are not tracked in the repository until publication.
+The manuscript (`Article_climate_IJoC_en.docx`) and its Supporting Information (`Supporting_information_climate_IJoC_en.docx`) are kept locally in this folder and are not tracked in the repository until publication.
 
 ## How to generate
 
